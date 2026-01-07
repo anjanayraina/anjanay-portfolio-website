@@ -15,11 +15,14 @@ const About = () => {
                         <h1 className="section-title-large" style={{
                             textAlign: 'left',
                             marginBottom: '2rem',
+                            display: 'inline-block',
                             background: 'linear-gradient(135deg, #fff 0%, #a855f7 50%, #6366f1 100%)',
                             WebkitBackgroundClip: 'text',
+                            backgroundClip: 'text',
                             WebkitTextFillColor: 'transparent',
                             filter: 'drop-shadow(0 0 30px rgba(168, 85, 247, 0.2))'
                         }}>
+
                             Know about <span style={{ color: '#a855f7' }}>Me!!</span>
                         </h1>
                         <p style={{ fontSize: '1.25rem', color: 'var(--text-primary)', marginBottom: '1.5rem', fontWeight: 600, letterSpacing: '-0.02em' }}>
