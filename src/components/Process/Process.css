@@ -1,0 +1,46 @@
+.process-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+    max-width: 800px;
+    width: 100%;
+}
+
+.process-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-lg);
+    padding-bottom: var(--space-lg);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.process-item:last-child {
+    border-bottom: none;
+}
+
+.process-number {
+    font-size: 0.875rem;
+    color: var(--accent-blue);
+    font-family: monospace;
+    /* Technical feel */
+    font-weight: 700;
+    margin-top: 6px;
+    /* Align with title */
+}
+
+.process-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+    color: var(--text-primary);
+}
+
+.process-description {
+    color: var(--text-secondary);
+}
+
+@media (min-width: 768px) {
+    .process-item {
+        gap: var(--space-2xl);
+    }
+}
