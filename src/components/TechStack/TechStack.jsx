@@ -41,23 +41,30 @@ const TechStack = () => {
                                 {group.skills.map((skill) => (
                                     <div key={skill} className="skill-badge-v2 shimmer">
                                         <div className="skill-logo-box">
-                                            {/* Simple logic for a logo-like icon */}
-                                            {skill === 'Python' && '🐍'}
-                                            {skill === 'Rust' && '🦀'}
-                                            {skill === 'Solidity' && '♢'}
-                                            {skill === 'Yul' && '⚡'}
-                                            {skill === 'Slither' && '🐍'}
-                                            {skill === 'Echidna' && '🦄'}
-                                            {skill === 'Anchor' && '⚓'}
-                                            {skill === 'Foundry' && '⚒️'}
-                                            {skill === 'FastAPI' && '⚡'}
-                                            {skill === 'Docker' && '🐳'}
-                                            {skill === 'Azure' && '☁️'}
-                                            {skill === 'GitHub Actions' && '⚙️'}
-                                            {skill === 'Hyperledger Fabric' && '⛓️'}
-                                            {skill === 'Redis' && '🔴'}
-                                            {!['Python', 'Rust', 'Solidity', 'Yul', 'Slither', 'Echidna', 'Anchor', 'Foundry', 'FastAPI', 'Docker', 'Azure', 'GitHub Actions', 'Hyperledger Fabric', 'Redis'].includes(skill) && '◈'}
+                                            {/* Branded Icon Mapping */}
+                                            {skill === 'Solidity' && <span style={{ color: '#627EEA' }}>◆</span>}
+                                            {skill === 'Yul' && <span style={{ color: '#FFD700' }}>⚡</span>}
+                                            {skill === 'Rust' && <span style={{ color: '#DEA584' }}>⚙️</span>}
+                                            {skill === 'Foundry' && <span style={{ color: '#D33833' }}>⚒️</span>}
+                                            {skill === 'Slither' && <span style={{ color: '#4CAF50' }}>🐍</span>}
+                                            {skill === 'Echidna' && <span style={{ color: '#E91E63' }}>🦄</span>}
+                                            {skill === 'Python' && <span style={{ color: '#3776AB' }}>🐍</span>}
+                                            {skill === 'FastAPI' && <span style={{ color: '#05998B' }}>⚡</span>}
+                                            {skill === 'Docker' && <span style={{ color: '#2496ED' }}>🐳</span>}
+                                            {skill === 'Terraform' && <span style={{ color: '#7B42BC' }}>⬢</span>}
+                                            {skill === 'PostgreSQL' && <span style={{ color: '#336791' }}>🐘</span>}
+                                            {skill === 'Redis' && <span style={{ color: '#D82C20' }}>🔴</span>}
+                                            {skill === 'GitHub Actions' && <span style={{ color: '#2088FF' }}>⚙️</span>}
+                                            {skill === 'Hyperledger Fabric' && <span style={{ color: '#2F3134' }}>⛓️</span>}
+                                            {skill === 'Golang' && <span style={{ color: '#00ADD8' }}>Go</span>}
+                                            {skill === 'Node.js' && <span style={{ color: '#339933' }}>⬢</span>}
+                                            {/* Default Icon */}
+                                            {!['Solidity', 'Yul', 'Rust', 'Foundry', 'Slither', 'Echidna', 'Python', 'FastAPI', 'Docker', 'Terraform', 'PostgreSQL', 'Redis', 'GitHub Actions', 'Hyperledger Fabric', 'Golang', 'Node.js'].includes(skill) &&
+                                                <span style={{ color: 'var(--accent-purple)' }}>✧</span>
+                                            }
                                         </div>
+
+
 
                                         {skill}
                                     </div>

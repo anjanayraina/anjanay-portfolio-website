@@ -17,12 +17,15 @@ const Hero = () => {
 
                 <div className="hero-text-content">
                     <h1 className="hero-heading">
-                        Software Engineer, <span style={{ color: '#a855f7' }}>Smart Contract Auditor</span>, and Freelancer.
+                        Backend Developer @ <span style={{ color: '#a855f7' }}>NatWest Group</span>.
                     </h1>
                     <p className="hero-description">
-                        I'm a Full-Stack Engineer and Web3 Security Researcher focused on securing high-value DeFi protocols.
-                        From architecting scalable microservices at <span style={{ fontWeight: 700 }}>NatWest</span> to identifying 20+ critical vulnerabilities in the blockchain space.
+                        I build high-performance systems and secure decentralized protocols.
+                        When I'm not <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>solving real-world technical problems</span>,
+                        you'll find me at the gym practicing <span style={{ color: 'var(--accent-purple)', fontWeight: 600 }}>MMA & Kickboxing</span> or out <span style={{ color: 'var(--accent-purple)', fontWeight: 600 }}>Trekking</span> in the mountains.
                     </p>
+
+
                     <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', marginTop: '2.5rem' }}>
                         <a href="mailto:anjanayraina326@gmail.com" className="btn-primary">Hire Me</a>
                         <button className="btn-secondary" onClick={() => window.open('https://drive.google.com/drive/folders/18StaXAN5Odo6mds5dGxj11s9YiRF-m-m?usp=sharing', '_blank')}>

@@ -4,7 +4,8 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 const experiences = [
   {
     company: 'NatWest Group',
-    role: 'Software Developer',
+    role: 'Backend Developer',
+
     period: 'July 2024 – Present',
     details: 'Architected and built a new ISV Signature Matching microservice from the ground up, owning the complete lifecycle.',
     highlights: [

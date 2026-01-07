@@ -26,7 +26,9 @@ const About = () => {
                             Hi Stranger!, I am <span style={{ color: '#a855f7' }}>Anjanay Raina</span> from <span style={{ color: '#a855f7' }}>Delhi, India.</span>
                         </p>
                         <p style={{ color: 'var(--text-secondary)', marginBottom: '3rem', fontSize: '1.125rem', letterSpacing: '-0.01em', lineHeight: '1.8' }}>
-                            I am a 4th-year CS student at <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>IIIT Delhi</span> and an accomplished **Web3 Security Researcher**. I have 3+ years of experience securing high-value protocols for clients like Zus Network and Moonvera Solutions.
+                            I am currently a <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>Backend Developer at NatWest Group</span>.
+                            Beyond my corporate role, I'm a Web3 Security Researcher with 3+ years of experience securing high-value protocols.
+                            I live for the challenge of <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>solving real-world problems</span> through elegant code.
                         </p>
 
                         <div style={{ display: 'flex', gap: '1rem', marginBottom: '3rem', flexWrap: 'wrap' }}>
@@ -38,18 +40,18 @@ const About = () => {
                             </button>
                         </div>
 
-
                         <h3 style={{ fontSize: '1.35rem', fontWeight: 800, marginBottom: '2rem', color: 'var(--text-primary)', letterSpacing: '-0.02em' }}>
-                            Some of my Hobbies are:
+                            Beyond the Code:
                         </h3>
                         <ul style={{ listStyle: 'none', padding: 0, color: 'var(--text-secondary)', fontSize: '1.125rem', lineHeight: '2.2' }}>
-                            <li><span style={{ marginRight: '12px', fontSize: '1.25rem' }}>🥊</span> I go to a nearby gym to learn <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Mixed Martial Arts</span></li>
-                            <li><span style={{ marginRight: '12px', fontSize: '1.25rem' }}>🎮</span> Gaming (mainly Strategy Games i.e. <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>AoE2, League of Legends, Chess</span>)</li>
-                            <li><span style={{ marginRight: '12px', fontSize: '1.25rem' }}>🏮</span> Watching Anime and Reading Manga (I am a Weeb xD)</li>
-                            <li><span style={{ marginRight: '12px', fontSize: '1.25rem' }}>🏐</span> Volleyball</li>
-                            <li><span style={{ marginRight: '12px', fontSize: '1.25rem' }}>⛓️</span> Crypto and Blockchain</li>
+                            <li><span style={{ marginRight: '12px', fontSize: '1.25rem' }}>🥊</span> Practicing <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Mixed Martial Arts & Kickboxing</span></li>
+                            <li><span style={{ marginRight: '12px', fontSize: '1.25rem' }}>🏔️</span> Enthusiastic about <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Trekking</span> and outdoor adventures</li>
+                            <li><span style={{ marginRight: '12px', fontSize: '1.25rem' }}>🎮</span> Gaming (Strategy Games: AoE2, LoL, Chess)</li>
+                            <li><span style={{ marginRight: '12px', fontSize: '1.25rem' }}>🏮</span> Watching Anime and Reading Manga</li>
+                            <li><span style={{ marginRight: '12px', fontSize: '1.25rem' }}>⛓️</span> Exploring the frontiers of Crypto and Blockchain</li>
                         </ul>
                     </div>
+
 
                     <div className="bio-image reveal" style={{ display: 'flex', justifyContent: 'center' }}>
                         <div className="glass glow-hover" style={{ padding: '2.5rem', borderRadius: '40px', width: '100%', maxWidth: '450px', textAlign: 'center', border: '1px solid rgba(168, 85, 247, 0.2)' }}>
