@@ -23,8 +23,17 @@
     border: 1px solid var(--border-medium);
     overflow: hidden;
     background: var(--bg-secondary);
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 0 20px rgba(0, 122, 255, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
+
+.hero-avatar:hover {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 30px rgba(0, 122, 255, 0.3);
+    transform: scale(1.05);
+}
+
 
 .hero-text-content {
     max-width: 800px;

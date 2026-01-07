@@ -2,83 +2,83 @@ import React from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const projects = [
-    {
-        title: 'JobSleuth',
-        subtitle: 'Automated Job Aggregation Platform',
-        description: 'Architected and deployed a full-stack platform that processes 5,000+ job postings daily from 10+ real-time sources.',
-        tech: ['Python', 'FastAPI', 'Telethon', 'aiohttp', 'React', 'Render'],
-        links: { github: 'https://github.com/anjanayraina/JobSleuth', live: 'https://job-sleuth.onrender.com/' },
-        icon: '🔍'
-    },
-    {
-        title: 'Middle Earth AI',
-        subtitle: 'Distributed Strategy Game',
-        description: 'Architected a system for a distributed game serving over 500+ players, with a core engine in JavaScript and on-chain programs in Rust.',
-        tech: ['Rust', 'Python', 'JavaScript', 'NumPy', 'Solana'],
-        links: { github: 'https://github.com/MiddleEarthAI/middle_earth_ai_program', live: 'https://www.middleearth.world/' },
-        icon: '⚔️'
-    },
-    {
-        title: 'Smart Contract Vaults',
-        subtitle: 'DeFi Security Research',
-        description: 'Developed advanced vault architectures for automated yield strategies while identifying and mitigating critical smart contract vulnerabilities.',
-        tech: ['Solidity', 'Foundry', 'Hardhat', 'Ethers.js'],
-        links: { github: '#' },
-        icon: '🛡️'
-    },
-    {
-        title: 'ISV Signature Matching',
-        subtitle: 'NatWest Group Microservice',
-        description: 'Architecting a high-availability microservice for automated signature verification in retail banking systems.',
-        tech: ['Python', 'Azure', 'Microservices', 'FastAPI'],
-        links: {},
-        icon: '✍️'
-    }
+  {
+    title: 'JobSleuth',
+    subtitle: 'Automated Job Aggregation Platform',
+    description: 'Architected and deployed a full-stack platform that processes 5,000+ job postings daily from 10+ real-time sources.',
+    tech: ['Python', 'FastAPI', 'Telethon', 'aiohttp', 'React', 'Render'],
+    links: { github: 'https://github.com/anjanayraina/JobSleuth', live: 'https://job-sleuth.onrender.com/' },
+    icon: '🔍'
+  },
+  {
+    title: 'Middle Earth AI',
+    subtitle: 'Distributed Strategy Game',
+    description: 'Architected a system for a distributed game serving over 500+ players, with a core engine in JavaScript and on-chain programs in Rust.',
+    tech: ['Rust', 'Python', 'JavaScript', 'NumPy', 'Solana'],
+    links: { github: 'https://github.com/MiddleEarthAI/middle_earth_ai_program', live: 'https://www.middleearth.world/' },
+    icon: '⚔️'
+  },
+  {
+    title: 'Smart Contract Vaults',
+    subtitle: 'DeFi Security Research',
+    description: 'Developed advanced vault architectures for automated yield strategies while identifying and mitigating critical smart contract vulnerabilities.',
+    tech: ['Solidity', 'Foundry', 'Hardhat', 'Ethers.js'],
+    links: { github: '#' },
+    icon: '🛡️'
+  },
+  {
+    title: 'ISV Signature Matching',
+    subtitle: 'NatWest Group Microservice',
+    description: 'Architecting a high-availability microservice for automated signature verification in retail banking systems.',
+    tech: ['Python', 'Azure', 'Microservices', 'FastAPI'],
+    links: {},
+    icon: '✍️'
+  }
 ];
 
 const Projects = () => {
-    const revealRef = useScrollReveal();
+  const revealRef = useScrollReveal();
 
-    return (
-        <div ref={revealRef} className="projects-page container section animate-fade-in">
-            <div className="reveal" style={{ marginBottom: '6rem' }}>
-                <h1 className="text-gradient" style={{ fontSize: '4.5rem', fontWeight: 800, letterSpacing: '-0.05em', marginBottom: '1.5rem' }}>
-                    Built with precision.
-                </h1>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '1.25rem', maxWidth: '600px', lineHeight: '1.6' }}>
-                    Select projects where I've led architecture, security, or implementation from zero to production.
-                </p>
+  return (
+    <div ref={revealRef} className="projects-page container section animate-fade-in">
+      <div className="reveal" style={{ marginBottom: '6rem' }}>
+        <h1 className="text-gradient" style={{ fontSize: '4.5rem', fontWeight: 800, letterSpacing: '-0.05em', marginBottom: '1.5rem' }}>
+          Built with precision.
+        </h1>
+        <p style={{ color: 'var(--text-secondary)', fontSize: '1.25rem', maxWidth: '600px', lineHeight: '1.6' }}>
+          Select projects where I've led architecture, security, or implementation from zero to production.
+        </p>
+      </div>
+
+      <div className="project-grid-enhanced stagger-reveal">
+        {projects.map((project, index) => (
+          <div key={index} className="project-item-group reveal">
+            <div className="project-card-v2 glass glow-hover">
+              <div className="project-header">
+                <div className="project-icon-box">
+                  {project.icon}
+                </div>
+                <div className="project-links-v2">
+                  {project.links.github && <a href={project.links.github} target="_blank" className="link-icon">GH</a>}
+                  {project.links.live && <a href={project.links.live} target="_blank" className="link-icon">↗</a>}
+                </div>
+              </div>
+
+              <div className="project-body">
+                <h3 className="project-title-v2">{project.title}</h3>
+                <div className="project-subtitle-v2">{project.subtitle}</div>
+                <p className="project-desc-v2">{project.description}</p>
+
+                <div className="project-stack-v2">
+                  {project.tech.map(t => <span key={t} className="tech-badge-v2">{t}</span>)}
+                </div>
+              </div>
             </div>
+          </div>
+        ))}
+      </div>
 
-            <div className="project-grid-enhanced stagger-reveal">
-                {projects.map((project, index) => (
-                    <div key={index} className="project-item-group reveal">
-                        <div className="project-card-v2 glass glow-hover">
-                            <div className="project-header">
-                                <div className="project-icon-box">
-                                    {project.icon}
-                                </div>
-                                <div className="project-links-v2">
-                                    {project.links.github && <a href={project.links.github} target="_blank" className="link-icon">GH</a>}
-                                    {project.links.live && <a href={project.links.live} target="_blank" className="link-icon">↗</a>}
-                                </div>
-                            </div>
-
-                            <div className="project-body">
-                                <h3 className="project-title-v2">{project.title}</h3>
-                                <div className="project-subtitle-v2">{project.subtitle}</div>
-                                <p className="project-desc-v2">{project.description}</p>
-
-                                <div className="project-stack-v2">
-                                    {project.tech.map(t => <span key={t} className="tech-badge-v2">{t}</span>)}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                ))}
-            </div>
-
-            <style>{`
+      <style>{`
         .project-grid-enhanced {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -99,7 +99,10 @@ const Projects = () => {
         .project-card-v2:hover {
           background: rgba(255, 255, 255, 0.02);
           transform: translateY(-8px);
+          border-color: var(--accent-blue);
+          box-shadow: 0 0 30px rgba(0, 122, 255, 0.2);
         }
+
 
         .project-header {
           display: flex;
@@ -184,8 +187,8 @@ const Projects = () => {
           }
         }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Projects;

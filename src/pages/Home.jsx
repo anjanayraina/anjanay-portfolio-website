@@ -2,7 +2,9 @@ import React from 'react';
 import Hero from '../components/Hero/Hero';
 import TechStack from '../components/TechStack/TechStack';
 import BentoGrid from '../components/BentoGrid/BentoGrid';
+import StatsCards from '../components/Stats/StatsCards';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+
 
 const Home = () => {
     const revealRef = useScrollReveal();
@@ -38,6 +40,9 @@ const Home = () => {
 
             {/* Projects Section (Redesigned) */}
             <BentoGrid />
+
+            {/* Stats Section (Leetcode & GitHub) */}
+            <StatsCards />
 
             {/* Tech Stack Horizontal Scroll/Grid */}
             <div className="reveal">
