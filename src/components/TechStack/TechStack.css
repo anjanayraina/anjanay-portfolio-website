@@ -1,47 +1,76 @@
-.tech-grid {
+.stack-grid-v2 {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 3rem;
     width: 100%;
 }
 
-.tech-item-sleek {
-    background: var(--bg-primary);
-    border: 1px solid var(--border-subtle);
-    padding: 1rem;
-    border-radius: 12px;
+.stack-group-v2 {
+    text-align: left;
+}
+
+.stack-category-v2 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
     display: flex;
     align-items: center;
+    gap: 1rem;
+}
+
+.stack-category-v2::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border-subtle);
+}
+
+.stack-items-v2 {
+    display: flex;
+    flex-wrap: wrap;
     gap: 0.75rem;
+}
+
+.skill-badge-v2 {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    padding: 0.6rem 1rem;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
     transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
     cursor: default;
 }
 
-.tech-item-sleek:hover {
-    border-color: var(--border-medium);
-    box-shadow: var(--shadow-md);
+.skill-badge-v2:hover {
+    background: rgba(255, 255, 255, 0.03);
+    border-color: var(--accent-blue);
     transform: translateY(-2px);
-    background: var(--bg-secondary);
+    box-shadow: 0 4px 12px rgba(0, 122, 255, 0.1);
 }
 
-.tech-icon-mini {
-    width: 6px;
-    height: 6px;
-    background: var(--accent-blue);
+.skill-dot {
+    width: 4px;
+    height: 4px;
+    background: var(--text-tertiary);
     border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.skill-badge-v2:hover .skill-dot {
+    background: var(--accent-blue);
     box-shadow: 0 0 8px var(--accent-blue);
 }
 
-.tech-name {
-    font-size: 0.8125rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-@media (min-width: 768px) {
-    .tech-grid {
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+@media (max-width: 768px) {
+    .stack-grid-v2 {
+        gap: 2rem;
     }
 }
