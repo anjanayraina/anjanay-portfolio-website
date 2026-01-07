@@ -2,25 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Color Palette - Refined Light Theme */
-  --bg-primary: #FFFFFF;
-  --bg-secondary: #FAFAFA;
-  --bg-tertiary: #F4F4F5;
-  --bg-card: #FFFFFF;
+  /* Color Palette - Premium Dark Theme */
+  --bg-primary: #0A0A0B;
+  --bg-secondary: #161617;
+  --bg-tertiary: #1E1E1F;
+  --bg-card: #161617;
 
-  --text-primary: #09090B;
-  --text-secondary: #52525B;
-  --text-tertiary: #71717A;
+  --text-primary: #FFFFFF;
+  --text-secondary: #A1A1AA;
+  --text-tertiary: #52525B;
 
   --accent-blue: #007AFF;
-  --accent-soft: rgba(0, 122, 255, 0.05);
+  --accent-soft: rgba(0, 122, 255, 0.1);
 
-  --border-subtle: #E4E4E7;
-  --border-medium: #D4D4D8;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-medium: rgba(255, 255, 255, 0.15);
 
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
 
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
@@ -67,14 +67,17 @@ html {
 
 body {
   min-height: 100vh;
-  line-height: 1.5;
+  line-height: 1.6;
   overflow-x: hidden;
+  /* Global Dot Grid */
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
 }
 
 /* Layout Utilities */
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 var(--space-md);
 }
@@ -86,43 +89,38 @@ body {
 
 /* Sleek Utilities */
 .glass {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(22, 22, 23, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-subtle);
-}
-
-.grid-bg {
-  background-image: radial-gradient(var(--border-subtle) 0.5px, transparent 0.5px);
-  background-size: 24px 24px;
 }
 
 .card {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
-  border-radius: 12px;
+  border-radius: 16px;
   padding: var(--space-lg);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .card:hover {
   border-color: var(--border-medium);
   box-shadow: var(--shadow-lg);
-  transform: translateY(-2px);
+  transform: translateY(-4px);
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, var(--text-primary) 30%, var(--text-tertiary));
+  background: linear-gradient(135deg, #FFF 0%, #AAA 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .badge {
-  padding: 0.25rem 0.75rem;
+  padding: 0.35rem 0.85rem;
   border-radius: 9999px;
   font-size: 0.75rem;
-  font-weight: 500;
+  font-weight: 600;
   background: var(--bg-tertiary);
   color: var(--text-secondary);
   border: 1px solid var(--border-subtle);
@@ -151,18 +149,6 @@ body {
   }
 }
 
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 .animate-fade-in {
   animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
 }
@@ -184,23 +170,43 @@ body {
 
 /* Button & Link Effects */
 .btn-primary {
-  background: var(--text-primary);
-  color: var(--bg-primary);
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
+  background: #FFFFFF;
+  color: #000000;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
   font-weight: 600;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   transition: all 0.3s ease;
   border: 1px solid transparent;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
 
 .btn-primary:hover {
-  background: #27272a;
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
+  background: #E4E4E7;
+  transform: scale(1.02);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #FFFFFF;
+  padding: 0.75rem 1.75rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-subtle);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--border-medium);
 }
 
 .hover-underline {

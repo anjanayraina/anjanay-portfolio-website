@@ -4,45 +4,55 @@ import './BentoGrid.css';
 
 const projects = [
     {
-        title: 'LLM-Powered DeFi Platform',
-        category: 'AI & Blockchain',
-        description: 'An intelligent interface for decentralized finance protocols.',
-        size: 'large', // spans 2 columns
+        title: 'SmartTrim AI',
+        description: 'SmartTrim AI is a magic background remover. Upload your image, clear the background seamlessly, and bring your ideas to life.',
+        tech: ['AI', 'Image Processing', 'Background Removal'],
+        imgLabel: 'SmartTrim AI Preview'
     },
     {
-        title: 'JobSleuth',
-        category: 'High-Throughput Backend',
-        description: 'Data ingestion pipeline processing 5k+ jobs daily.',
-        size: 'small',
+        title: 'NexTalk',
+        description: 'NexTalk is a cutting-edge replication of Zoom, built with the latest Next.js and TypeScript. Designed for high-performance video calls.',
+        tech: ['Next.js', 'WebRTC', 'TypeScript'],
+        imgLabel: 'NexTalk Interface'
     },
     {
-        title: 'Middle Earth AI',
-        category: 'Distributed Systems',
-        description: 'DeFi Strategy Game with on-chain state management.',
-        size: 'small',
-    },
-    {
-        title: 'Smart Contract Auditing',
-        category: 'Security',
-        description: 'Audited Solidity codebases identifying critical vulnerabilities.',
-        size: 'wide', // spans full width
-    },
+        title: 'Swiggy Clone',
+        description: 'A Swiggy inspired food ordering platform. Built using live Swiggy APIs and technologies like Tailwind CSS, Redux, and React Router.',
+        tech: ['React', 'Redux', 'Tailwind'],
+        imgLabel: 'Swiggy Clone UI'
+    }
 ];
 
 const BentoGrid = () => {
     return (
         <Section id="work" className="bento-section">
-            <h2 className="section-title">Proof of Work</h2>
-            <div className="bento-grid">
-                {projects.map((project, index) => (
-                    <div key={index} className={`bento-card ${project.size}`}>
-                        <div className="card-content">
-                            <span className="card-category">{project.category}</span>
-                            <h3 className="card-title">{project.title}</h3>
-                            <p className="card-description">{project.description}</p>
+            <div className="container" style={{ textAlign: 'center' }}>
+                <h2 className="section-title-large">Things I've made trying to put my mark</h2>
+                <p style={{ color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto 2.5rem' }}>
+                    I've worked on tons of little projects over the years, but these are some of the ones that I'm most proud of.
+                </p>
+
+                <div className="bento-actions">
+                    <button className="btn-primary">View All Projects</button>
+                    <button className="btn-secondary">GitHub</button>
+                </div>
+
+                <div className="project-grid-sleek">
+                    {projects.map((project, index) => (
+                        <div key={index} className="project-card-sleek reveal">
+                            <div className="card-image-preview">
+                                <span>{project.imgLabel}</span>
+                            </div>
+                            <div className="card-body-sleek">
+                                <h3 className="card-title-sleek">{project.title}</h3>
+                                <p className="card-desc-sleek">{project.description}</p>
+                                <div className="card-tech-sleek">
+                                    {project.tech.map(t => <span key={t} className="badge">{t}</span>)}
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </Section>
     );

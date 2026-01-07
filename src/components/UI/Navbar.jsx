@@ -4,17 +4,30 @@ import './Navbar.css';
 
 const Navbar = () => {
     return (
-        <nav className="navbar">
-            <div className="navbar-container container">
-                <NavLink to="/" className="navbar-logo">AR.</NavLink>
+        <>
+            <div className="nav-avatar animate-fade-in">
+                <div style={{ width: '100%', height: '100%', background: 'var(--bg-tertiary)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '10px' }}>
+                    {/* Avatar Placeholder */}
+                    AR
+                </div>
+            </div>
+
+            <nav className="navbar animate-fade-in">
                 <ul className="navbar-links">
+                    <li><NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>About</NavLink></li>
                     <li><NavLink to="/projects" className={({ isActive }) => isActive ? 'active' : ''}>Projects</NavLink></li>
-                    <li><NavLink to="/experience" className={({ isActive }) => isActive ? 'active' : ''}>Experience</NavLink></li>
+                    <li><NavLink to="/experience" className={({ isActive }) => isActive ? 'active' : ''}>Hire</NavLink></li>
                     <li><NavLink to="/stack" className={({ isActive }) => isActive ? 'active' : ''}>Stack</NavLink></li>
                     <li><NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>Contact</NavLink></li>
                 </ul>
+            </nav>
+
+            <div className="nav-actions animate-fade-in">
+                <button className="action-btn">
+                    <span>🌙</span>
+                </button>
             </div>
-        </nav>
+        </>
     );
 };
 
