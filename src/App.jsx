@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/UI/Navbar';
 import Footer from './components/UI/Footer';
+import Background from './components/UI/Background';
 
 // Lazy load pages for performance
 const Home = lazy(() => import('./pages/Home'));
@@ -13,8 +14,10 @@ const ContactPage = lazy(() => import('./pages/ContactPage'));
 function App() {
   return (
     <Router>
-      <div className="app-container grid-bg">
+      <div className="app-container">
+        <Background />
         <Navbar />
+
         <main style={{ paddingTop: '64px' }}>
           <Suspense fallback={
             <div style={{ height: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>

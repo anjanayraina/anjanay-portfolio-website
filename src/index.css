@@ -69,10 +69,8 @@ body {
   min-height: 100vh;
   line-height: 1.6;
   overflow-x: hidden;
-  /* Global Dot Grid */
-  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 0.5px, transparent 0.5px);
-  background-size: 24px 24px;
 }
+
 
 /* Layout Utilities */
 .container {
