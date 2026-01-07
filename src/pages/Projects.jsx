@@ -3,38 +3,39 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const projects = [
   {
-    title: 'JobSleuth',
-    subtitle: 'Automated Job Aggregation Platform',
-    description: 'Architected and deployed a full-stack platform that processes 5,000+ job postings daily from 10+ real-time sources.',
-    tech: ['Python', 'FastAPI', 'Telethon', 'aiohttp', 'React', 'Render'],
-    links: { github: 'https://github.com/anjanayraina/JobSleuth', live: 'https://job-sleuth.onrender.com/' },
-    icon: '🔍'
-  },
-  {
     title: 'Middle Earth AI',
-    subtitle: 'Distributed Strategy Game',
-    description: 'Architected a system for a distributed game serving over 500+ players, with a core engine in JavaScript and on-chain programs in Rust.',
-    tech: ['Rust', 'Python', 'JavaScript', 'NumPy', 'Solana'],
+    subtitle: 'On-Chain Strategy Game',
+    description: 'Developed Rust-based Solana smart contracts using Anchor for on-chain game state, asset minting, and battle logic. Secured $100K+ TVL.',
+    tech: ['Rust', 'Anchor', 'Solana', 'TypeScript', 'AI'],
     links: { github: 'https://github.com/MiddleEarthAI/middle_earth_ai_program', live: 'https://www.middleearth.world/' },
     icon: '⚔️'
   },
   {
-    title: 'Smart Contract Vaults',
-    subtitle: 'DeFi Security Research',
-    description: 'Developed advanced vault architectures for automated yield strategies while identifying and mitigating critical smart contract vulnerabilities.',
-    tech: ['Solidity', 'Foundry', 'Hardhat', 'Ethers.js'],
-    links: { github: '#' },
-    icon: '🛡️'
+    title: 'PerpetualVault',
+    subtitle: 'DeFi Liquidity Protocol',
+    description: 'Architected a decentralized perpetuals protocol following ERC-4626. Built a fault-tolerant double oracle system with Chainlink.',
+    tech: ['Solidity', 'Foundry', 'Chainlink', 'ERC-4626'],
+    links: { github: 'https://github.com/anjanayraina/PerpetualVault' },
+    icon: '📈'
+  },
+  {
+    title: 'JobSleuth',
+    subtitle: 'Automated Job Aggregation',
+    description: 'Deployed a full-stack platform aggregating 5,000+ daily postings. Built concurrent Python pipelines reducing collection time by 90%.',
+    tech: ['Python', 'FastAPI', 'Telethon', 'aiohttp', 'React'],
+    links: { github: 'https://github.com/anjanayraina/JobSleuth', live: 'https://job-sleuth.onrender.com/' },
+    icon: '🔍'
   },
   {
     title: 'ISV Signature Matching',
-    subtitle: 'NatWest Group Microservice',
-    description: 'Architecting a high-availability microservice for automated signature verification in retail banking systems.',
-    tech: ['Python', 'Azure', 'Microservices', 'FastAPI'],
+    subtitle: 'NatWest Group Banking Service',
+    description: 'High-availability microservice for automated signature verification in retail banking systems, reducing latency by 40%.',
+    tech: ['Python', 'Azure', 'FastAPI', 'Microservices'],
     links: {},
-    icon: '✍️'
+    icon: '⚖️'
   }
 ];
+
 
 const Projects = () => {
   const revealRef = useScrollReveal();

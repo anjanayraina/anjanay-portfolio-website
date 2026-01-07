@@ -1,7 +1,10 @@
 import React from 'react';
 import Hero from '../components/Hero/Hero';
 import BentoGrid from '../components/BentoGrid/BentoGrid';
+import Newsletter from '../components/UI/Newsletter';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+
+
 
 const Home = () => {
     const revealRef = useScrollReveal();
@@ -37,7 +40,11 @@ const Home = () => {
             {/* Projects Section */}
             <BentoGrid />
 
+            {/* Newsletter Subscription */}
+            <Newsletter />
+
             {/* Final Call to Action - Focused for Freelancer */}
+
             <section className="container section reveal" style={{ paddingBottom: '10rem', textAlign: 'center' }}>
                 <h2 className="section-title-large" style={{ marginBottom: '1.5rem' }}>Need a Technical Partner?</h2>
                 <p style={{ color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto 3rem', fontSize: '1.125rem' }}>

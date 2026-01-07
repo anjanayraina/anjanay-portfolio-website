@@ -4,22 +4,23 @@ import './TechStack.css';
 
 const stack = [
     {
-        category: 'Languages',
-        skills: ['Python', 'Golang', 'Rust', 'JavaScript', 'TypeScript', 'Solidity', 'SQL']
+        category: 'Blockchain & Security',
+        skills: ['Solidity', 'Yul', 'Rust', 'Foundry', 'Hardhat', 'Slither', 'Echidna', 'Anchor']
+    },
+    {
+        category: 'Web3 Standards',
+        skills: ['ERC-20', 'ERC-721', 'ERC-4626', 'Chainlink', 'OpenZeppelin', 'Hyperledger Fabric']
     },
     {
         category: 'Backend & Scaling',
-        skills: ['FastAPI', 'Node.js', 'Kafka', 'Elasticsearch', 'Redis', 'PostgreSQL', 'Microservices']
+        skills: ['Python', 'Golang', 'FastAPI', 'Node.js', 'Redis', 'PostgreSQL', 'Microservices']
     },
     {
         category: 'Infrastructure',
-        skills: ['Docker', 'Kubernetes', 'CI/CD', 'Azure', 'GCP', 'GHA', 'Terraform']
-    },
-    {
-        category: 'Web3 & AI',
-        skills: ['Smart Contracts', 'Defi', 'Foundry', 'Hardhat', 'LLM Agents', 'RAG']
+        skills: ['Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions', 'Terraform', 'Azure', 'GCP']
     }
 ];
+
 
 const TechStack = () => {
     return (
@@ -44,13 +45,20 @@ const TechStack = () => {
                                             {skill === 'Python' && '🐍'}
                                             {skill === 'Rust' && '🦀'}
                                             {skill === 'Solidity' && '♢'}
+                                            {skill === 'Yul' && '⚡'}
+                                            {skill === 'Slither' && '🐍'}
+                                            {skill === 'Echidna' && '🦄'}
+                                            {skill === 'Anchor' && '⚓'}
+                                            {skill === 'Foundry' && '⚒️'}
                                             {skill === 'FastAPI' && '⚡'}
                                             {skill === 'Docker' && '🐳'}
                                             {skill === 'Azure' && '☁️'}
-                                            {skill === 'Kafka' && '📡'}
+                                            {skill === 'GitHub Actions' && '⚙️'}
+                                            {skill === 'Hyperledger Fabric' && '⛓️'}
                                             {skill === 'Redis' && '🔴'}
-                                            {!['Python', 'Rust', 'Solidity', 'FastAPI', 'Docker', 'Azure', 'Kafka', 'Redis'].includes(skill) && '◈'}
+                                            {!['Python', 'Rust', 'Solidity', 'Yul', 'Slither', 'Echidna', 'Anchor', 'Foundry', 'FastAPI', 'Docker', 'Azure', 'GitHub Actions', 'Hyperledger Fabric', 'Redis'].includes(skill) && '◈'}
                                         </div>
+
                                         {skill}
                                     </div>
                                 ))}

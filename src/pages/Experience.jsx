@@ -2,90 +2,105 @@ import React from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const experiences = [
-    {
-        company: 'NatWest Group',
-        role: 'Backend Developer',
-        period: 'July 2024 – Present',
-        details: 'Leading the ISV Signature Matching microservice architecture project. Focused on high-availability and fault-tolerant data recovery.',
-        highlights: [
-            'Engineered auto-recovery mechanisms for critical batch processing.',
-            'Optimized API throughput by 3x via stateful caching and query tuning.',
-            'Orchestrating cloud deployment on Azure with Terraform.'
-        ],
-        logo: '🏦'
-    },
-    {
-        company: 'Zus Network',
-        role: 'Backend Consultant',
-        period: 'March 2024 – July 2024',
-        details: 'Security audit and backend optimization for core storage protocols.',
-        highlights: [
-            'Audited Solidity codebases, identifying critical security flaws.',
-            'Implemented robust unit testing suites for core Go services.'
-        ],
-        logo: '🛰️'
-    },
-    {
-        company: 'DLT Labs',
-        role: 'Student Researcher',
-        period: 'January 2023 – July 2023',
-        details: 'Blockchain research focused on Hyperledger Fabric. Resulted in a publication at IEEE ANTS.',
-        highlights: [
-            'Implemented theft tracking system on Hyperledger Fabric.',
-            'Achieved 100x improvement in system resolution latency.'
-        ],
-        logo: '⛓️'
-    }
+  {
+    company: 'NatWest Group',
+    role: 'Software Developer',
+    period: 'July 2024 – Present',
+    details: 'Architected and built a new ISV Signature Matching microservice from the ground up, owning the complete lifecycle.',
+    highlights: [
+      'Delivered a 40% reduction in average API response time through performance tuning.',
+      'Implemented key FastAPI endpoints for critical banking data modification.',
+      'Conducted extensive load testing with Locust to ensure system reliability.'
+    ],
+    logo: '🏦'
+  },
+  {
+    company: 'Freelance',
+    role: 'Independent Smart-Contract Auditor',
+    period: 'July 2023 – Present',
+    details: 'Secured high-value DeFi protocols, ranking among top global auditors on Code4rena and Sherlock.',
+    highlights: [
+      'Identified and resolved 20+ critical vulnerabilities (reentrancy, economic exploits).',
+      'Engineered gas optimizations reducing execution costs by up to 60%.',
+      'Integrated Foundry fuzzer and Slither into client CI/CD pipelines.'
+    ],
+    logo: '🛡️'
+  },
+  {
+    company: 'Zus Network',
+    role: 'Smart Contract Auditor (Consultant)',
+    period: 'April 2023 – June 2023',
+    details: 'Security audit and backend optimization for core storage protocols prior to mainnet.',
+    highlights: [
+      'Resolved 10+ critical vulnerabilities ensuring a secure protocol deployment.',
+      'Designed a comprehensive test suite in Go for complex scenario automation.',
+      'Collaborated on secure coding standards and vulnerability monitoring.'
+    ],
+    logo: '🛰️'
+  },
+  {
+    company: 'DLT Labs',
+    role: 'Student Researcher',
+    period: 'January 2023 – July 2023',
+    details: 'Blockchain research focused on theft tracking. Resulted in an IEEE ANTS publication.',
+    highlights: [
+      'Developed a Two-Layered Blockchain Architecture using Hyperledger Fabric.',
+      'Achieved 100x improvement in mobile theft resolution latency.',
+      'Published research detailing system guarantees and performance benchmarks.'
+    ],
+    logo: '⛓️'
+  }
 ];
 
+
 const Experience = () => {
-    const revealRef = useScrollReveal();
+  const revealRef = useScrollReveal();
 
-    return (
-        <div ref={revealRef} className="experience-page container section animate-fade-in">
-            <div className="reveal" style={{ marginBottom: '6rem' }}>
-                <h1 className="text-gradient" style={{ fontSize: '4.5rem', fontWeight: 800, letterSpacing: '-0.05em', marginBottom: '1.5rem' }}>
-                    Real-world scale.
-                </h1>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '1.25rem', maxWidth: '600px', lineHeight: '1.6' }}>
-                    Working with industry leaders to build highly reliable and performance-critical systems.
-                </p>
+  return (
+    <div ref={revealRef} className="experience-page container section animate-fade-in">
+      <div className="reveal" style={{ marginBottom: '6rem' }}>
+        <h1 className="text-gradient" style={{ fontSize: '4.5rem', fontWeight: 800, letterSpacing: '-0.05em', marginBottom: '1.5rem' }}>
+          Real-world scale.
+        </h1>
+        <p style={{ color: 'var(--text-secondary)', fontSize: '1.25rem', maxWidth: '600px', lineHeight: '1.6' }}>
+          Working with industry leaders to build highly reliable and performance-critical systems.
+        </p>
+      </div>
+
+      <div className="timeline-container stagger-reveal">
+        {experiences.map((exp, idx) => (
+          <div key={idx} className="timeline-item reveal">
+            <div className="timeline-dot-wrapper">
+              <div className="timeline-dot"></div>
+              <div className="timeline-line"></div>
             </div>
 
-            <div className="timeline-container stagger-reveal">
-                {experiences.map((exp, idx) => (
-                    <div key={idx} className="timeline-item reveal">
-                        <div className="timeline-dot-wrapper">
-                            <div className="timeline-dot"></div>
-                            <div className="timeline-line"></div>
-                        </div>
+            <div className="timeline-content card glass shimmer">
+              <div className="timeline-header">
+                <div className="exp-logo">{exp.logo}</div>
+                <div>
+                  <h3 className="exp-company">{exp.company}</h3>
+                  <div className="exp-role">{exp.role}</div>
+                </div>
+                <div className="exp-period">{exp.period}</div>
+              </div>
 
-                        <div className="timeline-content card glass shimmer">
-                            <div className="timeline-header">
-                                <div className="exp-logo">{exp.logo}</div>
-                                <div>
-                                    <h3 className="exp-company">{exp.company}</h3>
-                                    <div className="exp-role">{exp.role}</div>
-                                </div>
-                                <div className="exp-period">{exp.period}</div>
-                            </div>
+              <p className="exp-details">{exp.details}</p>
 
-                            <p className="exp-details">{exp.details}</p>
-
-                            <ul className="exp-highlights">
-                                {exp.highlights.map((h, i) => (
-                                    <li key={i} className="exp-highlight-item">
-                                        <span className="bullet"></span>
-                                        {h}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
+              <ul className="exp-highlights">
+                {exp.highlights.map((h, i) => (
+                  <li key={i} className="exp-highlight-item">
+                    <span className="bullet"></span>
+                    {h}
+                  </li>
                 ))}
+              </ul>
             </div>
+          </div>
+        ))}
+      </div>
 
-            <style>{`
+      <style>{`
         .timeline-container {
           position: relative;
           padding-left: 2rem;
@@ -214,8 +229,8 @@ const Experience = () => {
           }
         }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 };
 
 export default Experience;

@@ -17,16 +17,20 @@ const Hero = () => {
 
                 <div className="hero-text-content">
                     <h1 className="hero-heading">
-                        Software Engineer, Freelancer, and Open Source Enthusiast.
+                        Software Engineer, <span style={{ color: '#a855f7' }}>Smart Contract Auditor</span>, and Freelancer.
                     </h1>
                     <p className="hero-description">
-                        I'm a Senior Full-Stack Engineer focused on building secure, AI-powered decentralized systems.
-                        I love architecting tools that make developers' lives easier and sharing what I learn through tech blogs and open source.
+                        I'm a Full-Stack Engineer and Web3 Security Researcher focused on securing high-value DeFi protocols.
+                        From architecting scalable microservices at <span style={{ fontWeight: 700 }}>NatWest</span> to identifying 20+ critical vulnerabilities in the blockchain space.
                     </p>
-                    <p className="hero-cta-text">
-                        Currently accepting freelance projects — let's build something amazing together!
-                    </p>
+                    <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', marginTop: '2.5rem' }}>
+                        <a href="mailto:anjanayraina326@gmail.com" className="btn-primary">Hire Me</a>
+                        <button className="btn-secondary" onClick={() => window.open('https://drive.google.com/drive/folders/18StaXAN5Odo6mds5dGxj11s9YiRF-m-m?usp=sharing', '_blank')}>
+                            Download Resume 📥
+                        </button>
+                    </div>
                 </div>
+
 
                 {/* Social Icons Row */}
                 <div className="hero-socials">
