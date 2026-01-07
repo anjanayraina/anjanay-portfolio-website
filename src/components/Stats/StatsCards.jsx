@@ -62,7 +62,7 @@ const LeetcodeCard = () => {
     ];
 
     return (
-        <div className="card glass stats-card leetcode-card glow-hover reveal">
+        <div className="card glass stats-card leetcode-card glow-hover">
             <div className="stats-header">
                 <h3 className="stats-title">Leetcode Profile</h3>
                 <span className="stats-total">{displayData.totalSolved} <small>Solved</small></span>
@@ -104,7 +104,8 @@ const LeetcodeCard = () => {
 
 const GithubCard = () => {
     return (
-        <div className="card glass stats-card github-card glow-hover reveal">
+        <div className="card glass stats-card github-card glow-hover">
+
             <h3 className="stats-title" style={{ marginBottom: '2rem' }}>GitHub Contributions</h3>
             <div className="calendar-wrapper">
                 {/* Fixed import usage */}
@@ -121,16 +122,14 @@ const GithubCard = () => {
 };
 
 const StatsCards = () => {
-    const revealRef = useScrollReveal();
     return (
-        <section ref={revealRef} className="container section stats-section" style={{ padding: 0 }}>
-            <div className="stats-stack">
-                <LeetcodeCard />
-                <GithubCard />
-            </div>
-        </section>
+        <div className="stats-stack">
+            <LeetcodeCard />
+            <GithubCard />
+        </div>
     );
 };
+
 
 
 export default StatsCards;

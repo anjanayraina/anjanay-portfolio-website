@@ -39,10 +39,22 @@ const TechStack = () => {
                             <div className="stack-items-v2">
                                 {group.skills.map((skill) => (
                                     <div key={skill} className="skill-badge-v2 shimmer">
-                                        <span className="skill-dot"></span>
+                                        <div className="skill-logo-box">
+                                            {/* Simple logic for a logo-like icon */}
+                                            {skill === 'Python' && '🐍'}
+                                            {skill === 'Rust' && '🦀'}
+                                            {skill === 'Solidity' && '♢'}
+                                            {skill === 'FastAPI' && '⚡'}
+                                            {skill === 'Docker' && '🐳'}
+                                            {skill === 'Azure' && '☁️'}
+                                            {skill === 'Kafka' && '📡'}
+                                            {skill === 'Redis' && '🔴'}
+                                            {!['Python', 'Rust', 'Solidity', 'FastAPI', 'Docker', 'Azure', 'Kafka', 'Redis'].includes(skill) && '◈'}
+                                        </div>
                                         {skill}
                                     </div>
                                 ))}
+
                             </div>
                         </div>
                     ))}
