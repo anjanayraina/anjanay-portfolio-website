@@ -27,7 +27,7 @@ const Hero = () => {
 
 
                     <div style={{ display: 'flex', gap: '1.5rem', justifyContent: 'center', marginTop: '2.5rem' }}>
-                        <a href="mailto:anjanayraina326@gmail.com" className="btn-primary">Hire Me</a>
+                        <a href="/contact" className="btn-primary">Connect with Me</a>
                         <button className="btn-secondary" onClick={() => window.open('https://drive.google.com/drive/folders/18StaXAN5Odo6mds5dGxj11s9YiRF-m-m?usp=sharing', '_blank')}>
                             Download Resume 📥
                         </button>
@@ -37,25 +37,14 @@ const Hero = () => {
 
                 {/* Social Icons Row */}
                 <div className="hero-socials">
-                    <a href="https://github.com/anjanayraina" target="_blank" className="social-icon">GH</a>
-                    <a href="https://linkedin.com/in/..." target="_blank" className="social-icon">LI</a>
-                    <a href="https://x.com/..." target="_blank" className="social-icon">X</a>
-                    <a href="mailto:anjanayraina326@gmail.com" className="social-icon">EM</a>
-                    <a href="#" className="social-icon">BW</a>
-                </div>
-
-                {/* Floating Photo Gallery Row */}
-                <div className="hero-gallery">
-                    {[1, 2, 3, 4, 5].map((i) => (
-                        <div key={i} className={`gallery-item item-${i}`}>
-                            <div className="gallery-img-placeholder">
-                                <span>Ref_{i}</span>
-                            </div>
-                        </div>
-                    ))}
+                    <a href="https://github.com/anjanayraina" target="_blank" className="social-icon">GitHub</a>
+                    <a href="https://www.linkedin.in/in/anjanay-raina-289716192/" target="_blank" className="social-icon">LinkedIn</a>
+                    <a href="https://x.com/your_handle" target="_blank" className="social-icon">𝕏</a>
+                    <a href="mailto:anjanayraina326@gmail.com" className="social-icon">Email</a>
                 </div>
             </div>
         </Section>
+
     );
 };
 

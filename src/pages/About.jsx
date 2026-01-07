@@ -34,14 +34,7 @@ const About = () => {
                             I live for the challenge of <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>solving real-world problems</span> through elegant code.
                         </p>
 
-                        <div style={{ display: 'flex', gap: '1rem', marginBottom: '3rem', flexWrap: 'wrap' }}>
-                            <button className="btn-primary" onClick={() => window.open('https://drive.google.com/drive/folders/18StaXAN5Odo6mds5dGxj11s9YiRF-m-m?usp=sharing', '_blank')}>
-                                View Audit Reports 📑
-                            </button>
-                            <button className="btn-secondary" onClick={() => window.open('https://drive.google.com/drive/folders/18StaXAN5Odo6mds5dGxj11s9YiRF-m-m?usp=sharing', '_blank')}>
-                                Download Resume 📥
-                            </button>
-                        </div>
+
 
                         <h3 style={{ fontSize: '1.35rem', fontWeight: 800, marginBottom: '2rem', color: 'var(--text-primary)', letterSpacing: '-0.02em' }}>
                             Beyond the Code:
@@ -60,23 +53,42 @@ const About = () => {
                         {/* Trekking Photo Card */}
                         <div className="glass glow-hover" style={{ padding: '0.5rem', borderRadius: '32px', width: '100%', maxWidth: '450px', border: '1px solid rgba(168, 85, 247, 0.2)', overflow: 'hidden' }}>
                             <img
-                                src="/images/trekking.jpg"
+                                src="/trekking.jpg"
                                 alt="Anjanay Trekking"
                                 style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '26px' }}
                             />
                         </div>
+                        <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', fontStyle: 'italic', maxWidth: '400px', textAlign: 'center', fontWeight: 500 }}>
+                            Exploring the Himalayas — Finding balance away from the terminal.
+                        </p>
+
+                        {/* Code4rena Finding Card */}
+                        <div className="glass glow-hover" style={{ padding: '1.5rem', borderRadius: '32px', width: '100%', maxWidth: '450px', border: '1px solid rgba(168, 85, 247, 0.2)', background: 'rgba(168, 85, 247, 0.03)' }}>
+                            <img
+                                src="/Code4rena.png"
+                                alt="First Code4rena Finding"
+                                style={{ width: '100%', borderRadius: '20px', border: '1px solid rgba(168, 85, 247, 0.3)' }}
+                            />
+                            <p style={{ marginTop: '1.25rem', fontSize: '1.125rem', color: 'var(--text-primary)', fontWeight: 700, textAlign: 'center' }}>First Critical Finding</p>
+                            <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', fontStyle: 'italic', textAlign: 'center', opacity: 0.8 }}>The milestone that launched my journey in DeFi security at Code4rena.</p>
+                        </div>
 
                         {/* Setup Photo Card */}
-                        <div className="glass glow-hover" style={{ padding: '2rem', borderRadius: '40px', width: '100%', maxWidth: '450px', textAlign: 'center', border: '1px solid rgba(168, 85, 247, 0.2)' }}>
+                        <div className="glass glow-hover" style={{ padding: '2.5rem', borderRadius: '40px', width: '100%', maxWidth: '450px', textAlign: 'center', border: '1px solid rgba(168, 85, 247, 0.2)' }}>
                             <img
-                                src="/images/setup.jpg"
+                                src="/setup.jpeg"
                                 alt="My Workspace"
-                                style={{ width: '80px', height: '80px', borderRadius: '16px', objectFit: 'cover', marginBottom: '1.5rem', border: '2px solid var(--accent-purple)' }}
+                                style={{ width: '100%', maxHeight: '250px', borderRadius: '20px', objectFit: 'cover', marginBottom: '2rem', border: '1px solid rgba(168, 85, 247, 0.3)' }}
                             />
-                            <p style={{ fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 600, marginBottom: '0.5rem' }}>Top Global Auditor</p>
-                            <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', fontStyle: 'italic', opacity: 0.8 }}>"Securing the decentralized future, one line of code at a time."</p>
+                            <p style={{ fontSize: '1.25rem', color: 'var(--text-primary)', fontWeight: 700, marginBottom: '0.5rem' }}>The Command Center</p>
+                            <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', fontStyle: 'italic', opacity: 0.9 }}>
+                                Where architecture meets aesthetic.
+                            </p>
                         </div>
                     </div>
+
+
+
 
                 </div>
             </section>

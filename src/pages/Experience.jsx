@@ -60,13 +60,23 @@ const Experience = () => {
   return (
     <div ref={revealRef} className="experience-page container section animate-fade-in">
       <div className="reveal" style={{ marginBottom: '6rem' }}>
-        <h1 className="text-gradient" style={{ fontSize: '4.5rem', fontWeight: 800, letterSpacing: '-0.05em', marginBottom: '1.5rem' }}>
+        <h1 className="text-gradient" style={{ fontSize: '4.5rem', fontWeight: 800, letterSpacing: '-0.05em', marginBottom: '1.5rem', display: 'inline-block' }}>
           Real-world scale.
         </h1>
-        <p style={{ color: 'var(--text-secondary)', fontSize: '1.25rem', maxWidth: '600px', lineHeight: '1.6' }}>
+        <p style={{ color: 'var(--text-secondary)', fontSize: '1.25rem', maxWidth: '600px', lineHeight: '1.6', marginBottom: '3rem' }}>
           Working with industry leaders to build highly reliable and performance-critical systems.
         </p>
+
+        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+          <button className="btn-primary" onClick={() => window.open('https://drive.google.com/drive/folders/18StaXAN5Odo6mds5dGxj11s9YiRF-m-m?usp=sharing', '_blank')}>
+            View Audit Reports 📑
+          </button>
+          <button className="btn-secondary" onClick={() => window.open('https://drive.google.com/drive/folders/18StaXAN5Odo6mds5dGxj11s9YiRF-m-m?usp=sharing', '_blank')}>
+            Download Resume 📥
+          </button>
+        </div>
       </div>
+
 
       <div className="timeline-container stagger-reveal">
         {experiences.map((exp, idx) => (
