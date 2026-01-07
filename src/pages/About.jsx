@@ -10,8 +10,8 @@ const About = () => {
         <div ref={revealRef} className="about-page container animate-fade-in" style={{ paddingTop: '5rem', paddingBottom: '8rem' }}>
             {/* Bio Section */}
             <section className="section reveal">
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', alignItems: 'center' }}>
-                    <div className="bio-text">
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+                    <div className="bio-text" style={{ maxWidth: '900px' }}>
                         <h1 className="section-title-large" style={{
                             textAlign: 'left',
                             marginBottom: '2rem',
@@ -49,43 +49,104 @@ const About = () => {
                     </div>
 
 
-                    <div className="bio-image reveal" style={{ display: 'flex', flexDirection: 'column', gap: '2rem', alignItems: 'center' }}>
-                        {/* Trekking Photo Card */}
-                        <div className="glass glow-hover" style={{ padding: '0.5rem', borderRadius: '32px', width: '100%', maxWidth: '450px', border: '1px solid rgba(168, 85, 247, 0.2)', overflow: 'hidden' }}>
-                            <img
-                                src="/trekking.jpg"
-                                alt="Anjanay Trekking"
-                                style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '26px' }}
-                            />
-                        </div>
-                        <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', fontStyle: 'italic', maxWidth: '400px', textAlign: 'center', fontWeight: 500 }}>
-                            Exploring the Himalayas — Finding balance away from the terminal.
-                        </p>
+                    <div className="bio-gallery-container reveal" style={{ marginTop: '3rem' }}>
+                        <div className="horizontal-scroll-wrapper custom-scrollbar" style={{
+                            display: 'flex',
+                            gap: '2.5rem',
+                            overflowX: 'auto',
+                            padding: '1rem 0.5rem 2rem',
+                            scrollBehavior: 'smooth',
+                            WebkitOverflowScrolling: 'touch'
+                        }}>
+                            {/* Trekking Photo Card */}
+                            <div className="glass glow-hover" style={{
+                                flex: '0 0 420px',
+                                padding: '1.25rem',
+                                borderRadius: '32px',
+                                border: '1px solid rgba(168, 85, 247, 0.2)',
+                                display: 'flex',
+                                flexDirection: 'column'
+                            }}>
+                                <img
+                                    src="/trekking.jpg"
+                                    alt="Anjanay Trekking"
+                                    style={{ width: '100%', height: '320px', objectFit: 'cover', borderRadius: '24px' }}
+                                />
+                                <div style={{ marginTop: '1.5rem', textAlign: 'center' }}>
+                                    <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', fontStyle: 'italic', fontWeight: 500 }}>
+                                        Exploring the Himalayas — Finding balance away from the terminal.
+                                    </p>
+                                </div>
+                            </div>
 
-                        {/* Code4rena Finding Card */}
-                        <div className="glass glow-hover" style={{ padding: '1.5rem', borderRadius: '32px', width: '100%', maxWidth: '450px', border: '1px solid rgba(168, 85, 247, 0.2)', background: 'rgba(168, 85, 247, 0.03)' }}>
-                            <img
-                                src="/Code4rena.png"
-                                alt="First Code4rena Finding"
-                                style={{ width: '100%', borderRadius: '20px', border: '1px solid rgba(168, 85, 247, 0.3)' }}
-                            />
-                            <p style={{ marginTop: '1.25rem', fontSize: '1.125rem', color: 'var(--text-primary)', fontWeight: 700, textAlign: 'center' }}>First Critical Finding</p>
-                            <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', fontStyle: 'italic', textAlign: 'center', opacity: 0.8 }}>The milestone that launched my journey in DeFi security at Code4rena.</p>
-                        </div>
+                            {/* Code4rena Finding Card */}
+                            <div className="glass glow-hover" style={{
+                                flex: '0 0 420px',
+                                padding: '1.5rem',
+                                borderRadius: '32px',
+                                border: '1px solid rgba(168, 85, 247, 0.2)',
+                                background: 'rgba(168, 85, 247, 0.03)',
+                                display: 'flex',
+                                flexDirection: 'column'
+                            }}>
+                                <img
+                                    src="/Code4rena.png"
+                                    alt="First Code4rena Finding"
+                                    style={{ width: '100%', borderRadius: '20px', border: '1px solid rgba(168, 85, 247, 0.3)', flex: 1, objectFit: 'contain' }}
+                                />
+                                <div style={{ marginTop: '1.5rem', textAlign: 'center' }}>
+                                    <h3 style={{ fontSize: '1.25rem', color: 'var(--text-primary)', fontWeight: 700, marginBottom: '0.5rem' }}>First Critical Finding</h3>
+                                    <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', fontStyle: 'italic', opacity: 0.8 }}>The milestone that launched my journey in DeFi security at Code4rena.</p>
+                                </div>
+                            </div>
 
-                        {/* Setup Photo Card */}
-                        <div className="glass glow-hover" style={{ padding: '2.5rem', borderRadius: '40px', width: '100%', maxWidth: '450px', textAlign: 'center', border: '1px solid rgba(168, 85, 247, 0.2)' }}>
-                            <img
-                                src="/setup.jpeg"
-                                alt="My Workspace"
-                                style={{ width: '100%', maxHeight: '250px', borderRadius: '20px', objectFit: 'cover', marginBottom: '2rem', border: '1px solid rgba(168, 85, 247, 0.3)' }}
-                            />
-                            <p style={{ fontSize: '1.25rem', color: 'var(--text-primary)', fontWeight: 700, marginBottom: '0.5rem' }}>The Command Center</p>
-                            <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', fontStyle: 'italic', opacity: 0.9 }}>
-                                Where architecture meets aesthetic.
-                            </p>
+                            {/* MMA Photo Card */}
+                            <div className="glass glow-hover" style={{
+                                flex: '0 0 420px',
+                                padding: '1.25rem',
+                                borderRadius: '32px',
+                                border: '1px solid rgba(168, 85, 247, 0.2)',
+                                display: 'flex',
+                                flexDirection: 'column'
+                            }}>
+                                <img
+                                    src="/mma.jpg"
+                                    alt="MMA Training"
+                                    style={{ width: '100%', height: '320px', objectFit: 'cover', borderRadius: '24px' }}
+                                />
+                                <div style={{ marginTop: '1.5rem', textAlign: 'center' }}>
+                                    <h3 style={{ fontSize: '1.25rem', color: 'var(--text-primary)', fontWeight: 700, marginBottom: '0.5rem' }}>MMA & Kickboxing</h3>
+                                    <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', fontStyle: 'italic', opacity: 0.8 }}>
+                                        Discipline in the cage, precision in the code.
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            {/* Setup Photo Card */}
+                            <div className="glass glow-hover" style={{
+                                flex: '0 0 420px',
+                                padding: '1.25rem',
+                                borderRadius: '32px',
+                                border: '1px solid rgba(168, 85, 247, 0.2)',
+                                display: 'flex',
+                                flexDirection: 'column'
+                            }}>
+                                <img
+                                    src="/setup.jpeg"
+                                    alt="My Workspace"
+                                    style={{ width: '100%', height: '320px', borderRadius: '24px', objectFit: 'cover', border: '1px solid rgba(168, 85, 247, 0.3)' }}
+                                />
+                                <div style={{ marginTop: '1.5rem', textAlign: 'center' }}>
+                                    <h3 style={{ fontSize: '1.25rem', color: 'var(--text-primary)', fontWeight: 700, marginBottom: '0.5rem' }}>The Command Center</h3>
+                                    <p style={{ fontSize: '0.95rem', color: 'var(--text-secondary)', fontStyle: 'italic', opacity: 0.9 }}>
+                                        Where architecture meets aesthetic.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
 
 
 
