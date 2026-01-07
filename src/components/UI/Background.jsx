@@ -4,7 +4,7 @@ import './Background.css';
 const Background = () => {
     // Generate random stars once
     const stars = useMemo(() => {
-        return Array.from({ length: 150 }).map((_, i) => ({
+        return Array.from({ length: 250 }).map((_, i) => ({
             id: i,
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
