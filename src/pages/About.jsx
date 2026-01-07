@@ -56,13 +56,28 @@ const About = () => {
                     </div>
 
 
-                    <div className="bio-image reveal" style={{ display: 'flex', justifyContent: 'center' }}>
-                        <div className="glass glow-hover" style={{ padding: '2.5rem', borderRadius: '40px', width: '100%', maxWidth: '450px', textAlign: 'center', border: '1px solid rgba(168, 85, 247, 0.2)' }}>
-                            <div style={{ fontSize: '120px', marginBottom: '1.5rem', filter: 'drop-shadow(0 0 20px rgba(168, 85, 247, 0.3))' }}>🧱</div>
+                    <div className="bio-image reveal" style={{ display: 'flex', flexDirection: 'column', gap: '2rem', alignItems: 'center' }}>
+                        {/* Trekking Photo Card */}
+                        <div className="glass glow-hover" style={{ padding: '0.5rem', borderRadius: '32px', width: '100%', maxWidth: '450px', border: '1px solid rgba(168, 85, 247, 0.2)', overflow: 'hidden' }}>
+                            <img
+                                src="/images/trekking.jpg"
+                                alt="Anjanay Trekking"
+                                style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '26px' }}
+                            />
+                        </div>
+
+                        {/* Setup Photo Card */}
+                        <div className="glass glow-hover" style={{ padding: '2rem', borderRadius: '40px', width: '100%', maxWidth: '450px', textAlign: 'center', border: '1px solid rgba(168, 85, 247, 0.2)' }}>
+                            <img
+                                src="/images/setup.jpg"
+                                alt="My Workspace"
+                                style={{ width: '80px', height: '80px', borderRadius: '16px', objectFit: 'cover', marginBottom: '1.5rem', border: '2px solid var(--accent-purple)' }}
+                            />
                             <p style={{ fontSize: '1.1rem', color: 'var(--text-primary)', fontWeight: 600, marginBottom: '0.5rem' }}>Top Global Auditor</p>
                             <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)', fontStyle: 'italic', opacity: 0.8 }}>"Securing the decentralized future, one line of code at a time."</p>
                         </div>
                     </div>
+
                 </div>
             </section>
 
