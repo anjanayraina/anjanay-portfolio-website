@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Section from '../UI/Section';
 import './BentoGrid.css';
+
 
 const projects = [
     {
@@ -24,6 +26,7 @@ const projects = [
 ];
 
 const BentoGrid = () => {
+    const navigate = useNavigate();
     return (
         <Section id="work" className="bento-section">
             <div className="container" style={{ textAlign: 'center' }}>
@@ -33,9 +36,10 @@ const BentoGrid = () => {
                 </p>
 
                 <div className="bento-actions">
-                    <button className="btn-primary">View All Projects</button>
-                    <button className="btn-secondary">GitHub</button>
+                    <button className="btn-primary" onClick={() => navigate('/projects')}>View All Projects</button>
+                    <button className="btn-secondary" onClick={() => window.open('https://github.com/anjanayraina', '_blank')}>GitHub</button>
                 </div>
+
 
                 <div className="project-grid-sleek">
                     {projects.map((project, index) => (

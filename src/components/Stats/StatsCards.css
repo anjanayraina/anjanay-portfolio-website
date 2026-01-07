@@ -113,11 +113,20 @@
     padding: 1rem 0;
 }
 
+.stats-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 @media (min-width: 1024px) {
-    .stats-grid {
-        grid-template-columns: 400px 1fr;
+    .stats-stack {
+        max-width: 1000px;
     }
 }
+
 
 @media (max-width: 768px) {
     .stats-content {

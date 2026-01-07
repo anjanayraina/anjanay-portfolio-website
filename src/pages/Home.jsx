@@ -1,10 +1,7 @@
 import React from 'react';
 import Hero from '../components/Hero/Hero';
-import TechStack from '../components/TechStack/TechStack';
 import BentoGrid from '../components/BentoGrid/BentoGrid';
-import StatsCards from '../components/Stats/StatsCards';
 import { useScrollReveal } from '../hooks/useScrollReveal';
-
 
 const Home = () => {
     const revealRef = useScrollReveal();
@@ -14,12 +11,11 @@ const Home = () => {
             {/* Centered Bio & Gallery */}
             <Hero />
 
-            {/* Expertise Summary (Refined for Freelancer) */}
+            {/* Home page now focuses on Proof of Work and Freelancer CTA */}
             <section className="container section reveal">
                 <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-                    <h2 className="section-title-large">Technical Expertise</h2>
+                    <h2 className="section-title-large">Technical Authority</h2>
                     <p style={{ color: 'var(--text-secondary)', maxWidth: '700px', margin: '0 auto' }}>
-                        Specializing in the intersection of AI and Blockchain.
                         I help startups architect high-performance backends and decentralized protocols.
                     </p>
                 </div>
@@ -38,16 +34,8 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Projects Section (Redesigned) */}
+            {/* Projects Section */}
             <BentoGrid />
-
-            {/* Stats Section (Leetcode & GitHub) */}
-            <StatsCards />
-
-            {/* Tech Stack Horizontal Scroll/Grid */}
-            <div className="reveal">
-                <TechStack />
-            </div>
 
             {/* Final Call to Action - Focused for Freelancer */}
             <section className="container section reveal" style={{ paddingBottom: '10rem', textAlign: 'center' }}>

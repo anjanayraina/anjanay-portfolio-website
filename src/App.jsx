@@ -6,6 +6,7 @@ import Background from './components/UI/Background';
 
 // Lazy load pages for performance
 const Home = lazy(() => import('./pages/Home'));
+const About = lazy(() => import('./pages/About'));
 const Projects = lazy(() => import('./pages/Projects'));
 const Experience = lazy(() => import('./pages/Experience'));
 const StackPage = lazy(() => import('./pages/StackPage'));
@@ -26,7 +27,9 @@ function App() {
           }>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
+
               <Route path="/experience" element={<Experience />} />
               <Route path="/stack" element={<StackPage />} />
               <Route path="/contact" element={<ContactPage />} />
