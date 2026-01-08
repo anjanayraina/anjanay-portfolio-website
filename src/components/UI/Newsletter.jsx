@@ -4,11 +4,16 @@ import './Newsletter.css';
 const Newsletter = () => {
     const [email, setEmail] = useState('');
     const [subscribed, setSubscribed] = useState(false);
+    const [loading, setLoading] = useState(false);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (email) {
+            setLoading(true);
+            // Simulate API call
+            await new Promise(resolve => setTimeout(resolve, 1500));
             setSubscribed(true);
+            setLoading(false);
             setEmail('');
         }
     };
@@ -25,7 +30,11 @@ const Newsletter = () => {
 
                 {subscribed ? (
                     <div className="subscribed-msg animate-fade-in">
-                        <span className="check-icon">✓</span> Thanks for subscribing!
+                        <span className="check-icon">✓</span>
+                        <div>
+                            <strong>Thanks for subscribing!</strong>
+                            <p style={{ fontSize: '0.9rem', opacity: 0.8, margin: '0.25rem 0 0' }}>Check your email to confirm.</p>
+                        </div>
                     </div>
                 ) : (
                     <form className="newsletter-form" onSubmit={handleSubmit}>
@@ -36,8 +45,15 @@ const Newsletter = () => {
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required
+                            disabled={loading}
                         />
-                        <button type="submit" className="btn-primary">Join Now</button>
+                        <button type="submit" className="btn-primary" disabled={loading}>
+                            {loading ? (
+                                <>
+                                    <span className="loader-sm"></span> Subscribing...
+                                </>
+                            ) : 'Join Now'}
+                        </button>
                     </form>
                 )}
             </div>
@@ -46,3 +62,4 @@ const Newsletter = () => {
 };
 
 export default Newsletter;
+

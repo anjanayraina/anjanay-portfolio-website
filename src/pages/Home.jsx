@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../components/Hero/Hero';
 import BentoGrid from '../components/BentoGrid/BentoGrid';
 import Newsletter from '../components/UI/Newsletter';
+import Testimonials from '../components/Testimonials/Testimonials';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 
@@ -39,6 +40,9 @@ const Home = () => {
 
             {/* Projects Section */}
             <BentoGrid />
+
+            {/* Testimonials Section */}
+            <Testimonials />
 
             {/* Newsletter Subscription */}
             <Newsletter />
