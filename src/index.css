@@ -2,7 +2,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
-  /* Color Palette - Refined Premium Purple Theme */
+  /* Fonts - Premium Selection */
+  --font-sans: 'Plus Jakarta Sans',
+    system-ui,
+    -apple-system,
+    sans-serif;
+  --font-mono: 'JetBrains Mono',
+    monospace;
+
+  --letter-spacing-tight: -0.04em;
+  --letter-spacing-normal: -0.01em;
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+  --space-2xl: 8rem;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+  /* Theme Transitions */
+  --theme-transition: background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+[data-theme='dark'] {
   --bg-primary: #030303;
   --bg-secondary: #0D0D0E;
   --bg-tertiary: #161618;
@@ -13,7 +42,6 @@
   --text-tertiary: #424245;
 
   --accent-blue: #a855f7;
-  /* Shifting blue variable name to mean purple for consistency across existing classes */
   --accent-purple: #a855f7;
   --accent-indigo: #6366f1;
   --accent-soft: rgba(168, 85, 247, 0.12);
@@ -21,23 +49,54 @@
   --border-subtle: rgba(168, 85, 247, 0.1);
   --border-medium: rgba(168, 85, 247, 0.2);
 
+  --glass-bg: rgba(13, 13, 14, 0.7);
+}
 
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
-  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+[data-theme='light'] {
+  --bg-primary: #F5F5F7;
+  --bg-secondary: #FFFFFF;
+  --bg-tertiary: #E8E8ED;
+  --bg-card: #FFFFFF;
 
-  --space-xs: 0.25rem;
-  --space-sm: 0.5rem;
-  --space-md: 1rem;
-  --space-lg: 2rem;
-  --space-xl: 4rem;
-  --space-2xl: 8rem;
+  --text-primary: #1D1D1F;
+  --text-secondary: #86868B;
+  --text-tertiary: #B4B4B8;
 
-  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --accent-blue: #a855f7;
+  --accent-purple: #a855f7;
+  --accent-indigo: #6366f1;
+  --accent-soft: rgba(168, 85, 247, 0.08);
 
-  --letter-spacing-tight: -0.04em;
-  --letter-spacing-normal: -0.01em;
+  --border-subtle: rgba(168, 85, 247, 0.15);
+  --border-medium: rgba(168, 85, 247, 0.25);
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+
+  --glass-bg: rgba(255, 255, 255, 0.7);
+}
+
+:root:not([data-theme]) {
+  /* Default to dark if not set */
+  --bg-primary: #030303;
+  --bg-secondary: #0D0D0E;
+  --bg-tertiary: #161618;
+  --bg-card: #0D0D0E;
+
+  --text-primary: #F5F5F7;
+  --text-secondary: #86868B;
+  --text-tertiary: #424245;
+
+  --accent-blue: #a855f7;
+  --accent-purple: #a855f7;
+  --accent-indigo: #6366f1;
+  --accent-soft: rgba(168, 85, 247, 0.12);
+
+  --border-subtle: rgba(168, 85, 247, 0.1);
+  --border-medium: rgba(168, 85, 247, 0.2);
+
+  --glass-bg: rgba(13, 13, 14, 0.7);
 }
 
 /* Resets */
@@ -70,6 +129,7 @@ html {
   color: var(--text-primary);
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
+  transition: var(--theme-transition);
 }
 
 body {
@@ -97,7 +157,7 @@ body {
 
 /* Sleek Utilities */
 .glass {
-  background: rgba(13, 13, 14, 0.7);
+  background: var(--glass-bg);
   backdrop-filter: blur(4px);
   /* Sharper background through glass */
   -webkit-backdrop-filter: blur(4px);
@@ -132,7 +192,7 @@ h4 {
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #FFFFFF 0%, #A1A1AA 100%);
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -145,7 +205,7 @@ h4 {
   letter-spacing: -0.04em;
   line-height: 1.1;
   margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, #fff 0%, #a855f7 50%, #6366f1 100%);
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-purple) 50%, var(--accent-indigo) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

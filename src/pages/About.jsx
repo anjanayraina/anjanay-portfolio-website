@@ -16,11 +16,11 @@ const About = () => {
                             textAlign: 'left',
                             marginBottom: '2rem',
                             display: 'inline-block',
-                            background: 'linear-gradient(135deg, #fff 0%, #a855f7 50%, #6366f1 100%)',
+                            background: 'linear-gradient(135deg, var(--text-primary) 0%, var(--accent-purple) 50%, var(--accent-indigo) 100%)',
                             WebkitBackgroundClip: 'text',
                             backgroundClip: 'text',
                             WebkitTextFillColor: 'transparent',
-                            filter: 'drop-shadow(0 0 30px rgba(168, 85, 247, 0.2))'
+                            filter: 'drop-shadow(0 0 30px var(--accent-soft))'
                         }}>
 
                             Know about <span style={{ color: '#a855f7' }}>Me!!</span>
@@ -30,15 +30,14 @@ const About = () => {
                         </p>
                         <p style={{ color: 'var(--text-secondary)', marginBottom: '3rem', fontSize: '1.125rem', letterSpacing: '-0.01em', lineHeight: '1.8' }}>
                             I am currently a <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>Full Stack Developer at NatWest Group</span>.
-                            Beyond my corporate role, I have achieved a <span style={{ color: '#a855f7', fontWeight: 800 }}>327th rank in the weekly Code4rena ranking</span> and an <span style={{ color: '#a855f7', fontWeight: 800 }}>824th rank in the Sherlock rankings</span>.
-                            I have conducted <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>more than 10 audits</span> for leading protocols, securing high-value systems with 3+ years of deep technical experience.
+                            I specialize in building high-performance backend systems and securing decentralized protocols, with 3+ years of deep technical experience in DeFi and on-chain security.
                         </p>
 
                         {/* Professional Skillset - Moved Up */}
                         <div className="reveal" style={{ marginTop: '2rem', marginBottom: '4rem' }}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '3rem', justifyContent: 'center' }}>
-                                <div style={{ padding: '10px', borderRadius: '12px', background: 'rgba(168, 85, 247, 0.1)', color: '#a855f7', fontSize: '1.5rem' }}>⚙️</div>
-                                <h2 className="section-title-large" style={{ margin: 0 }}>Professional <span style={{ color: '#a855f7' }}>Skillset</span></h2>
+                                <div style={{ padding: '10px', borderRadius: '12px', background: 'var(--accent-soft)', color: 'var(--accent-purple)', fontSize: '1.5rem' }}>⚙️</div>
+                                <h2 className="section-title-large" style={{ margin: 0 }}>Professional <span style={{ color: 'var(--accent-purple)' }}>Skillset</span></h2>
                             </div>
                             <TechStack />
                         </div>
@@ -99,8 +98,8 @@ const About = () => {
                                 flex: '0 0 420px',
                                 padding: '1.5rem',
                                 borderRadius: '32px',
-                                border: '1px solid rgba(168, 85, 247, 0.2)',
-                                background: 'rgba(168, 85, 247, 0.03)',
+                                border: '1px solid var(--border-subtle)',
+                                background: 'var(--bg-tertiary)',
                                 display: 'flex',
                                 flexDirection: 'column'
                             }}>
@@ -171,7 +170,7 @@ const About = () => {
 
             {/* Security Rankings Section (Based on Uploaded Design) */}
             <section className="section reveal" style={{ marginTop: '2rem' }}>
-                <div className="card glass" style={{ padding: '3rem', border: '1px solid rgba(168, 85, 247, 0.3)', position: 'relative' }}>
+                <div className="card glass" style={{ padding: '3rem', border: '1px solid var(--border-medium)', position: 'relative' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '3rem', flexWrap: 'wrap', gap: '1rem' }}>
                         <h2 style={{ fontSize: '1.5rem', fontWeight: 800, margin: 0, letterSpacing: '-0.02em' }}>Security Rankings</h2>
                         <div style={{ fontSize: '1.5rem', fontWeight: 800 }}>
@@ -181,21 +180,21 @@ const About = () => {
 
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '2rem' }}>
                         {/* Code4rena Card */}
-                        <div className="card" style={{ background: 'rgba(255, 255, 255, 0.03)', textAlign: 'center', padding: '2.5rem 1.5rem' }}>
+                        <div className="card" style={{ background: 'var(--bg-secondary)', textAlign: 'center', padding: '2.5rem 1.5rem', border: '1px solid var(--border-subtle)' }}>
                             <div style={{ fontSize: '3rem', marginBottom: '1.5rem', color: '#60a5fa' }}>🛡️</div>
                             <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem' }}>Rank #327 <span style={{ fontSize: '0.8rem', opacity: 0.6 }}>(Weekly)</span></h3>
                             <p style={{ color: 'var(--text-tertiary)', fontWeight: 800, fontSize: '0.9rem', letterSpacing: '0.05em' }}>CODE4RENA</p>
                         </div>
 
                         {/* Sherlock Card */}
-                        <div className="card" style={{ background: 'rgba(255, 255, 255, 0.03)', textAlign: 'center', padding: '2.5rem 1.5rem' }}>
-                            <div style={{ fontSize: '3rem', marginBottom: '1.5rem', color: '#a855f7' }}>🔍</div>
+                        <div className="card" style={{ background: 'var(--bg-secondary)', textAlign: 'center', padding: '2.5rem 1.5rem', border: '1px solid var(--border-subtle)' }}>
+                            <div style={{ fontSize: '3rem', marginBottom: '1.5rem', color: 'var(--accent-purple)' }}>🔍</div>
                             <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem' }}>Rank #824</h3>
                             <p style={{ color: 'var(--text-tertiary)', fontWeight: 800, fontSize: '0.9rem', letterSpacing: '0.05em' }}>SHERLOCK</p>
                         </div>
 
                         {/* Security Impact Card */}
-                        <div className="card" style={{ background: 'rgba(255, 255, 255, 0.03)', textAlign: 'center', padding: '2.5rem 1.5rem' }}>
+                        <div className="card" style={{ background: 'var(--bg-secondary)', textAlign: 'center', padding: '2.5rem 1.5rem', border: '1px solid var(--border-subtle)' }}>
                             <div style={{ fontSize: '3rem', marginBottom: '1.5rem', color: '#fbbf24' }}>⚡</div>
                             <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem' }}>20+ Criticals</h3>
                             <p style={{ color: 'var(--text-tertiary)', fontWeight: 800, fontSize: '0.9rem', letterSpacing: '0.05em' }}>SECURITY IMPACT</p>

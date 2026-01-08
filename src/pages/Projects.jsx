@@ -158,15 +158,15 @@ const Projects = () => {
           padding: 2.5rem;
           border-radius: 24px;
           border: 1px solid var(--border-subtle);
-          background: rgba(22, 22, 23, 0.4);
+          background: var(--bg-card);
           transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
         }
 
         .project-card-v2:hover {
-          background: rgba(255, 255, 255, 0.02);
+          background: var(--bg-tertiary);
           transform: translateY(-8px);
           border-color: var(--accent-blue);
-          box-shadow: 0 0 30px rgba(0, 122, 255, 0.2);
+          box-shadow: 0 0 30px var(--accent-soft);
         }
 
 
@@ -271,9 +271,9 @@ const Projects = () => {
         .project-repos-v2 {
           margin-bottom: 2rem;
           padding: 1rem;
-          background: rgba(168, 85, 247, 0.03);
+          background: var(--accent-soft);
           border-radius: 12px;
-          border: 1px solid rgba(168, 85, 247, 0.1);
+          border: 1px solid var(--border-medium);
         }
 
         .repo-link {
@@ -282,7 +282,7 @@ const Projects = () => {
           color: var(--text-primary);
           padding: 0.25rem 0.5rem;
           border-radius: 4px;
-          background: rgba(255, 255, 255, 0.05);
+          background: var(--bg-tertiary);
           transition: all 0.2s ease;
         }
 

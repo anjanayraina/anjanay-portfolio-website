@@ -163,7 +163,6 @@ const GithubCard = () => {
 const StatsCards = () => {
     return (
         <div className="stats-stack">
-            <SecurityRanksCard />
             <LeetcodeCard />
             <GithubCard />
         </div>
