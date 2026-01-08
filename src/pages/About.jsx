@@ -34,6 +34,21 @@ const About = () => {
                             I live for the challenge of <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>solving real-world problems</span> through elegant code.
                         </p>
 
+                        {/* Professional Skillset - Moved Up */}
+                        <div className="reveal" style={{ marginTop: '2rem', marginBottom: '4rem' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '3rem', justifyContent: 'center' }}>
+                                <div style={{ padding: '10px', borderRadius: '12px', background: 'rgba(168, 85, 247, 0.1)', color: '#a855f7', fontSize: '1.5rem' }}>⚙️</div>
+                                <h2 className="section-title-large" style={{ margin: 0 }}>Professional <span style={{ color: '#a855f7' }}>Skillset</span></h2>
+                            </div>
+                            <TechStack />
+                        </div>
+
+                        {/* Stats Section - Moved Up */}
+                        <div className="reveal" style={{ marginTop: '2rem', marginBottom: '6rem' }}>
+                            <StatsCards />
+                        </div>
+
+
 
 
                         <h3 style={{ fontSize: '1.35rem', fontWeight: 800, marginBottom: '2rem', color: 'var(--text-primary)', letterSpacing: '-0.02em' }}>
@@ -177,19 +192,8 @@ const About = () => {
             </section>
 
 
-            {/* Stats Section - Now Stacked */}
-            <div className="reveal" style={{ marginTop: '2rem', marginBottom: '6rem' }}>
-                <StatsCards />
-            </div>
 
-            {/* Professional Skillset */}
-            <div className="reveal">
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '3rem', justifyContent: 'center' }}>
-                    <div style={{ padding: '10px', borderRadius: '12px', background: 'rgba(168, 85, 247, 0.1)', color: '#a855f7', fontSize: '1.5rem' }}>⚙️</div>
-                    <h2 className="section-title-large" style={{ margin: 0 }}>Professional <span style={{ color: '#a855f7' }}>Skillset</span></h2>
-                </div>
-                <TechStack />
-            </div>
+
         </div>
     );
 };

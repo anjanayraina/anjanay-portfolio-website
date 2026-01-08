@@ -4,20 +4,20 @@ import './TechStack.css';
 
 const stack = [
     {
+        category: 'Backend & Scaling',
+        skills: ['Python', 'Golang', 'FastAPI', 'Node.js', 'Redis', 'PostgreSQL', 'Microservices', 'Distributed Systems']
+    },
+    {
+        category: 'Infrastructure',
+        skills: ['Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions', 'Terraform', 'Azure', 'GCP']
+    },
+    {
         category: 'Blockchain & Security',
         skills: ['Solidity', 'Yul', 'Rust', 'Foundry', 'Hardhat', 'Slither', 'Echidna', 'Anchor']
     },
     {
         category: 'Web3 Standards',
         skills: ['ERC-20', 'ERC-721', 'ERC-4626', 'Chainlink', 'OpenZeppelin', 'Hyperledger Fabric']
-    },
-    {
-        category: 'Backend & Scaling',
-        skills: ['Python', 'Golang', 'FastAPI', 'Node.js', 'Redis', 'PostgreSQL', 'Microservices']
-    },
-    {
-        category: 'Infrastructure',
-        skills: ['Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions', 'Terraform', 'Azure', 'GCP']
     }
 ];
 
@@ -29,7 +29,7 @@ const TechStack = () => {
                 <div className="reveal" style={{ textAlign: 'center', marginBottom: '5rem' }}>
                     <h2 className="section-title-large">Architectural Toolkit</h2>
                     <p style={{ color: 'var(--text-secondary)', maxWidth: '600px', margin: '1rem auto' }}>
-                        A comprehensive stack built for scale, reliability, and technical innovation.
+                        Expertise in building scalable backend systems, robust infrastructure, and secure decentralized protocols.
                     </p>
                 </div>
 
