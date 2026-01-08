@@ -6,6 +6,12 @@ import './BentoGrid.css';
 
 const projects = [
     {
+        title: 'Mon Finance AI',
+        description: 'A modular, AI-powered trading ecosystem bridging DeFi and CeX. Features an asynchronous microservice architecture for real-time market analysis and automated execution.',
+        tech: ['FastAPI', 'React', 'LLMs', 'Web3'],
+        imgLabel: 'Mon Finance AI Dashboard'
+    },
+    {
         title: 'SmartTrim AI',
         description: 'SmartTrim AI is a magic background remover. Upload your image, clear the background seamlessly, and bring your ideas to life.',
         tech: ['AI', 'Image Processing', 'Background Removal'],
@@ -16,12 +22,6 @@ const projects = [
         description: 'NexTalk is a cutting-edge replication of Zoom, built with the latest Next.js and TypeScript. Designed for high-performance video calls.',
         tech: ['Next.js', 'WebRTC', 'TypeScript'],
         imgLabel: 'NexTalk Interface'
-    },
-    {
-        title: 'Swiggy Clone',
-        description: 'A Swiggy inspired food ordering platform. Built using live Swiggy APIs and technologies like Tailwind CSS, Redux, and React Router.',
-        tech: ['React', 'Redux', 'Tailwind'],
-        imgLabel: 'Swiggy Clone UI'
     }
 ];
 
