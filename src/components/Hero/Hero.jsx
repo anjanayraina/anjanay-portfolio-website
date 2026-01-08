@@ -38,7 +38,7 @@ const Hero = () => {
                 <div className="hero-socials">
                     <a href="https://github.com/anjanayraina" target="_blank" className="social-icon">GitHub</a>
                     <a href="https://www.linkedin.in/in/anjanay-raina-289716192/" target="_blank" className="social-icon">LinkedIn</a>
-                    <a href="https://x.com/your_handle" target="_blank" className="social-icon">𝕏</a>
+                    <a href="https://x.com/Anjanay_Raina" target="_blank" className="social-icon">𝕏</a>
                     <a href="mailto:anjanayraina326@gmail.com" className="social-icon">Email</a>
                 </div>
             </div>

@@ -18,7 +18,8 @@ const Footer = () => {
 
                 <div style={{ display: 'flex', gap: '1.5rem' }}>
                     <a href="https://github.com/anjanayraina" target="_blank" style={{ color: 'var(--text-secondary)' }}>GitHub</a>
-                    <a href="https://linkedin.com/in/..." target="_blank" style={{ color: 'var(--text-secondary)' }}>LinkedIn</a>
+                    <a href="https://linkedin.com/in/anjanay-raina-289716192/" target="_blank" style={{ color: 'var(--text-secondary)' }}>LinkedIn</a>
+                    <a href="https://x.com/Anjanay_Raina" target="_blank" style={{ color: 'var(--text-secondary)' }}>𝕏</a>
                     <a href="mailto:anjanayraina326@gmail.com" style={{ color: 'var(--text-secondary)' }}>Email</a>
                 </div>
             </div>

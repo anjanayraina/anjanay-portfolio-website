@@ -12,16 +12,16 @@ const projects = [
         imgLabel: 'Mon Finance AI Dashboard'
     },
     {
-        title: 'SmartTrim AI',
-        description: 'SmartTrim AI is a magic background remover. Upload your image, clear the background seamlessly, and bring your ideas to life.',
-        tech: ['AI', 'Image Processing', 'Background Removal'],
-        imgLabel: 'SmartTrim AI Preview'
+        title: 'Middle Earth AI',
+        description: 'An AI-powered on-chain strategy game built on Solana. Features complex battle logic, asset minting, and dynamic NPC agents powered by specialized AI.',
+        tech: ['Solana', 'Rust', 'Anchor', 'AI'],
+        imgLabel: 'Middle Earth AI Program'
     },
     {
-        title: 'NexTalk',
-        description: 'NexTalk is a cutting-edge replication of Zoom, built with the latest Next.js and TypeScript. Designed for high-performance video calls.',
-        tech: ['Next.js', 'WebRTC', 'TypeScript'],
-        imgLabel: 'NexTalk Interface'
+        title: 'PerpetualVault',
+        description: 'A decentralized perpetuals protocol following ERC-4626. Implements a fault-tolerant double oracle system with Chainlink for secure on-chain trading.',
+        tech: ['Solidity', 'Foundry', 'Chainlink', 'ERC-4626'],
+        imgLabel: 'PerpetualVault Protocol'
     }
 ];
 
