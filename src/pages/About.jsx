@@ -30,8 +30,8 @@ const About = () => {
                         </p>
                         <p style={{ color: 'var(--text-secondary)', marginBottom: '3rem', fontSize: '1.125rem', letterSpacing: '-0.01em', lineHeight: '1.8' }}>
                             I am currently a <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>Backend Developer at NatWest Group</span>.
-                            Beyond my corporate role, I'm a Web3 Security Researcher with 3+ years of experience securing high-value protocols.
-                            I live for the challenge of <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>solving real-world problems</span> through elegant code.
+                            Beyond my corporate role, I am an <span style={{ color: '#a855f7', fontWeight: 800 }}>Elite Security Researcher</span> and a <span style={{ color: '#a855f7', fontWeight: 800 }}>Top Global Auditor</span> on Code4rena & Sherlock,
+                            securing high-value protocols with 3+ years of deep technical experience.
                         </p>
 
                         {/* Professional Skillset - Moved Up */}

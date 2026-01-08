@@ -102,6 +102,45 @@ const LeetcodeCard = () => {
     );
 };
 
+const SecurityRanksCard = () => {
+    const ranks = [
+        { platform: 'Code4rena', rank: 'Top Global Auditor', icon: '🛡️', color: '#6366f1' },
+        { platform: 'Sherlock', rank: 'Elite Auditor', icon: '🔍', color: '#a855f7' },
+        { platform: 'Security Impact', rank: '20+ Criticals', icon: '⚡', color: '#f59e0b' }
+    ];
+
+    return (
+        <div className="card glass stats-card security-ranks-card glow-hover">
+            <div className="stats-header">
+                <h3 className="stats-title">Security Rankings</h3>
+                <span className="stats-total">Global <small>Expertise</small></span>
+            </div>
+
+            <div style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+                gap: '1.5rem',
+                width: '100%',
+                marginTop: '1rem'
+            }}>
+                {ranks.map((item) => (
+                    <div key={item.platform} className="shimmer" style={{
+                        padding: '1.5rem',
+                        background: 'rgba(255, 255, 255, 0.03)',
+                        borderRadius: '24px',
+                        border: '1px solid rgba(255, 255, 255, 0.05)',
+                        textAlign: 'center'
+                    }}>
+                        <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>{item.icon}</div>
+                        <div style={{ fontWeight: 800, fontSize: '1.15rem', color: 'var(--text-primary)', letterSpacing: '-0.02em' }}>{item.rank}</div>
+                        <div style={{ color: item.color, fontWeight: 700, marginTop: '0.5rem', fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>{item.platform}</div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+};
+
 const GithubCard = () => {
     return (
         <div className="card glass stats-card github-card glow-hover">
@@ -124,6 +163,7 @@ const GithubCard = () => {
 const StatsCards = () => {
     return (
         <div className="stats-stack">
+            <SecurityRanksCard />
             <LeetcodeCard />
             <GithubCard />
         </div>

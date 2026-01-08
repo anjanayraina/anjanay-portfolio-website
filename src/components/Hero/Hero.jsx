@@ -20,9 +20,8 @@ const Hero = () => {
                         Backend Developer @ <span style={{ color: '#a855f7' }}>NatWest Group</span>.
                     </h1>
                     <p className="hero-description">
-                        I build high-performance systems and secure decentralized protocols.
-                        When I'm not <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>solving real-world technical problems</span>,
-                        you'll find me at the gym practicing <span style={{ color: 'var(--accent-purple)', fontWeight: 600 }}>MMA & Kickboxing</span> or out <span style={{ color: 'var(--accent-purple)', fontWeight: 600 }}>Trekking</span> in the mountains.
+                        Specializing in <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Backend Systems</span>, <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Fullstack Development</span>,
+                        and <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Security</span>. High-performance architecture meets robust protocol design.
                     </p>
 
 
