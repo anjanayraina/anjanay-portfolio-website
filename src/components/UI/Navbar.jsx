@@ -6,10 +6,7 @@ const Navbar = () => {
     return (
         <>
             <div className="nav-avatar animate-fade-in">
-                <div style={{ width: '100%', height: '100%', background: 'var(--bg-tertiary)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '10px' }}>
-                    {/* Avatar Placeholder */}
-                    AR
-                </div>
+                <img src="/logo.png" alt="Stryder Logo" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '50%' }} />
             </div>
 
             <nav className="navbar animate-fade-in">

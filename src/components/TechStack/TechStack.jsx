@@ -4,20 +4,24 @@ import './TechStack.css';
 
 const stack = [
     {
-        category: 'Backend & Scaling',
-        skills: ['Python', 'Golang', 'FastAPI', 'Node.js', 'Redis', 'PostgreSQL', 'Microservices', 'Distributed Systems']
+        category: 'Programming Languages',
+        skills: ['Python', 'Golang', 'Rust', 'Java', 'Solidity', 'JavaScript', 'TypeScript', 'C++']
     },
     {
-        category: 'Infrastructure',
-        skills: ['Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions', 'Terraform', 'Azure', 'GCP']
+        category: 'Frameworks & Libraries',
+        skills: ['FastAPI', 'Flask', 'Spring Boot', 'React', 'Next.js', 'Foundry', 'Hardhat', 'Anchor']
     },
     {
-        category: 'Blockchain & Security',
-        skills: ['Solidity', 'Yul', 'Rust', 'Foundry', 'Hardhat', 'Slither', 'Echidna', 'Anchor']
+        category: 'Databases & Storage',
+        skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis', 'Elasticsearch', 'Kafka']
     },
     {
-        category: 'Web3 Standards',
-        skills: ['ERC-20', 'ERC-721', 'ERC-4626', 'Chainlink', 'OpenZeppelin', 'Hyperledger Fabric']
+        category: 'Web3 Standards (EIPs)',
+        skills: ['ERC-20', 'ERC-721', 'ERC-1155', 'ERC-4626', 'EIP-712', 'EIP-1271', 'EIP-1559']
+    },
+    {
+        category: 'Infrastructure & Security',
+        skills: ['Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions', 'Slither', 'Echidna', 'Azure', 'GCP']
     }
 ];
 
@@ -43,23 +47,30 @@ const TechStack = () => {
                                         <div className="skill-logo-box">
                                             {/* Branded Icon Mapping */}
                                             {skill === 'Solidity' && <span style={{ color: '#627EEA' }}>◆</span>}
-                                            {skill === 'Yul' && <span style={{ color: '#FFD700' }}>⚡</span>}
-                                            {skill === 'Rust' && <span style={{ color: '#DEA584' }}>⚙️</span>}
-                                            {skill === 'Foundry' && <span style={{ color: '#D33833' }}>⚒️</span>}
-                                            {skill === 'Slither' && <span style={{ color: '#4CAF50' }}>🐍</span>}
-                                            {skill === 'Echidna' && <span style={{ color: '#E91E63' }}>🦄</span>}
                                             {skill === 'Python' && <span style={{ color: '#3776AB' }}>🐍</span>}
+                                            {skill === 'Rust' && <span style={{ color: '#DEA584' }}>⚙️</span>}
+                                            {skill === 'Golang' && <span style={{ color: '#00ADD8' }}>Go</span>}
+                                            {skill === 'Java' && <span style={{ color: '#ED8B00' }}>☕</span>}
+                                            {skill === 'C++' && <span style={{ color: '#00599C' }}>++</span>}
+
                                             {skill === 'FastAPI' && <span style={{ color: '#05998B' }}>⚡</span>}
-                                            {skill === 'Docker' && <span style={{ color: '#2496ED' }}>🐳</span>}
-                                            {skill === 'Terraform' && <span style={{ color: '#7B42BC' }}>⬢</span>}
+                                            {skill === 'React' && <span style={{ color: '#61DAFB' }}>⚛️</span>}
+                                            {skill === 'Next.js' && <span style={{ color: '#ffffff' }}>N</span>}
+                                            {skill === 'Foundry' && <span style={{ color: '#D33833' }}>⚒️</span>}
+
+                                            {skill === 'MongoDB' && <span style={{ color: '#47A248' }}>🍃</span>}
                                             {skill === 'PostgreSQL' && <span style={{ color: '#336791' }}>🐘</span>}
                                             {skill === 'Redis' && <span style={{ color: '#D82C20' }}>🔴</span>}
-                                            {skill === 'GitHub Actions' && <span style={{ color: '#2088FF' }}>⚙️</span>}
-                                            {skill === 'Hyperledger Fabric' && <span style={{ color: '#2F3134' }}>⛓️</span>}
-                                            {skill === 'Golang' && <span style={{ color: '#00ADD8' }}>Go</span>}
-                                            {skill === 'Node.js' && <span style={{ color: '#339933' }}>⬢</span>}
+
+                                            {skill.startsWith('ERC') && <span style={{ color: '#a855f7' }}>📜</span>}
+                                            {skill.startsWith('EIP') && <span style={{ color: '#6366f1' }}>💎</span>}
+
+                                            {skill === 'Docker' && <span style={{ color: '#2496ED' }}>🐳</span>}
+                                            {skill === 'Kubernetes' && <span style={{ color: '#326CE5' }}>☸️</span>}
+                                            {skill === 'Slither' && <span style={{ color: '#4CAF50' }}>🐍</span>}
+
                                             {/* Default Icon */}
-                                            {!['Solidity', 'Yul', 'Rust', 'Foundry', 'Slither', 'Echidna', 'Python', 'FastAPI', 'Docker', 'Terraform', 'PostgreSQL', 'Redis', 'GitHub Actions', 'Hyperledger Fabric', 'Golang', 'Node.js'].includes(skill) &&
+                                            {!['Solidity', 'Python', 'Rust', 'Golang', 'Java', 'C++', 'FastAPI', 'React', 'Next.js', 'Foundry', 'MongoDB', 'PostgreSQL', 'Redis', 'Docker', 'Kubernetes', 'Slither'].some(s => skill === s || skill.startsWith('ERC') || skill.startsWith('EIP')) &&
                                                 <span style={{ color: 'var(--accent-purple)' }}>✧</span>
                                             }
                                         </div>
