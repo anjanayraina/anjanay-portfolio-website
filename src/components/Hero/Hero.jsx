@@ -17,7 +17,7 @@ const Hero = () => {
 
                 <div className="hero-text-content">
                     <h1 className="hero-heading">
-                        Backend Developer @ <span style={{ color: '#a855f7' }}>NatWest Group</span>.
+                        Full Stack Developer & <span style={{ color: '#a855f7' }}>Security Researcher</span>.
                     </h1>
                     <p className="hero-description">
                         Specializing in <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Backend Systems</span>, <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Fullstack Development</span>,
