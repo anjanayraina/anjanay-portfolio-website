@@ -3,23 +3,23 @@ import './Testimonials.css';
 
 const testimonials = [
     {
-        quote: "Anjanay's audit identified critical vulnerabilities that three other firms missed. His depth of knowledge in DeFi security is unparalleled.",
-        author: "Marcus Chen",
-        role: "CTO at Nexus Finance",
+        quote: "Anjanay done an amazing job on the front/backend of our protocol, hardworking fully committed developer highly recommended and will surely hire again for future work",
+        author: "John Egbonwon",
+        role: "CEO of Mon Finance AI",
         image: "/client_avatar_1_1767874917832.png",
         rating: 5
     },
     {
-        quote: "Working with Anjanay on our backend architecture was a game-changer. He didn't just write code; he built a system that scales effortlessly.",
-        author: "Sarah Jenkins",
-        role: "Founder of Ethos AI",
-        image: "/client_avatar_2_1767874937189.png",
+        quote: "Extremely understanding, Understood what we needed and delivered exactly what we were looking for!",
+        author: "Tarun Dhakad",
+        role: "CEO of Radianoff",
+        image: "/client_avatar_male_new_1767877648113.png",
         rating: 5
     },
     {
-        quote: "The cleanest Solidity code I've ever seen. Anjanay's attention to detail and security-first mindset saved us from potential multi-million dollar exploits.",
-        author: "David Kovacs",
-        role: "Lead Dev at Prism Protocol",
+        quote: "Amazing work Anjanay. Anjanay delived the results with flying colors!",
+        author: "Dominik Sosnowski",
+        role: "CTO of WyvernX",
         image: "/client_avatar_3_1767874969329.png",
         rating: 5
     }
