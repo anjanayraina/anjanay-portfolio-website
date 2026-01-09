@@ -22,6 +22,10 @@ const stack = [
     {
         category: 'Infrastructure & Security',
         skills: ['Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions', 'Slither', 'Echidna', 'Azure', 'GCP']
+    },
+    {
+        category: 'AI & Data Science',
+        skills: ['LLMs', 'OpenAI API', 'LangChain', 'Hugging Face', 'PyTorch', 'TensorFlow', 'Pandas', 'NumPy']
     }
 ];
 
@@ -69,8 +73,17 @@ const TechStack = () => {
                                             {skill === 'Kubernetes' && <span style={{ color: '#326CE5' }}>☸️</span>}
                                             {skill === 'Slither' && <span style={{ color: '#4CAF50' }}>🐍</span>}
 
+                                            {skill === 'LLMs' && <span style={{ color: '#a855f7' }}>✨</span>}
+                                            {skill === 'OpenAI API' && <span style={{ color: '#10A37F' }}>🤖</span>}
+                                            {skill === 'LangChain' && <span>🦜</span>}
+                                            {skill === 'Hugging Face' && <span>🤗</span>}
+                                            {skill === 'PyTorch' && <span style={{ color: '#EE4C2C' }}>🔥</span>}
+                                            {skill === 'TensorFlow' && <span style={{ color: '#FF6F00' }}>🧠</span>}
+                                            {skill === 'Pandas' && <span>🐼</span>}
+                                            {skill === 'NumPy' && <span style={{ color: '#4DABCF' }}>🔢</span>}
+
                                             {/* Default Icon */}
-                                            {!['Solidity', 'Python', 'Rust', 'Golang', 'Java', 'C++', 'FastAPI', 'React', 'Next.js', 'Foundry', 'MongoDB', 'PostgreSQL', 'Redis', 'Docker', 'Kubernetes', 'Slither'].some(s => skill === s || skill.startsWith('ERC') || skill.startsWith('EIP')) &&
+                                            {!['Solidity', 'Python', 'Rust', 'Golang', 'Java', 'C++', 'FastAPI', 'React', 'Next.js', 'Foundry', 'MongoDB', 'PostgreSQL', 'Redis', 'Docker', 'Kubernetes', 'Slither', 'LLMs', 'OpenAI API', 'LangChain', 'Hugging Face', 'PyTorch', 'TensorFlow', 'Pandas', 'NumPy'].some(s => skill === s || skill.startsWith('ERC') || skill.startsWith('EIP')) &&
                                                 <span style={{ color: 'var(--accent-purple)' }}>✧</span>
                                             }
                                         </div>

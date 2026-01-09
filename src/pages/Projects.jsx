@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'Mon Finance AI',
     subtitle: 'AI-Driven Trading Ecosystem',
-    description: 'A modular, AI-powered trading solution bridging DeFi and CeX. Features a high-performance FastAPI backend, an LLM-powered intelligence layer for market signals, and a real-time React dashboard with AI-chat assistance.',
+    description: 'A modular, AI-powered trading solution bridging DeFi and CeX. Features a high-performance FastAPI backend, an LLM-powered intelligence layer for market signals, and a real-time React dashboard with AI-chat assistance. Designed to democratize institutional-grade trading strategies using generative AI.',
     tech: ['FastAPI', 'MongoDB', 'React', 'LLMs', 'Binance API', 'Uniswap', 'EIP-712'],
     links: {
       github: 'https://github.com/Mor-Fin-AI',
@@ -25,9 +25,23 @@ const projects = [
     ]
   },
   {
+    title: 'JobSleuth',
+    subtitle: 'Automated Job Aggregation',
+    description: 'A high-throughput data aggregation platform designed to streamline the job search process. By leveraging asynchronous parallel processing, it scrapes and consolidates over 5,000 daily job postings from disparate sources into a unified, searchable interface.',
+    tech: ['Python', 'FastAPI', 'Telethon', 'aiohttp', 'React'],
+    links: { github: 'https://github.com/anjanayraina/JobSleuth', live: 'https://job-sleuth.onrender.com/' },
+    icon: '🔍',
+    features: [
+      'Built concurrent Python pipelines reducing data collection time by 90%.',
+      'Aggregated and processed 5,000+ daily job postings from multiple sources.',
+      'Deployed a scalable FastAPI backend with asynchronous task processing.',
+      'Developed a modern React dashboard for real-time job filtering.'
+    ]
+  },
+  {
     title: 'Middle Earth AI',
     subtitle: 'On-Chain Strategy Game',
-    description: 'Developed Rust-based Solana smart contracts using Anchor for on-chain game state, asset minting, and battle logic. Secured $100K+ TVL.',
+    description: 'A fully on-chain strategy game built on the Solana blockchain. I built the core Rust smart contracts using the Anchor framework, handling complex game state transitions, asset minting, and cryptographic verifications for fair gameplay.',
     tech: ['Rust', 'Anchor', 'Solana', 'TypeScript', 'AI'],
     links: { github: 'https://github.com/MiddleEarthAI/middle_earth_ai_program', live: 'https://www.middleearth.world/' },
     icon: '⚔️',
@@ -41,7 +55,7 @@ const projects = [
   {
     title: 'PerpetualVault',
     subtitle: 'DeFi Liquidity Protocol',
-    description: 'Architected a decentralized perpetuals protocol following ERC-4626. Built a fault-tolerant double oracle system with Chainlink.',
+    description: 'A sophisticated decentralized perpetuals trading protocol built on the ERC-4626 standard. The architecture focuses on capital efficiency and security, featuring a custom fault-tolerant oracle system that aggregates price feeds to prevent manipulation.',
     tech: ['Solidity', 'Foundry', 'Chainlink', 'ERC-4626'],
     links: { github: 'https://github.com/anjanayraina/PerpetualVault' },
     icon: '📈',
@@ -53,17 +67,31 @@ const projects = [
     ]
   },
   {
-    title: 'JobSleuth',
-    subtitle: 'Automated Job Aggregation',
-    description: 'Deployed a full-stack platform aggregating 5,000+ daily postings. Built concurrent Python pipelines reducing collection time by 90%.',
-    tech: ['Python', 'FastAPI', 'Telethon', 'aiohttp', 'React'],
-    links: { github: 'https://github.com/anjanayraina/JobSleuth', live: 'https://job-sleuth.onrender.com/' },
-    icon: '🔍',
+    title: 'Independent Security Research',
+    subtitle: 'Smart Contract Auditing',
+    description: 'As an independent security researcher, I specialize in identifying critical vulnerabilities in complex DeFi protocols. My work typically involves deep analysis of economic logic, reentrancy vectors, and mathematical invariants to protect user funds.',
+    tech: ['Solidity', 'Echidna', 'Slither', 'Foundry', 'DeFi Security'],
+    links: { live: 'https://drive.google.com/drive/folders/18StaXAN5Odo6mds5dGxj11s9YiRF-m-m?usp=sharing' },
+    icon: '🛡️',
     features: [
-      'Built concurrent Python pipelines reducing data collection time by 90%.',
-      'Aggregated and processed 5,000+ daily job postings from multiple sources.',
-      'Deployed a scalable FastAPI backend with asynchronous task processing.',
-      'Developed a modern React dashboard for real-time job filtering.'
+      'Uncovered 20+ critical severity vulnerabilities across major protocols.',
+      'Ranked among top auditors on competitive platforms (Code4rena, Sherlock).',
+      'Conducted comprehensive security reviews for AMMs, lending markets, and bridges.',
+      'Specialized in economic exploit analysis and formal verification.'
+    ]
+  },
+  {
+    title: 'IDRECS',
+    subtitle: 'Enterprise Data Processing',
+    description: 'Engineered a fault-tolerant recovery mechanism to ensure zero state loss during service interruptions for critical data processing jobs. Optimized API endpoints for concurrent HTTP requests using Python’s multithreading, decreasing response times by 3x.',
+    tech: ['Python', 'Multithreading', 'API Optimization', 'Enterprise Architecture'],
+    links: {},
+    icon: '⚙️',
+    features: [
+      'Implemented complex business logic modules (Rebate, Negative Ageing, Contra).',
+      'Engineered a fault-tolerant recovery mechanism ensuring zero state loss.',
+      'Optimized API endpoints for concurrent HTTP requests using Python multithreading.',
+      'Decreased response times by 3x and significantly boosted throughput.'
     ]
   },
   {
