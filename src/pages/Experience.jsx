@@ -9,9 +9,10 @@ const experiences = [
     period: 'July 2024 – Present',
     details: 'Architected and built a new ISV Signature Matching microservice from the ground up, owning the complete lifecycle.',
     highlights: [
-      'Delivered a 40% reduction in average API response time through performance tuning.',
-      'Implemented key FastAPI endpoints for critical banking data modification.',
-      'Conducted extensive load testing with Locust to ensure system reliability.'
+      'Implemented complex business logic modules (Rebate, Negative Ageing, Contra) and led code reviews.',
+      'Engineered a fault-tolerant recovery mechanism to ensure zero state loss during service interruptions.',
+      'Optimized API endpoints for concurrent HTTP requests using Python’s multithreading, decreasing response times by 3x.',
+      'Architected and built a new ISV Signature Matching microservice from the ground up.'
     ],
     logo: '🏦'
   },
