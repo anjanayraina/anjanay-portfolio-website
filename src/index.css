@@ -49,7 +49,7 @@
   --border-subtle: rgba(168, 85, 247, 0.1);
   --border-medium: rgba(168, 85, 247, 0.2);
 
-  --glass-bg: rgba(13, 13, 14, 0.7);
+  --glass-bg: rgba(13, 13, 14, 0.5);
 }
 
 [data-theme='light'] {
@@ -96,7 +96,7 @@
   --border-subtle: rgba(168, 85, 247, 0.1);
   --border-medium: rgba(168, 85, 247, 0.2);
 
-  --glass-bg: rgba(13, 13, 14, 0.7);
+  --glass-bg: rgba(13, 13, 14, 0.5);
 }
 
 /* Resets */

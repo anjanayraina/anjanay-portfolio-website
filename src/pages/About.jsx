@@ -213,7 +213,7 @@ const About = () => {
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
                     {[
                         { title: 'Peak Hackathon Winner (2nd Place)', org: 'Mantra Chain', date: 'Jul 2024', icon: '🥈' },
-                        { title: 'Aptos Winter School', org: 'IIT Bombay Graduate', date: 'Dec 2023', icon: '🎿' },
+                        { title: 'Aptos Winter School', org: 'Selected Attendee (Top 60 India)', date: 'Dec 2023', icon: '🎿' },
                         { title: 'GDSC Blockchain Mentor', org: 'Core Lead & Mentorship', date: '2023-2024', icon: '🎓' }
                     ].map((award, i) => (
                         <div key={i} className="card glass glow-hover reveal" style={{ padding: '2rem' }}>
