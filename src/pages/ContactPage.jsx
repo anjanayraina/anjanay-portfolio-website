@@ -80,7 +80,7 @@ const ContactPage = () => {
             <div className="reveal" style={{ marginTop: '8rem', padding: '5rem 3rem', background: 'var(--bg-secondary)', borderRadius: '24px', width: '100%', maxWidth: '800px' }}>
                 <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-0.03em' }}>Ready to Scale?</h2>
                 <p style={{ color: 'var(--text-secondary)', marginBottom: '3rem', fontSize: '1.125rem', lineHeight: '1.8' }}>
-                    Open to projects, full/part-time roles, and freelance opportunities on <span style={{ color: 'var(--text-primary)', fontWeight: 700 }}>Upwork</span> and <span style={{ color: 'var(--text-primary)', fontWeight: 700 }}>Fiverr</span>. <br />
+                    Open to projects, full/part-time roles, and freelance. <br />
                     Schedule a 30-minute technical discovery call to discuss your architecture.
                 </p>
                 <a href="https://calendly.com/anjanayraina326/30min" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '1rem 3rem', fontSize: '1.125rem' }}>
