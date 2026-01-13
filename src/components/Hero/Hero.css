@@ -13,7 +13,7 @@
 .hero-blob {
     position: absolute;
     filter: blur(80px);
-    opacity: 0.4;
+    opacity: 0.15;
     animation: float-blob 10s ease-in-out infinite alternate;
 }
 

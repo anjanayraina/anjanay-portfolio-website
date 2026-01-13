@@ -4,6 +4,8 @@ import Navbar from './components/UI/Navbar';
 import Footer from './components/UI/Footer';
 import Background from './components/UI/Background';
 
+import Loader from './components/UI/Loader';
+
 // Lazy load pages for performance
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
@@ -13,18 +15,27 @@ const StackPage = lazy(() => import('./pages/StackPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 
 function App() {
+  const [isLoading, setIsLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    // Simulate initial loading time
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Router>
       <div className="app-container">
+        {isLoading && <Loader />}
+
         <Background />
         <Navbar />
 
-        <main style={{ paddingTop: '64px' }}>
-          <Suspense fallback={
-            <div style={{ height: '80vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-              <div className="animate-fade-in" style={{ color: 'var(--text-tertiary)' }}>Loading...</div>
-            </div>
-          }>
+        <main style={{ paddingTop: '64px', opacity: isLoading ? 0 : 1, transition: 'opacity 0.8s ease' }}>
+          <Suspense fallback={null}>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
