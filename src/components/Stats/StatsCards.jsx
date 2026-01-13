@@ -162,7 +162,7 @@ const GithubCard = () => {
 
 const StatsCards = () => {
     return (
-        <div className="stats-stack">
+        <div className="stats-stack reveal stagger-reveal">
             <LeetcodeCard />
             <GithubCard />
         </div>

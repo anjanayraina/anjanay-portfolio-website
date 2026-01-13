@@ -41,9 +41,9 @@ const BentoGrid = () => {
                 </div>
 
 
-                <div className="project-grid-sleek">
+                <div className="project-grid-sleek reveal stagger-reveal">
                     {projects.map((project, index) => (
-                        <div key={index} className="project-card-sleek reveal">
+                        <div key={index} className="project-card-sleek">
                             <div className="card-image-preview">
                                 <span>{project.imgLabel}</span>
                             </div>

@@ -29,13 +29,13 @@ const Home = () => {
                     </p>
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+                <div className="stagger-reveal reveal" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
                     {[
                         { title: 'AI Integration', desc: 'Deploying LLM agents, automated data pipelines, and intelligent decision systems.' },
                         { title: 'Blockchain Development', desc: 'Secure smart contracts (Solidity/Rust), DeFi protocols, and L2 scaling solutions.' },
                         { title: 'Backend Systems', desc: 'Highly scalable microservices in Python, Go, and Node.js with fault-tolerant recovery.' }
                     ].map((service, i) => (
-                        <div key={i} className="card reveal" style={{ padding: '2.5rem' }}>
+                        <div key={i} className="card" style={{ padding: '2.5rem' }}>
                             <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1rem' }}>{service.title}</h3>
                             <p style={{ color: 'var(--text-secondary)', fontSize: '0.9375rem', lineHeight: '1.6' }}>{service.desc}</p>
                         </div>

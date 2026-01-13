@@ -41,9 +41,9 @@ const TechStack = () => {
                     </p>
                 </div>
 
-                <div className="stack-grid-v2 stagger-reveal">
+                <div className="stack-grid-v2 reveal stagger-reveal">
                     {stack.map((group, idx) => (
-                        <div key={idx} className="stack-group-v2 reveal">
+                        <div key={idx} className="stack-group-v2">
                             <h3 className="stack-category-v2">{group.category}</h3>
                             <div className="stack-items-v2">
                                 {group.skills.map((skill) => (

@@ -400,6 +400,26 @@ h4 {
   animation-delay: 0.5s;
 }
 
+.stagger-reveal.active>*:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.stagger-reveal.active>*:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.stagger-reveal.active>*:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+.stagger-reveal.active>*:nth-child(9) {
+  animation-delay: 0.9s;
+}
+
+.stagger-reveal.active>*:nth-child(10) {
+  animation-delay: 1.0s;
+}
+
 /* Custom Scrollbar for Horizontal Gallery */
 .custom-scrollbar::-webkit-scrollbar {
   height: 6px;

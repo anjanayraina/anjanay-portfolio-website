@@ -49,7 +49,7 @@ const About = () => {
                         </div>
 
                         {/* Stats Section - Moved Up */}
-                        <div className="reveal" style={{ marginTop: '2rem', marginBottom: '6rem' }}>
+                        <div style={{ marginTop: '2rem', marginBottom: '6rem' }}>
                             <StatsCards />
                         </div>
 
@@ -184,7 +184,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '2rem' }}>
+                    <div className="reveal stagger-reveal" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '2rem' }}>
                         {/* Code4rena Card */}
                         <div className="card" style={{ background: 'var(--bg-secondary)', textAlign: 'center', padding: '2.5rem 1.5rem', border: '1px solid var(--border-subtle)' }}>
                             <div style={{ fontSize: '3rem', marginBottom: '1.5rem', color: '#60a5fa' }}>🛡️</div>
@@ -216,13 +216,13 @@ const About = () => {
                     <h2 className="section-title-large" style={{ margin: 0, fontSize: '2rem' }}>Awards & <span style={{ color: '#a855f7' }}>Recognition</span></h2>
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+                <div className="reveal stagger-reveal" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
                     {[
                         { title: 'Peak Hackathon Winner (2nd Place)', org: 'Mantra Chain', date: 'Jul 2024', icon: '🥈' },
                         { title: 'Aptos Winter School', org: 'Selected Attendee (Top 60 India)', date: 'Dec 2023', icon: '🎿' },
                         { title: 'GDSC Blockchain Mentor', org: 'Core Lead & Mentorship', date: '2023-2024', icon: '🎓' }
                     ].map((award, i) => (
-                        <div key={i} className="card glass glow-hover reveal" style={{ padding: '2rem' }}>
+                        <div key={i} className="card glass glow-hover" style={{ padding: '2rem' }}>
                             <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>{award.icon}</div>
                             <h3 style={{ fontSize: '1.125rem', fontWeight: 700, marginBottom: '0.5rem' }}>{award.title}</h3>
                             <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem' }}>{award.org} • {award.date}</p>
