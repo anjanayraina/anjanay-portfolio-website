@@ -84,6 +84,7 @@
 
 @media (max-width: 768px) {
     .stack-grid-v2 {
+        grid-template-columns: 1fr;
         gap: 2rem;
     }
 }
