@@ -1,5 +1,6 @@
 import React from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import SEO from '../components/SEO/SEO';
 
 const socials = [
     { name: 'LinkedIn', label: 'Professional Profile', url: 'https://www.linkedin.in/in/anjanay-raina-289716192/', color: '#0077b5' },
@@ -13,6 +14,11 @@ const ContactPage = () => {
 
     return (
         <div ref={revealRef} className="contact-page container section animate-fade-in" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', paddingTop: '5rem' }}>
+            <SEO
+                title="Contact Me"
+                description="Get in touch with Anjanay Raina for freelance projects, security audits, or full-stack development roles."
+                url="/contact"
+            />
             <div className="reveal">
                 <h1 className="text-gradient" style={{
                     fontSize: 'clamp(2.5rem, 8vw, 4.5rem)',

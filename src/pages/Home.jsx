@@ -3,6 +3,7 @@ import Hero from '../components/Hero/Hero';
 import BentoGrid from '../components/BentoGrid/BentoGrid';
 import Newsletter from '../components/UI/Newsletter';
 import Testimonials from '../components/Testimonials/Testimonials';
+import SEO from '../components/SEO/SEO';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 
@@ -12,6 +13,10 @@ const Home = () => {
 
     return (
         <div ref={revealRef} className="home-page animate-fade-in">
+            <SEO
+                title="Anjanay Raina | Full Stack Developer & Security Researcher"
+                description="Anjanay Raina is a Full Stack Developer and Security Researcher helping startups architect high-performance backends and decentralized protocols."
+            />
             {/* Centered Bio & Gallery */}
             <Hero />
 

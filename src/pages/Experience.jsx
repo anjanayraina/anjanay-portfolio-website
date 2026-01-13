@@ -1,5 +1,6 @@
 import React from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import SEO from '../components/SEO/SEO';
 
 const experiences = [
   {
@@ -60,6 +61,11 @@ const Experience = () => {
 
   return (
     <div ref={revealRef} className="experience-page container section animate-fade-in">
+      <SEO
+        title="Experience & Resume"
+        description="Professional experience of Anjanay Raina, including NatWest Group, smart contract auditing, and blockchain research."
+        url="/experience"
+      />
       <div className="reveal" style={{ marginBottom: '6rem' }}>
         <h1 className="text-gradient" style={{ fontSize: '4.5rem', fontWeight: 800, letterSpacing: '-0.05em', marginBottom: '1.5rem', display: 'inline-block' }}>
           Real-world scale.

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import SEO from '../components/SEO/SEO';
 
 const projects = [
   {
@@ -116,6 +117,11 @@ const Projects = () => {
 
   return (
     <div ref={revealRef} className="projects-page container section animate-fade-in">
+      <SEO
+        title="Projects & Portfolio"
+        description="Explore Anjanay Raina's portfolio of high-performance backend systems, AI trading ecosystems, and secure DeFi protocols."
+        url="/projects"
+      />
       <div className="reveal" style={{ marginBottom: '6rem' }}>
         <h1 className="text-gradient" style={{ fontSize: '4.5rem', fontWeight: 800, letterSpacing: '-0.05em', marginBottom: '1.5rem' }}>
           Built with precision.

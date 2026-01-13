@@ -2,12 +2,18 @@ import React from 'react';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import StatsCards from '../components/Stats/StatsCards';
 import TechStack from '../components/TechStack/TechStack';
+import SEO from '../components/SEO/SEO';
 
 const About = () => {
     const revealRef = useScrollReveal();
 
     return (
         <div ref={revealRef} className="about-page container animate-fade-in" style={{ paddingTop: '5rem', paddingBottom: '8rem' }}>
+            <SEO
+                title="About Me"
+                description="Learn more about Anjanay Raina - his background in full stack development, security auditing, and hobbies like MMA and trekking."
+                url="/about"
+            />
             {/* Bio Section */}
             <section className="section reveal">
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>

@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/SEO/SEO';
 
 const stack = [
     { category: 'Languages', items: ['Python', 'Golang', 'Rust', 'Java', 'SQL', 'Solidity', 'JavaScript', 'TypeScript'] },
@@ -10,6 +11,11 @@ const stack = [
 const StackPage = () => {
     return (
         <div className="stack-page container section animate-slide-up">
+            <SEO
+                title="Tech Stack & Skills"
+                description="Anjanay Raina's technical toolkit: Python, Rust, Solidity, React, and cloud infrastructure for building scalable systems."
+                url="/stack"
+            />
             <h1 className="text-gradient" style={{ fontSize: '3rem', marginBottom: '1rem' }}>Tech Stack</h1>
             <p style={{ color: 'var(--text-secondary)', marginBottom: '4rem' }}>
                 The tools and technologies I use to build scalable, high-performance systems.
