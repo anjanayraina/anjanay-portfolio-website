@@ -44,8 +44,9 @@ const SEO = ({ title, description, keywords, image, url }) => {
                     "url": siteUrl,
                     "image": metaImage,
                     "sameAs": [
-                        "https://www.linkedin.in/in/anjanay-raina-289716192/",
-                        "https://github.com/anjanayraina"
+                        "https://linkedin.com/in/anjanay-raina-289716192/",
+                        "https://github.com/anjanayraina",
+                        "https://x.com/Anjanay_Raina"
                     ],
                     "jobTitle": "Full Stack Developer",
                     "worksFor": {

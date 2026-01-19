@@ -3,9 +3,9 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 import SEO from '../components/SEO/SEO';
 
 const socials = [
-    { name: 'LinkedIn', label: 'Professional Profile', url: 'https://www.linkedin.in/in/anjanay-raina-289716192/', color: '#0077b5' },
+    { name: 'LinkedIn', label: 'Professional Profile', url: 'https://linkedin.com/in/anjanay-raina-289716192/', color: '#0077b5' },
     { name: 'GitHub', label: 'Code & contributions', url: 'https://github.com/anjanayraina', color: '#181717' },
-    { name: 'X / Twitter', label: 'Updates & Thoughts', url: 'https://x.com/your_handle', color: '#000' },
+    { name: 'X / Twitter', label: 'Updates & Thoughts', url: 'https://x.com/Anjanay_Raina', color: '#000' },
     { name: 'Email', label: 'Direct Correspondence', url: 'mailto:anjanayraina326@gmail.com', color: '#007AFF' }
 ];
 
@@ -36,12 +36,12 @@ const ContactPage = () => {
 
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', width: '100%', maxWidth: '1100px' }}>
                 {[
-                    { name: 'LinkedIn', label: 'Professional Profile', url: 'https://www.linkedin.in/in/anjanay-raina-289716192/', color: '#0077b5', brand: 'in' },
+                    { name: 'LinkedIn', label: 'Professional Profile', url: 'https://linkedin.com/in/anjanay-raina-289716192/', color: '#0077b5', brand: 'in' },
                     { name: 'GitHub', label: 'Code & contributions', url: 'https://github.com/anjanayraina', color: '#fff', brand: 'git' },
                     { name: 'Upwork', label: 'Hire me for projects', url: 'https://www.upwork.com/freelancers/~010cea8b44a78ea307?mp_source=share', color: '#14a800', brand: 'Up' },
                     { name: 'Fiverr', label: 'Direct Gigs', url: 'https://www.fiverr.com/s/38xwaxx', color: '#1dbf73', brand: 'fi' },
                     { name: 'Medium', label: 'Technical Writing', url: 'https://medium.com/@anjanayraina326', color: '#fff', brand: 'M' },
-                    { name: 'X / Twitter', label: 'Updates & Thoughts', url: 'https://x.com/your_handle', color: '#fff', brand: '𝕏' },
+                    { name: 'X / Twitter', label: 'Updates & Thoughts', url: 'https://x.com/Anjanay_Raina', color: '#fff', brand: '𝕏' },
                     { name: 'Email', label: 'Direct Correspondence', url: 'mailto:anjanayraina326@gmail.com', color: '#a855f7', brand: '✉' }
                 ].map((social) => (
                     <a
