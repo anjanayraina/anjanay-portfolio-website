@@ -133,4 +133,13 @@
         flex-direction: column;
         gap: 2rem;
     }
+
+    .stats-card {
+        padding: 1.5rem;
+        /* Reduced from 2.5rem */
+    }
+
+    .stats-header {
+        margin-bottom: 1.5rem;
+    }
 }

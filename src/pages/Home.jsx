@@ -29,7 +29,7 @@ const Home = () => {
                     </p>
                 </div>
 
-                <div className="stagger-reveal reveal" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+                <div className="stagger-reveal reveal" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
                     {[
                         { title: 'AI Integration', desc: 'Deploying LLM agents, automated data pipelines, and intelligent decision systems.' },
                         { title: 'Blockchain Development', desc: 'Secure smart contracts (Solidity/Rust), DeFi protocols, and L2 scaling solutions.' },

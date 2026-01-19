@@ -281,8 +281,27 @@
         padding: 0.6rem 1rem;
     }
 
+    .hero-section {
+        padding-top: 100px;
+        /* Reduced from 120px */
+    }
+
+    .hero-heading {
+        font-size: clamp(2rem, 10vw, 3.5rem);
+        /* Adjusted for mobile */
+    }
+
     .hero-container {
         padding-bottom: 4rem;
-        /* Space for scroll indicator on mobile */
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .blob-1,
+    .blob-2 {
+        opacity: 0.1;
+        /* Reduce distraction */
+        width: 80vw;
+        height: 80vw;
     }
 }

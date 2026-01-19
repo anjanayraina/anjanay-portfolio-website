@@ -89,3 +89,31 @@
     color: var(--text-primary);
     border-color: var(--border-medium);
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 90%;
+        max-width: 400px;
+        padding: 0 1rem;
+        height: 48px;
+        /* Slightly taller for touch targets */
+        justify-content: center;
+    }
+
+    .navbar-links {
+        gap: 0.75rem;
+    }
+
+    .navbar-links a {
+        font-size: 0.75rem;
+    }
+
+    /* Hide the floating absolute elements to simplify mobile view or move them */
+    .nav-avatar,
+    .nav-actions {
+        display: none;
+    }
+
+    /* Optional: If we want to keep theme toggle, we could integrate it into the nav, 
+       but for now simplicity is key to avoid breaking */
+}

@@ -1,9 +1,15 @@
 .process-list {
     display: flex;
     flex-direction: column;
-    gap: var(--space-xl);
+    gap: 3rem;
     max-width: 800px;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .process-list {
+        gap: 2rem;
+    }
 }
 
 .process-item {
