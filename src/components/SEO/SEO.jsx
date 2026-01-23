@@ -3,10 +3,10 @@ import { Helmet } from 'react-helmet-async';
 
 const SEO = ({ title, description, keywords, image, url }) => {
     const siteTitle = 'Anjanay Raina | Full Stack Developer & Security Researcher';
-    const defaultDescription = 'Anjanay Raina is a Full Stack Developer and Security Researcher specializing in DeFi, backend systems, and smart contract auditing.';
+    const defaultDescription = 'Anjanay Raina is a Full Stack Developer and Security Researcher helping startups architect high-performance backends and decentralized protocols.';
     const defaultKeywords = 'Anjanay Raina, Full Stack Developer, Security Researcher, DeFi, Smart Contract Auditor, React, Node.js, Web3, NatWest Group';
     const defaultImage = '/client_avatar_male_new_1767877648113.png';
-    const siteUrl = 'https://anjanay.dev';
+    const siteUrl = 'https://anjanay.in';
 
     const metaTitle = title ? `${title} | Anjanay Raina` : siteTitle;
     const metaDescription = description || defaultDescription;
