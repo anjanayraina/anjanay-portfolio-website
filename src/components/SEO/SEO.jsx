@@ -21,6 +21,9 @@ const SEO = ({ title, description, keywords, image, url }) => {
             <meta name="keywords" content={metaKeywords} />
             <meta name="author" content="Anjanay Raina" />
             <link rel="canonical" href={metaUrl} />
+            <link rel="icon" type="image/png" href="/logo.png" />
+            <link rel="apple-touch-icon" href="/logo.png" />
+            <link rel="shortcut icon" href="/logo.png" />
 
             {/* Open Graph / Facebook */}
             <meta property="og:type" content="website" />
