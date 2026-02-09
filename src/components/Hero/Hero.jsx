@@ -8,10 +8,10 @@ const Hero = () => {
     const [isDeleting, setIsDeleting] = React.useState(false);
 
     const roles = React.useMemo(() => [
-        "Security Researcher",
-        "Smart Contract Auditor",
-        "DeFi Architect",
-        "Backend Engineer"
+        "Backend Architect",
+        "Full Stack Developer",
+        "Systems Engineer",
+        "Security Researcher"
     ], []);
 
     React.useEffect(() => {
@@ -57,14 +57,14 @@ const Hero = () => {
 
                 <div className="hero-text-content">
                     <h1 className="hero-heading">
-                        Full Stack Developer & <br />
+                        Backend Architect & <br />
                         <span style={{ color: 'var(--accent-purple)' }}>{displayText}</span>
                         <span className="typing-cursor"></span>
                     </h1>
                     <p className="hero-description">
                         Hi, I'm <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Anjanay Raina</span>.
-                        I help startups architect high-performance backends and decentralized protocols.
-                        Where <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>clean code</span> meets <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>on-chain security</span>.
+                        I architect <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>high-performance backends</span> and scalable distributed systems.
+                        Specializing in <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>system design</span>, security, and full-stack engineering.
                     </p>
 
 

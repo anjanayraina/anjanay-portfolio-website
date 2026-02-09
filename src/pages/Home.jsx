@@ -25,15 +25,15 @@ const Home = () => {
                 <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
                     <h2 className="section-title-large">Technical Authority</h2>
                     <p style={{ color: 'var(--text-secondary)', maxWidth: '700px', margin: '0 auto' }}>
-                        I help startups architect high-performance backends and decentralized protocols.
+                        I architect high-performance backends and scalable distributed systems for modern enterprises.
                     </p>
                 </div>
 
                 <div className="stagger-reveal reveal" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
                     {[
-                        { title: 'AI Integration', desc: 'Deploying LLM agents, automated data pipelines, and intelligent decision systems.' },
-                        { title: 'Blockchain Development', desc: 'Secure smart contracts (Solidity/Rust), DeFi protocols, and L2 scaling solutions.' },
-                        { title: 'Backend Systems', desc: 'Highly scalable microservices in Python, Go, and Node.js with fault-tolerant recovery.' }
+                        { title: 'Backend Systems', desc: 'Highly scalable microservices in Python, Go, and Node.js with fault-tolerant recovery and system optimization.' },
+                        { title: 'Full Stack Engineering', desc: 'End-to-end development of high-performance web applications with seamless frontend-backend integration.' },
+                        { title: 'AI & Data Pipelines', desc: 'Deploying LLM agents, automated data processing, and intelligent decision systems at scale.' }
                     ].map((service, i) => (
                         <div key={i} className="card" style={{ padding: '2.5rem' }}>
                             <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1rem' }}>{service.title}</h3>

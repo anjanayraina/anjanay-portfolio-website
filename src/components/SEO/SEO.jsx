@@ -2,9 +2,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 const SEO = ({ title, description, keywords, image, url }) => {
-    const siteTitle = 'Anjanay Raina | Full Stack Developer & Security Researcher';
-    const defaultDescription = 'Anjanay Raina is a Full Stack Developer and Security Researcher helping startups architect high-performance backends and decentralized protocols.';
-    const defaultKeywords = 'Anjanay Raina, Full Stack Developer, Security Researcher, DeFi, Smart Contract Auditor, React, Node.js, Web3, NatWest Group';
+    const siteTitle = 'Anjanay Raina | Backend Architect & Full Stack Developer';
+    const defaultDescription = 'Anjanay Raina is a Backend Architect and Full Stack Developer specializing in high-performance backends, scalable distributed systems, and security engineering.';
+    const defaultKeywords = 'Anjanay Raina, Backend Architect, Full Stack Developer, System Design, Security Engineer, Python, Go, FastAPI, Distributed Systems, NatWest Group';
     const defaultImage = '/client_avatar_male_new_1767877648113.png';
     const siteUrl = 'https://anjanay.in';
 

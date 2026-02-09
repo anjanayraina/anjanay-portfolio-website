@@ -5,27 +5,27 @@ import './TechStack.css';
 const stack = [
     {
         category: 'Programming Languages',
-        skills: ['Python', 'Golang', 'Rust', 'Java', 'Solidity', 'JavaScript', 'TypeScript', 'C++']
+        skills: ['Python', 'Golang', 'Rust', 'Java', 'C++', 'JavaScript', 'TypeScript', 'Solidity']
     },
     {
         category: 'Frameworks & Libraries',
-        skills: ['FastAPI', 'Flask', 'Spring Boot', 'React', 'Next.js', 'Foundry', 'Hardhat', 'Anchor']
+        skills: ['FastAPI', 'Flask', 'Spring Boot', 'React', 'Next.js', 'Node.js', 'Foundry', 'Anchor']
     },
     {
-        category: 'Databases & Storage',
-        skills: ['MongoDB', 'PostgreSQL', 'MySQL', 'Redis', 'Elasticsearch', 'Kafka']
+        category: 'Databases & System Design',
+        skills: ['PostgreSQL', 'MongoDB', 'Redis', 'Kafka', 'Elasticsearch', 'System Design']
     },
     {
-        category: 'Web3 Standards (EIPs)',
-        skills: ['ERC-20', 'ERC-721', 'ERC-1155', 'ERC-4626', 'EIP-712', 'EIP-1271', 'EIP-1559']
+        category: 'Infrastructure & Cloud',
+        skills: ['Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions', 'Azure', 'GCP', 'AWS']
     },
     {
-        category: 'Infrastructure & Security',
-        skills: ['Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions', 'Slither', 'Echidna', 'Azure', 'GCP']
+        category: 'Distributed Systems & Web3',
+        skills: ['Distributed Ledger', 'P2P Protocols', 'ERC-4626', 'EIP-712', 'Smart Contracts', 'Security Auditing']
     },
     {
-        category: 'AI & Data Science',
-        skills: ['LLMs', 'OpenAI API', 'LangChain', 'Hugging Face', 'PyTorch', 'TensorFlow', 'Pandas', 'NumPy']
+        category: 'AI & Data Engineering',
+        skills: ['LLMs', 'OpenAI API', 'LangChain', 'Data Pipelines', 'PyTorch', 'Spark', 'Pandas']
     }
 ];
 
@@ -82,8 +82,16 @@ const TechStack = () => {
                                             {skill === 'Pandas' && <span>🐼</span>}
                                             {skill === 'NumPy' && <span style={{ color: '#4DABCF' }}>🔢</span>}
 
+                                            {skill === 'AWS' && <span style={{ color: '#FF9900' }}>☁️</span>}
+                                            {skill === 'Node.js' && <span style={{ color: '#339933' }}>🟢</span>}
+                                            {skill === 'System Design' && <span style={{ color: '#00bcd4' }}>🏛️</span>}
+                                            {skill === 'Spark' && <span style={{ color: '#E25A1C' }}>✨</span>}
+                                            {skill === 'Data Pipelines' && <span style={{ color: '#4CAF50' }}>🛤️</span>}
+                                            {skill === 'Distributed Ledger' && <span style={{ color: '#6366f1' }}>🔗</span>}
+                                            {skill === 'Security Auditing' && <span style={{ color: '#f44336' }}>🔍</span>}
+
                                             {/* Default Icon */}
-                                            {!['Solidity', 'Python', 'Rust', 'Golang', 'Java', 'C++', 'FastAPI', 'React', 'Next.js', 'Foundry', 'MongoDB', 'PostgreSQL', 'Redis', 'Docker', 'Kubernetes', 'Slither', 'LLMs', 'OpenAI API', 'LangChain', 'Hugging Face', 'PyTorch', 'TensorFlow', 'Pandas', 'NumPy'].some(s => skill === s || skill.startsWith('ERC') || skill.startsWith('EIP')) &&
+                                            {!['Solidity', 'Python', 'Rust', 'Golang', 'Java', 'C++', 'FastAPI', 'React', 'Next.js', 'Foundry', 'MongoDB', 'PostgreSQL', 'Redis', 'Docker', 'Kubernetes', 'Slither', 'LLMs', 'OpenAI API', 'LangChain', 'Hugging Face', 'PyTorch', 'TensorFlow', 'Pandas', 'NumPy', 'AWS', 'Node.js', 'System Design', 'Spark', 'Data Pipelines', 'Distributed Ledger', 'Security Auditing'].some(s => skill === s || skill.startsWith('ERC') || skill.startsWith('EIP')) &&
                                                 <span style={{ color: 'var(--accent-purple)' }}>✧</span>
                                             }
                                         </div>

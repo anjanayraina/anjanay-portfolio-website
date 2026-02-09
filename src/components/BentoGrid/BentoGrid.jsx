@@ -7,21 +7,21 @@ import './BentoGrid.css';
 const projects = [
     {
         title: 'Mon Finance AI',
-        description: 'A modular, AI-powered trading ecosystem bridging DeFi and CeX. Features an asynchronous microservice architecture for real-time market analysis and automated execution.',
-        tech: ['FastAPI', 'React', 'LLMs', 'Web3'],
-        imgLabel: 'Mon Finance AI Dashboard'
+        description: 'A modular, AI-powered trading ecosystem. Features an asynchronous microservice architecture for real-time market analysis and automated execution with high-performance FastAPI backend.',
+        tech: ['FastAPI', 'Microservices', 'Redis', 'LLMs'],
+        imgLabel: 'Mon Finance AI Infrastructure'
     },
     {
-        title: 'Middle Earth AI',
-        description: 'An AI-powered on-chain strategy game built on Solana. Features complex battle logic, asset minting, and dynamic NPC agents powered by specialized AI.',
-        tech: ['Solana', 'Rust', 'Anchor', 'AI'],
-        imgLabel: 'Middle Earth AI Program'
+        title: 'IDRECS',
+        description: 'Mission-critical enterprise data processing engine with a fault-tolerant recovery mechanism ensuring zero state loss and 3x faster concurrent processing.',
+        tech: ['Python', 'System Design', 'Multithreading', 'Enterprise'],
+        imgLabel: 'IDRECS Architecture'
     },
     {
-        title: 'PerpetualVault',
-        description: 'A decentralized perpetuals protocol following ERC-4626. Implements a fault-tolerant double oracle system with Chainlink for secure on-chain trading.',
-        tech: ['Solidity', 'Foundry', 'Chainlink', 'ERC-4626'],
-        imgLabel: 'PerpetualVault Protocol'
+        title: 'JobSleuth',
+        description: 'Distributed data aggregation platform processing thousands of records daily. Engineered with asynchronous pipelines reducing collection time by 90%.',
+        tech: ['Python', 'FastAPI', 'AsyncIO', 'React'],
+        imgLabel: 'JobSleuth Aggregator'
     }
 ];
 

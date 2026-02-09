@@ -35,8 +35,8 @@ const About = () => {
                             Hi Stranger!, I am <span style={{ color: '#a855f7' }}>Anjanay Raina</span> from <span style={{ color: '#a855f7' }}>Delhi, India.</span>
                         </p>
                         <p style={{ color: 'var(--text-secondary)', marginBottom: '3rem', fontSize: '1.125rem', letterSpacing: '-0.01em', lineHeight: '1.8' }}>
-                            I am currently a <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>Full Stack Developer at NatWest Group</span>.
-                            I specialize in building high-performance backend systems and securing decentralized protocols, with 3+ years of deep technical experience in DeFi and on-chain security.
+                            I am currently a <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>Backend Systems Developer at NatWest Group</span>.
+                            I specialize in architecting <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>high-performance backends</span> and scalable distributed systems, with 3+ years of experience in full-stack engineering and security.
                         </p>
 
                         {/* Professional Skillset - Moved Up */}

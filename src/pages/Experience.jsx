@@ -5,39 +5,40 @@ import SEO from '../components/SEO/SEO';
 const experiences = [
   {
     company: 'NatWest Group',
-    role: 'Backend Developer',
+    role: 'Backend Systems Developer',
 
     period: 'July 2024 – Present',
-    details: 'Architected and built a new ISV Signature Matching microservice from the ground up, owning the complete lifecycle.',
+    details: 'Architecting and scaling mission-critical microservices within the retail banking ecosystem.',
     highlights: [
-      'Implemented complex business logic modules (Rebate, Negative Ageing, Contra) and led code reviews.',
-      'Engineered a fault-tolerant recovery mechanism to ensure zero state loss during service interruptions.',
-      'Optimized API endpoints for concurrent HTTP requests using Python’s multithreading, decreasing response times by 3x.',
-      'Architected and built a new ISV Signature Matching microservice from the ground up.'
+      'Engineered a high-availability ISV Signature Matching microservice from zero to production.',
+      'Implemented complex business logic modules (Rebate, Negative Ageing, Contra) handling millions in monthly transactions.',
+      'Architected a fault-tolerant recovery mechanism ensuring zero state loss during distributed system interruptions.',
+      'Optimized backend API performance by 3x using advanced concurrency patterns and Python multithreading.'
     ],
     logo: '🏦'
   },
   {
-    company: 'Freelance',
-    role: 'Independent Smart-Contract Auditor',
+    company: 'Independent Researcher',
+    role: 'Security Engineer & Auditor',
     period: 'July 2023 – Present',
-    details: 'Secured high-value DeFi protocols, ranking among top global auditors on Code4rena and Sherlock.',
+    details: 'Securing complex distributed systems and financial protocols through deep-dive systemic analysis.',
     highlights: [
-      'Identified and resolved 20+ critical vulnerabilities (reentrancy, economic exploits).',
-      'Engineered gas optimizations reducing execution costs by up to 60%.',
-      'Integrated Foundry fuzzer and Slither into client CI/CD pipelines.'
+      'Uncovered 20+ critical vulnerabilities in high-traffic DeFi and distributed protocols.',
+      'Engineered mathematical invariant tests and formal verification suites to ensure system integrity.',
+      'Optimized low-level execution logic reducing operational costs by up to 60%.',
+      'Integrated advanced security tooling (Foundry, Slither, Echidna) into enterprise CI/CD pipelines.'
     ],
     logo: '🛡️'
   },
   {
     company: 'Zus Network',
-    role: 'Smart Contract Auditor (Consultant)',
+    role: 'Backend Security Consultant',
     period: 'April 2023 – June 2023',
-    details: 'Security audit and backend optimization for core storage protocols prior to mainnet.',
+    details: 'Security architecture and performance optimization for decentralized storage protocols.',
     highlights: [
-      'Resolved 10+ critical vulnerabilities ensuring a secure protocol deployment.',
-      'Designed a comprehensive test suite in Go for complex scenario automation.',
-      'Collaborated on secure coding standards and vulnerability monitoring.'
+      'Conducted deep-dive security audits of core storage protocols prior to mainnet deployment.',
+      'Designed and implemented a comprehensive system test suite in Go for complex scenario simulation.',
+      'Collaborated on secure architecture standards and real-time vulnerability monitoring systems.'
     ],
     logo: '🛰️'
   },

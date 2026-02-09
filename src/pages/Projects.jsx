@@ -4,10 +4,52 @@ import SEO from '../components/SEO/SEO';
 
 const projects = [
   {
+    title: 'IDRECS',
+    subtitle: 'Enterprise Data Processing & Recovery',
+    description: 'Engineered a mission-critical data processing engine with a fault-tolerant recovery mechanism ensuring zero state loss during service interruptions. Specialized in high-throughput system architecture and concurrent processing pipelines.',
+    tech: ['Python', 'Multithreading', 'System Design', 'Enterprise Architecture'],
+    links: {},
+    icon: '⚙️',
+    features: [
+      'Engineered a fault-tolerant recovery system ensuring transaction integrity.',
+      'Optimized backend services for high-concurrency using Python multithreading.',
+      'Reduced system response latency by 3x through algorithmic optimization.',
+      'Implemented robust business logic modules for complex enterprise reporting.'
+    ]
+  },
+  {
+    title: 'ISV Signature Matching',
+    subtitle: 'NatWest Group | Banking Microservice',
+    description: 'Developed a high-availability microservice for automated signature verification within NatWest Group\'s retail banking infrastructure. Focused on extreme reliability, security compliance, and minimal latency.',
+    tech: ['Python', 'FastAPI', 'Azure', 'Microservices', 'System Design'],
+    links: {},
+    icon: '🏦',
+    features: [
+      'Architected a resilient microservice handling core banking operations.',
+      'Automated legacy verification workflows, reducing processing time by 40%.',
+      'Implemented enterprise-grade logging, security, and financial compliance.',
+      'Optimized data pipelines for real-time validation and error handling.'
+    ]
+  },
+  {
+    title: 'JobSleuth',
+    subtitle: 'High-Throughput Data Aggregator',
+    description: 'A distributed data aggregation platform designed for massive scale. Leveraging asynchronous parallel processing, it ingests and processes thousands of records daily from disparate sources into a unified, high-performance interface.',
+    tech: ['Python', 'FastAPI', 'Asynchronous I/O', 'PostgreSQL', 'React'],
+    links: { github: 'https://github.com/anjanayraina/JobSleuth', live: 'https://job-sleuth.onrender.com/' },
+    icon: '🔍',
+    features: [
+      'Built concurrent data pipelines reducing collection time by 90%.',
+      'Engineered a scalable FastAPI backend with asynchronous task processing.',
+      'Developed a responsive React dashboard for real-time data visualization.',
+      'Optimized database queries for millisecond-range filtering of 100k+ records.'
+    ]
+  },
+  {
     title: 'Mon Finance AI',
-    subtitle: 'AI-Driven Trading Ecosystem',
-    description: 'A modular, AI-powered trading solution bridging DeFi and CeX. Features a high-performance FastAPI backend, an LLM-powered intelligence layer for market signals, and a real-time React dashboard with AI-chat assistance. Designed to democratize institutional-grade trading strategies using generative AI.',
-    tech: ['FastAPI', 'MongoDB', 'React', 'LLMs', 'Binance API', 'Uniswap', 'EIP-712'],
+    subtitle: 'AI-Powered Backend Architecture',
+    description: 'A modular backend ecosystem bridging financial protocols. Features a high-performance FastAPI architecture, an intelligent data processing layer, and real-time monitoring. Designed for scalability and extensibility in high-stakes environments.',
+    tech: ['FastAPI', 'MongoDB', 'Redis', 'Python', 'LLMs', 'React'],
     links: {
       github: 'https://github.com/Mor-Fin-AI',
       live: 'https://dashboard.morfinance.ai/',
@@ -19,94 +61,52 @@ const projects = [
     },
     icon: '🤖',
     features: [
-      'Asynchronous microservice architecture for real-time market insights.',
-      'AI-driven decision making using LLMs for trade recommendations.',
-      'Non-custodial security via EIP-712 typed data signing.',
-      'Hybrid trading engine supporting both Binance and Uniswap protocols.'
-    ]
-  },
-  {
-    title: 'JobSleuth',
-    subtitle: 'Automated Job Aggregation',
-    description: 'A high-throughput data aggregation platform designed to streamline the job search process. By leveraging asynchronous parallel processing, it scrapes and consolidates over 5,000 daily job postings from disparate sources into a unified, searchable interface.',
-    tech: ['Python', 'FastAPI', 'Telethon', 'aiohttp', 'React'],
-    links: { github: 'https://github.com/anjanayraina/JobSleuth', live: 'https://job-sleuth.onrender.com/' },
-    icon: '🔍',
-    features: [
-      'Built concurrent Python pipelines reducing data collection time by 90%.',
-      'Aggregated and processed 5,000+ daily job postings from multiple sources.',
-      'Deployed a scalable FastAPI backend with asynchronous task processing.',
-      'Developed a modern React dashboard for real-time job filtering.'
-    ]
-  },
-  {
-    title: 'Middle Earth AI',
-    subtitle: 'On-Chain Strategy Game',
-    description: 'A fully on-chain strategy game built on the Solana blockchain. I built the core Rust smart contracts using the Anchor framework, handling complex game state transitions, asset minting, and cryptographic verifications for fair gameplay.',
-    tech: ['Rust', 'Anchor', 'Solana', 'TypeScript', 'AI'],
-    links: { github: 'https://github.com/MiddleEarthAI/middle_earth_ai_program', live: 'https://www.middleearth.world/' },
-    icon: '⚔️',
-    features: [
-      'Developed Rust-based Solana programs using Anchor framework.',
-      'Implemented on-chain game state, asset minting, and complex battle logic.',
-      'Secured $100K+ Total Value Locked (TVL) during peak gameplay.',
-      'Integrated AI agents for dynamic on-chain strategy execution.'
+      'Asynchronous microservice architecture for real-time intelligence.',
+      'Deployed intelligent decision systems using LLM-powered data analysis.',
+      'Built custom integration layers for diverse financial and API protocols.',
+      'Hybrid engine supporting complex cross-platform execution logic.'
     ]
   },
   {
     title: 'PerpetualVault',
-    subtitle: 'DeFi Liquidity Protocol',
-    description: 'A sophisticated decentralized perpetuals trading protocol built on the ERC-4626 standard. The architecture focuses on capital efficiency and security, featuring a custom fault-tolerant oracle system that aggregates price feeds to prevent manipulation.',
-    tech: ['Solidity', 'Foundry', 'Chainlink', 'ERC-4626'],
+    subtitle: 'Fault-Tolerant Systems Research',
+    description: 'A deep-dive into secure system architecture following the ERC-4626 standard. Built a robust, fault-tolerant oracle system that aggregates multi-source price feeds to ensure system integrity and prevent manipulation.',
+    tech: ['Solidity', 'Foundry', 'System Security', 'ERC-4626'],
     links: { github: 'https://github.com/anjanayraina/PerpetualVault' },
     icon: '📈',
     features: [
-      'Architected a decentralized perpetuals protocol following ERC-4626 standard.',
-      'Built a robust fault-tolerant double oracle system with Chainlink integration.',
-      'Implemented automated yield-bearing strategies for vault depositors.',
-      'Designed gas-optimized smart contracts for cross-margin trading.'
+      'Architected a secure vault standard for efficient resource management.',
+      'Built a redundant oracle system with multi-layer failure protection.',
+      'Implemented automated balance management and invariant protection.',
+      'Designed gas-optimized logic for high-frequency state transitions.'
     ]
   },
   {
     title: 'Independent Security Research',
-    subtitle: 'Smart Contract Auditing',
-    description: 'As an independent security researcher, I specialize in identifying critical vulnerabilities in complex DeFi protocols. My work typically involves deep analysis of economic logic, reentrancy vectors, and mathematical invariants to protect user funds.',
-    tech: ['Solidity', 'Echidna', 'Slither', 'Foundry', 'DeFi Security'],
+    subtitle: 'Systemic Vulnerability Analysis',
+    description: 'Specialized in identifying critical systemic risks and logic flaws in distributed architectures. My work involves deep analysis of mathematical invariants and economic game theory to prevent catastrophic system failure.',
+    tech: ['Security Engineering', 'Formal Verification', 'Foundry', 'Distributed Systems'],
     links: { live: 'https://drive.google.com/drive/folders/18StaXAN5Odo6mds5dGxj11s9YiRF-m-m?usp=sharing' },
     icon: '🛡️',
     features: [
-      'Uncovered 20+ critical severity vulnerabilities across major protocols.',
-      'Ranked among top auditors on competitive platforms (Code4rena, Sherlock).',
-      'Conducted comprehensive security reviews for AMMs, lending markets, and bridges.',
-      'Specialized in economic exploit analysis and formal verification.'
+      'Uncovered 20+ critical-severity vulnerabilities in complex systems.',
+      'Ranked among top global security researchers on competitive platforms.',
+      'Conducted deep-dive security reviews for high-traffic infrastructure.',
+      'Specialized in logic-level exploit analysis and zero-day detection.'
     ]
   },
   {
-    title: 'IDRECS',
-    subtitle: 'Enterprise Data Processing',
-    description: 'Engineered a fault-tolerant recovery mechanism to ensure zero state loss during service interruptions for critical data processing jobs. Optimized API endpoints for concurrent HTTP requests using Python’s multithreading, decreasing response times by 3x.',
-    tech: ['Python', 'Multithreading', 'API Optimization', 'Enterprise Architecture'],
-    links: {},
-    icon: '⚙️',
+    title: 'Middle Earth AI',
+    subtitle: 'On-Chain Distributed Systems',
+    description: 'A complex state-machine implementation on the Solana blockchain. Engineered the core programs using Rust, handling high-frequency state updates, asset minting, and cryptographic verification.',
+    tech: ['Rust', 'Anchor', 'Solana', 'State Machine Design', 'AI'],
+    links: { github: 'https://github.com/MiddleEarthAI/middle_earth_ai_program', live: 'https://www.middleearth.world/' },
+    icon: '⚔️',
     features: [
-      'Implemented complex business logic modules (Rebate, Negative Ageing, Contra).',
-      'Engineered a fault-tolerant recovery mechanism ensuring zero state loss.',
-      'Optimized API endpoints for concurrent HTTP requests using Python multithreading.',
-      'Decreased response times by 3x and significantly boosted throughput.'
-    ]
-  },
-  {
-    title: 'ISV Signature Matching',
-    subtitle: 'NatWest Group Banking Service',
-    description: 'High-availability microservice for automated signature verification in retail banking systems, reducing latency by 40%.',
-    tech: ['Python', 'Azure', 'FastAPI', 'Microservices'],
-    links: {},
-    icon: '⚖️',
-    features: [
-      'Engineered a high-availability microservice for retail banking systems.',
-      'Automated core signature verification processes for NatWest Group.',
-      'Reduced system latency by 40% through optimized processing pipelines.',
-      'Implemented enterprise-grade security and logging for financial compliance.'
+      'Developed high-performance Rust programs for distributed state management.',
+      'Implemented complex game logic as a verifiable on-chain state machine.',
+      'Secured $100K+ TVL through rigorous testing and security audits.',
+      'Integrated autonomous agents for dynamic state interactions.'
     ]
   }
 ];
