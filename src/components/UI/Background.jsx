@@ -19,10 +19,6 @@ const Background = () => {
             {/* Grid Overlay */}
             <div className="grid-overlay"></div>
 
-            {/* Animated Glows */}
-            <div className="nebula-glow glow-1"></div>
-            <div className="nebula-glow glow-2"></div>
-
             {/* Twinkling Stars */}
             <div className="stars-layer">
                 {stars.map((star) => (

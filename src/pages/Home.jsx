@@ -32,8 +32,8 @@ const Home = () => {
                 <div className="stagger-reveal reveal" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
                     {[
                         { title: 'Backend Systems', desc: 'Highly scalable microservices in Python, Go, and Node.js with fault-tolerant recovery and system optimization.' },
-                        { title: 'Full Stack Engineering', desc: 'End-to-end development of high-performance web applications with seamless frontend-backend integration.' },
-                        { title: 'AI & Data Pipelines', desc: 'Deploying LLM agents, automated data processing, and intelligent decision systems at scale.' }
+                        { title: 'Blockchain Development', desc: 'Secure smart contracts (Solidity/Rust), DeFi protocols, and decentralized infrastructure with elite auditing standards.' },
+                        { title: 'Full Stack Engineering', desc: 'End-to-end development of high-performance web applications with seamless frontend-backend integration and AI features.' }
                     ].map((service, i) => (
                         <div key={i} className="card" style={{ padding: '2.5rem' }}>
                             <h3 style={{ fontSize: '1.25rem', fontWeight: 700, marginBottom: '1rem' }}>{service.title}</h3>

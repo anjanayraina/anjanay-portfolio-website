@@ -47,9 +47,9 @@ const projects = [
   },
   {
     title: 'Mon Finance AI',
-    subtitle: 'AI-Powered Backend Architecture',
-    description: 'A modular backend ecosystem bridging financial protocols. Features a high-performance FastAPI architecture, an intelligent data processing layer, and real-time monitoring. Designed for scalability and extensibility in high-stakes environments.',
-    tech: ['FastAPI', 'MongoDB', 'Redis', 'Python', 'LLMs', 'React'],
+    subtitle: 'AI-Powered Backend & Web3 Intelligence',
+    description: 'A modular backend ecosystem bridging financial protocols. Features a high-performance FastAPI architecture, an intelligent data processing layer, and real-time Web3 monitoring. Designed for scalability in high-stakes DeFi and CeX environments.',
+    tech: ['FastAPI', 'MongoDB', 'Redis', 'Python', 'Web3', 'LLMs'],
     links: {
       github: 'https://github.com/Mor-Fin-AI',
       live: 'https://dashboard.morfinance.ai/',
@@ -61,43 +61,43 @@ const projects = [
     },
     icon: '🤖',
     features: [
-      'Asynchronous microservice architecture for real-time intelligence.',
+      'Asynchronous microservice architecture for real-time Web3 intelligence.',
       'Deployed intelligent decision systems using LLM-powered data analysis.',
-      'Built custom integration layers for diverse financial and API protocols.',
+      'Built custom integration layers for diverse DeFi and CeX API protocols.',
       'Hybrid engine supporting complex cross-platform execution logic.'
     ]
   },
   {
     title: 'PerpetualVault',
-    subtitle: 'Fault-Tolerant Systems Research',
-    description: 'A deep-dive into secure system architecture following the ERC-4626 standard. Built a robust, fault-tolerant oracle system that aggregates multi-source price feeds to ensure system integrity and prevent manipulation.',
-    tech: ['Solidity', 'Foundry', 'System Security', 'ERC-4626'],
+    subtitle: 'DeFi Protocol & Secure Systems Research',
+    description: 'A deep-dive into secure system architecture following the ERC-4626 standard. Built a robust, fault-tolerant oracle system that aggregates multi-source price feeds to ensure DeFi system integrity and prevent manipulation.',
+    tech: ['Solidity', 'Foundry', 'Chainlink', 'ERC-4626'],
     links: { github: 'https://github.com/anjanayraina/PerpetualVault' },
     icon: '📈',
     features: [
-      'Architected a secure vault standard for efficient resource management.',
+      'Architected a decentralized vault following ERC-4626 standards.',
       'Built a redundant oracle system with multi-layer failure protection.',
       'Implemented automated balance management and invariant protection.',
-      'Designed gas-optimized logic for high-frequency state transitions.'
+      'Designed gas-optimized logic for high-frequency on-chain state transitions.'
     ]
   },
   {
     title: 'Independent Security Research',
-    subtitle: 'Systemic Vulnerability Analysis',
-    description: 'Specialized in identifying critical systemic risks and logic flaws in distributed architectures. My work involves deep analysis of mathematical invariants and economic game theory to prevent catastrophic system failure.',
-    tech: ['Security Engineering', 'Formal Verification', 'Foundry', 'Distributed Systems'],
+    subtitle: 'DeFi Security & Vulnerability Analysis',
+    description: 'Specialized in identifying critical systemic risks and logic flaws in distributed DeFi architectures. My work involves deep analysis of mathematical invariants and economic game theory to prevent catastrophic system failure.',
+    tech: ['Solidity', 'Formal Verification', 'Foundry', 'Distributed Systems'],
     links: { live: 'https://drive.google.com/drive/folders/18StaXAN5Odo6mds5dGxj11s9YiRF-m-m?usp=sharing' },
     icon: '🛡️',
     features: [
-      'Uncovered 20+ critical-severity vulnerabilities in complex systems.',
+      'Uncovered 20+ critical-severity vulnerabilities in complex DeFi protocols.',
       'Ranked among top global security researchers on competitive platforms.',
-      'Conducted deep-dive security reviews for high-traffic infrastructure.',
+      'Conducted deep-dive security reviews for high-traffic Web3 infrastructure.',
       'Specialized in logic-level exploit analysis and zero-day detection.'
     ]
   },
   {
     title: 'Middle Earth AI',
-    subtitle: 'On-Chain Distributed Systems',
+    subtitle: 'On-Chain Distributed Systems & Game Theory',
     description: 'A complex state-machine implementation on the Solana blockchain. Engineered the core programs using Rust, handling high-frequency state updates, asset minting, and cryptographic verification.',
     tech: ['Rust', 'Anchor', 'Solana', 'State Machine Design', 'AI'],
     links: { github: 'https://github.com/MiddleEarthAI/middle_earth_ai_program', live: 'https://www.middleearth.world/' },
@@ -106,7 +106,7 @@ const projects = [
       'Developed high-performance Rust programs for distributed state management.',
       'Implemented complex game logic as a verifiable on-chain state machine.',
       'Secured $100K+ TVL through rigorous testing and security audits.',
-      'Integrated autonomous agents for dynamic state interactions.'
+      'Integrated autonomous agents for dynamic on-chain interactions.'
     ]
   }
 ];

@@ -10,8 +10,8 @@ const Hero = () => {
     const roles = React.useMemo(() => [
         "Backend Architect",
         "Full Stack Developer",
-        "Systems Engineer",
-        "Security Researcher"
+        "Smart Contract Auditor",
+        "Systems Engineer"
     ], []);
 
     React.useEffect(() => {
@@ -40,11 +40,6 @@ const Hero = () => {
 
     return (
         <Section id="hero" className="hero-section">
-            <div className="hero-background">
-                <div className="hero-blob blob-1"></div>
-                <div className="hero-blob blob-2"></div>
-            </div>
-
             <div className="container hero-container animate-slide-up">
                 {/* Profile Circle at Top Center */}
                 <div className="hero-profile-container animate-float">
@@ -63,8 +58,8 @@ const Hero = () => {
                     </h1>
                     <p className="hero-description">
                         Hi, I'm <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Anjanay Raina</span>.
-                        I architect <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>high-performance backends</span> and scalable distributed systems.
-                        Specializing in <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>system design</span>, security, and full-stack engineering.
+                        I architect <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>high-performance backends</span> and <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>decentralized protocols</span>.
+                        Specializing in system design, security, and scalable full-stack engineering.
                     </p>
 
 

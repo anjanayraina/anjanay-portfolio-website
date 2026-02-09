@@ -36,7 +36,7 @@ const About = () => {
                         </p>
                         <p style={{ color: 'var(--text-secondary)', marginBottom: '3rem', fontSize: '1.125rem', letterSpacing: '-0.01em', lineHeight: '1.8' }}>
                             I am currently a <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>Backend Systems Developer at NatWest Group</span>.
-                            I specialize in architecting <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>high-performance backends</span> and scalable distributed systems, with 3+ years of experience in full-stack engineering and security.
+                            I specialize in architecting <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>high-performance backends</span> and <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>decentralized protocols</span>, with 3+ years of technical experience in full-stack engineering and security.
                         </p>
 
                         {/* Professional Skillset - Moved Up */}
