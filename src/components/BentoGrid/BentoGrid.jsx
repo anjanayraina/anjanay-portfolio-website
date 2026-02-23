@@ -6,6 +6,12 @@ import './BentoGrid.css';
 
 const projects = [
     {
+        title: 'Lead Generation Engine',
+        description: 'AI-powered marketing SaaS that automates the end-to-end lead generation lifecycle. Features real-time SERP extraction and LLM-driven competitive audits.',
+        tech: ['FastAPI', 'MongoDB', 'LLMs', 'React'],
+        imgLabel: 'AI Lead Generation Pipeline'
+    },
+    {
         title: 'Mon Finance AI',
         description: 'A modular, AI-powered trading ecosystem. Features an asynchronous microservice architecture for real-time market analysis and automated execution with high-performance FastAPI backend.',
         tech: ['FastAPI', 'Microservices', 'Redis', 'LLMs'],

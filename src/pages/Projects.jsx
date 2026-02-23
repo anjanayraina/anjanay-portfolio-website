@@ -4,6 +4,21 @@ import SEO from '../components/SEO/SEO';
 
 const projects = [
   {
+    title: 'Lead Generation Engine',
+    subtitle: 'AI-Powered Marketing SaaS',
+    description: 'Architected a modular backend API using FastAPI to automate the end-to-end lead generation lifecycle. Features real-time SERP data extraction, AI-driven website audits, and competitive analysis using LLMs.',
+    tech: ['FastAPI', 'MongoDB', 'React', 'LLMs', 'BeautifulSoup', 'Tailwind CSS'],
+    links: { github: 'https://github.com/anjanayraina/lead_generator', live: 'https://lead-gen-ai-sooty.vercel.app/' },
+    icon: '⚡',
+    features: [
+      'Engineered a high-performance scraping pipeline using SerpApi and BeautifulSoup.',
+      'Integrated LLM-based intelligence for automated website audits and competitive battle plans.',
+      'Built a responsive React dashboard with lead tracking and waitlist management.',
+      'Implemented a robust data layer with MongoDB and verified with a 100% Pytest suite.',
+      'Automated CI/CD with GitHub Actions and hosted on Vercel for seamless scalability.'
+    ]
+  },
+  {
     title: 'IDRECS',
     subtitle: 'Enterprise Data Processing & Recovery',
     description: 'Engineered a mission-critical data processing engine with a fault-tolerant recovery mechanism ensuring zero state loss during service interruptions. Specialized in high-throughput system architecture and concurrent processing pipelines.',
