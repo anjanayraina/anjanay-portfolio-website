@@ -52,7 +52,7 @@ const Hero = () => {
 
                 <div className="hero-text-content">
                     <h1 className="hero-heading">
-                        Backend Architect & <br />
+                        Backend Developer & <br />
                         <span style={{ color: 'var(--accent-purple)' }}>{displayText}</span>
                         <span className="typing-cursor"></span>
                     </h1>
