@@ -6,7 +6,7 @@ import './BentoGrid.css';
 
 const projects = [
     {
-        title: 'Lead Generation Engine',
+        title: 'LeadFlow AI',
         description: 'AI-powered marketing SaaS that automates the end-to-end lead generation lifecycle. Features real-time SERP extraction and LLM-driven competitive audits.',
         tech: ['FastAPI', 'MongoDB', 'LLMs', 'React'],
         imgLabel: 'AI Lead Generation Pipeline'

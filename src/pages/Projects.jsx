@@ -4,7 +4,7 @@ import SEO from '../components/SEO/SEO';
 
 const projects = [
   {
-    title: 'Lead Generation Engine',
+    title: 'LeadFlow AI',
     subtitle: 'AI-Powered Marketing SaaS',
     description: 'Architected a modular backend API using FastAPI to automate the end-to-end lead generation lifecycle. Features real-time SERP data extraction, AI-driven website audits, and competitive analysis using LLMs.',
     tech: ['FastAPI', 'MongoDB', 'React', 'LLMs', 'BeautifulSoup', 'Tailwind CSS'],
