@@ -4,18 +4,25 @@ import SEO from '../components/SEO/SEO';
 
 const projects = [
   {
-    title: 'LeadFlow AI',
-    subtitle: 'AI-Powered Marketing SaaS',
-    description: 'Architected a modular backend API using FastAPI to automate the end-to-end lead generation lifecycle. Features real-time SERP data extraction, AI-driven website audits, and competitive analysis using LLMs.',
-    tech: ['FastAPI', 'MongoDB', 'React', 'LLMs', 'BeautifulSoup', 'Tailwind CSS'],
-    links: { github: 'https://github.com/anjanayraina/lead_generator', live: 'https://lead-gen-ai-sooty.vercel.app/' },
-    icon: '⚡',
+    title: 'Mon Finance AI',
+    subtitle: 'AI-Powered Backend & Web3 Intelligence',
+    description: 'A modular backend ecosystem bridging financial protocols. Features a high-performance FastAPI architecture, an intelligent data processing layer, and real-time Web3 monitoring. Designed for scalability in high-stakes DeFi and CeX environments.',
+    tech: ['FastAPI', 'MongoDB', 'Redis', 'Python', 'Web3', 'LLMs'],
+    links: {
+      github: 'https://github.com/Mor-Fin-AI',
+      live: 'https://dashboard.morfinance.ai/',
+      repos: [
+        { name: 'API', url: 'https://github.com/Mor-Fin-AI/mon-finance-ai-v1-backend' },
+        { name: 'UI', url: 'https://github.com/Mor-Fin-AI/mon-finance-ui' },
+        { name: 'Workers', url: 'https://github.com/Mor-Fin-AI/mon-finance-ai-v1-backend-workers' }
+      ]
+    },
+    icon: '🤖',
     features: [
-      'Engineered a high-performance scraping pipeline using SerpApi and BeautifulSoup.',
-      'Integrated LLM-based intelligence for automated website audits and competitive battle plans.',
-      'Built a responsive React dashboard with lead tracking and waitlist management.',
-      'Implemented a robust data layer with MongoDB and verified with a 100% Pytest suite.',
-      'Automated CI/CD with GitHub Actions and hosted on Vercel for seamless scalability.'
+      'Asynchronous microservice architecture for real-time Web3 intelligence.',
+      'Deployed intelligent decision systems using LLM-powered data analysis.',
+      'Built custom integration layers for diverse DeFi and CeX API protocols.',
+      'Hybrid engine supporting complex cross-platform execution logic.'
     ]
   },
   {
@@ -61,25 +68,18 @@ const projects = [
     ]
   },
   {
-    title: 'Mon Finance AI',
-    subtitle: 'AI-Powered Backend & Web3 Intelligence',
-    description: 'A modular backend ecosystem bridging financial protocols. Features a high-performance FastAPI architecture, an intelligent data processing layer, and real-time Web3 monitoring. Designed for scalability in high-stakes DeFi and CeX environments.',
-    tech: ['FastAPI', 'MongoDB', 'Redis', 'Python', 'Web3', 'LLMs'],
-    links: {
-      github: 'https://github.com/Mor-Fin-AI',
-      live: 'https://dashboard.morfinance.ai/',
-      repos: [
-        { name: 'API', url: 'https://github.com/Mor-Fin-AI/mon-finance-ai-v1-backend' },
-        { name: 'UI', url: 'https://github.com/Mor-Fin-AI/mon-finance-ui' },
-        { name: 'Workers', url: 'https://github.com/Mor-Fin-AI/mon-finance-ai-v1-backend-workers' }
-      ]
-    },
-    icon: '🤖',
+    title: 'LeadFlow AI',
+    subtitle: 'AI-Powered Marketing SaaS',
+    description: 'Architected a modular backend API using FastAPI to automate the end-to-end lead generation lifecycle. Features real-time SERP data extraction, AI-driven website audits, and competitive analysis using LLMs.',
+    tech: ['FastAPI', 'MongoDB', 'React', 'LLMs', 'BeautifulSoup', 'Tailwind CSS'],
+    links: { github: 'https://github.com/anjanayraina/lead_generator', live: 'https://lead-gen-ai-sooty.vercel.app/' },
+    icon: '⚡',
     features: [
-      'Asynchronous microservice architecture for real-time Web3 intelligence.',
-      'Deployed intelligent decision systems using LLM-powered data analysis.',
-      'Built custom integration layers for diverse DeFi and CeX API protocols.',
-      'Hybrid engine supporting complex cross-platform execution logic.'
+      'Engineered a high-performance scraping pipeline using SerpApi and BeautifulSoup.',
+      'Integrated LLM-based intelligence for automated website audits and competitive battle plans.',
+      'Built a responsive React dashboard with lead tracking and waitlist management.',
+      'Implemented a robust data layer with MongoDB and verified with a 100% Pytest suite.',
+      'Automated CI/CD with GitHub Actions and hosted on Vercel for seamless scalability.'
     ]
   },
   {
