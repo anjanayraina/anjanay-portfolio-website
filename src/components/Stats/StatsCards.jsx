@@ -18,13 +18,15 @@ const LeetcodeCard = () => {
         const controller = new AbortController();
         const timeoutId = setTimeout(() => controller.abort(), 10000);
 
-        fetch("https://leetcode-stats-api.herokuapp.com/anjanayraina", { signal: controller.signal })
+        fetch("https://leetcode-api-faisalshohag.vercel.app/anjanayraina", { signal: controller.signal })
             .then(res => {
                 if (!res.ok) throw new Error('API Error');
                 return res.json();
             })
             .then(result => {
-                if (result.status === "error") throw new Error(result.message);
+                if (!result || typeof result.totalSolved !== 'number') {
+                    throw new Error('Invalid response format');
+                }
                 setData(result);
                 setLoading(false);
             })
