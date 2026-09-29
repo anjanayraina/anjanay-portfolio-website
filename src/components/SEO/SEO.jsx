@@ -2,9 +2,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 const SEO = ({ title, description, keywords, image, url }) => {
-    const siteTitle = 'Anjanay Raina | Backend Architect & Full Stack Developer';
-    const defaultDescription = 'Anjanay Raina is a Backend Architect and Full Stack Developer specializing in high-performance backends, scalable distributed systems, and security engineering.';
-    const defaultKeywords = 'Anjanay Raina, Backend Architect, Full Stack Developer, System Design, Security Engineer, Python, Go, FastAPI, Distributed Systems, NatWest Group';
+    const siteTitle = 'Anjanay Raina | Senior Software Engineer & Security Researcher';
+    const defaultDescription = 'Anjanay Raina is a Senior Software Engineer at NatWest Group and Backend & Security Engineer building high-performance, fault-tolerant distributed systems and Web3 protocols.';
+    const defaultKeywords = 'Anjanay Raina, Senior Software Engineer, Backend Engineer, Security Researcher, Smart Contract Auditor, Python, Go, Solidity, FastAPI, NatWest Group, Distributed Systems, Microservices';
     const defaultImage = '/client_avatar_male_new_1767877648113.png';
     const siteUrl = 'https://anjanay.in';
 
@@ -51,7 +51,7 @@ const SEO = ({ title, description, keywords, image, url }) => {
                         "https://github.com/anjanayraina",
                         "https://x.com/Anjanay_Raina"
                     ],
-                    "jobTitle": "Full Stack Developer",
+                    "jobTitle": "Senior Software Engineer & Security Researcher",
                     "worksFor": {
                         "@type": "Organization",
                         "name": "NatWest Group"

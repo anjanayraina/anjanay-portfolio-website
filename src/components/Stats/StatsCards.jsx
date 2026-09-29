@@ -108,7 +108,7 @@ const SecurityRanksCard = () => {
     const ranks = [
         { platform: 'Code4rena', rank: 'Top Global Auditor', icon: '🛡️', color: '#6366f1' },
         { platform: 'Sherlock', rank: 'Elite Auditor', icon: '🔍', color: '#a855f7' },
-        { platform: 'Security Impact', rank: '20+ Criticals', icon: '⚡', color: '#f59e0b' }
+        { platform: 'Security Impact', rank: '30+ Criticals', icon: '⚡', color: '#f59e0b' }
     ];
 
     return (

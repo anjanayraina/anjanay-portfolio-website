@@ -3,21 +3,21 @@ import './Testimonials.css';
 
 const testimonials = [
     {
-        quote: "Anjanay done an amazing job on the front/backend of our protocol, hardworking fully committed developer highly recommended and will surely hire again for future work",
+        quote: "Anjanay did an amazing job on the frontend and backend of our protocol, hardworking fully committed engineer highly recommended and will surely collaborate with again for future work.",
         author: "John Egbonwon",
-        role: "CEO of Mon Finance AI",
+        role: "CEO of Mor Finance AI",
         image: "/client_avatar_1_1767874917832.png",
         rating: 5
     },
     {
-        quote: "Extremely understanding, Understood what we needed and delivered exactly what we were looking for!",
+        quote: "Extremely understanding, understood what we needed and delivered scalable, robust engineering results!",
         author: "Tarun Dhakad",
         role: "CEO of Radianoff",
         image: "/client_avatar_male_new_1767877648113.png",
         rating: 5
     },
     {
-        quote: "Amazing work Anjanay. Anjanay delived the results with flying colors!",
+        quote: "Amazing work Anjanay. Delivered high quality architectural results with flying colors!",
         author: "Dominik Sosnowski",
         role: "CTO of WyvernX",
         image: "/client_avatar_3_1767874969329.png",
@@ -29,9 +29,9 @@ const Testimonials = () => {
     return (
         <section className="testimonials-section container reveal">
             <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-                <h2 className="section-title-large">Client <span className="text-gradient">Testimonials</span></h2>
+                <h2 className="section-title-large">Leadership <span className="text-gradient">Endorsements</span></h2>
                 <p style={{ color: 'var(--text-secondary)', maxWidth: '600px', margin: '0 auto' }}>
-                    Don't just take my word for it. Here's what industry leaders say about working with me.
+                    What technical founders, leaders, and collaborators say about working with me.
                 </p>
             </div>
 

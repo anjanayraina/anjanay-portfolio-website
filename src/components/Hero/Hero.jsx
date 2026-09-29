@@ -8,10 +8,10 @@ const Hero = () => {
     const [isDeleting, setIsDeleting] = React.useState(false);
 
     const roles = React.useMemo(() => [
-        "Backend Architect",
-        "Full Stack Developer",
-        "Smart Contract Auditor",
-        "Systems Engineer"
+        "Senior Software Engineer",
+        "Backend & Security Architect",
+        "Distributed Systems Engineer",
+        "Smart Contract Auditor"
     ], []);
 
     React.useEffect(() => {
@@ -58,8 +58,7 @@ const Hero = () => {
                     </h1>
                     <p className="hero-description">
                         Hi, I'm <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Anjanay Raina</span>.
-                        I architect <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>high-performance backends</span> and <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>decentralized protocols</span>.
-                        Specializing in system design, security, and scalable full-stack engineering.
+                        <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}> Senior Software Engineer at NatWest Group</span> & <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Security Researcher</span> building high-performance distributed systems, microservices, and Web3 protocols.
                     </p>
 
 

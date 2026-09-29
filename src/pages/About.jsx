@@ -11,7 +11,7 @@ const About = () => {
         <div ref={revealRef} className="about-page container animate-fade-in" style={{ paddingTop: '5rem', paddingBottom: '8rem' }}>
             <SEO
                 title="About Me"
-                description="Learn more about Anjanay Raina - his background in full stack development, security auditing, and hobbies like MMA and trekking."
+                description="Learn more about Anjanay Raina - Senior Software Engineer at NatWest Group, Backend & Security Engineer, and Web3 Researcher."
                 url="/about"
             />
             {/* Bio Section */}
@@ -35,8 +35,8 @@ const About = () => {
                             Hi Stranger!, I am <span style={{ color: '#a855f7' }}>Anjanay Raina</span> from <span style={{ color: '#a855f7' }}>Delhi, India.</span>
                         </p>
                         <p style={{ color: 'var(--text-secondary)', marginBottom: '3rem', fontSize: '1.125rem', letterSpacing: '-0.01em', lineHeight: '1.8' }}>
-                            I am currently a <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>Backend Systems Developer at NatWest Group</span>.
-                            I specialize in architecting <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>high-performance backends</span> and <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>decentralized protocols</span>, with 3+ years of technical experience in full-stack engineering and security.
+                            I am currently a <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>Senior Software Engineer at NatWest Group</span> and an independent <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>Backend & Security Engineer</span>.
+                            I specialize in building <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>high-performance, fault-tolerant distributed systems</span>, asynchronous architectures, and microservices in Python, Go, and Solidity. As an independent security researcher, I have audited global Web3 protocols and resolved <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>30+ critical vulnerabilities</span>.
                         </p>
 
                         {/* Professional Skillset - Moved Up */}
@@ -202,25 +202,26 @@ const About = () => {
                         {/* Security Impact Card */}
                         <div className="card" style={{ background: 'var(--bg-secondary)', textAlign: 'center', padding: '2.5rem 1.5rem', border: '1px solid var(--border-subtle)' }}>
                             <div style={{ fontSize: '3rem', marginBottom: '1.5rem', color: '#fbbf24' }}>⚡</div>
-                            <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem' }}>20+ Criticals</h3>
+                            <h3 style={{ fontSize: '1.25rem', fontWeight: 800, marginBottom: '0.5rem' }}>30+ Criticals</h3>
                             <p style={{ color: 'var(--text-tertiary)', fontWeight: 800, fontSize: '0.9rem', letterSpacing: '0.05em' }}>SECURITY IMPACT</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* Awards & Recognition Section */}
+            {/* Awards & Education Section */}
             <section className="section reveal" style={{ marginTop: '4rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', marginBottom: '3rem' }}>
                     <div style={{ padding: '10px', borderRadius: '12px', background: 'rgba(168, 85, 247, 0.1)', color: '#a855f7', fontSize: '1.5rem' }}>🏆</div>
-                    <h2 className="section-title-large" style={{ margin: 0, fontSize: '2rem' }}>Awards & <span style={{ color: '#a855f7' }}>Recognition</span></h2>
+                    <h2 className="section-title-large" style={{ margin: 0, fontSize: '2rem' }}>Awards & <span style={{ color: '#a855f7' }}>Education</span></h2>
                 </div>
 
                 <div className="reveal stagger-reveal" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
                     {[
+                        { title: 'B.Tech (CS & Biosciences)', org: 'IIIT Delhi', date: 'Jan 2021 – Jul 2024', icon: '🎓' },
                         { title: 'Peak Hackathon Winner (2nd Place)', org: 'Mantra Chain', date: 'Jul 2024', icon: '🥈' },
-                        { title: 'Aptos Winter School', org: 'Selected Attendee (Top 60 India)', date: 'Dec 2023', icon: '🎿' },
-                        { title: 'GDSC Blockchain Mentor', org: 'Core Lead & Mentorship', date: '2023-2024', icon: '🎓' }
+                        { title: 'GDSC Core Member & Blockchain Lead', org: 'IIIT Delhi', date: 'Aug 2023 – Jun 2024', icon: '🔗' },
+                        { title: 'Aptos Winter School', org: 'Selected Attendee (Top 60 India)', date: 'Dec 2023', icon: '🎿' }
                     ].map((award, i) => (
                         <div key={i} className="card glass glow-hover" style={{ padding: '2rem' }}>
                             <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>{award.icon}</div>

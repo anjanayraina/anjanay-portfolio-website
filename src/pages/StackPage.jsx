@@ -2,10 +2,12 @@ import React from 'react';
 import SEO from '../components/SEO/SEO';
 
 const stack = [
-    { category: 'Languages', items: ['Python', 'Golang', 'Rust', 'Java', 'SQL', 'Solidity', 'JavaScript', 'TypeScript'] },
-    { category: 'Frameworks & Libraries', items: ['FastAPI', 'Flask', 'Spring', 'ReactJS', 'Pytest', 'Pandas', 'NumPy'] },
-    { category: 'Databases & Cloud', items: ['PostgreSQL', 'MongoDB', 'Elasticsearch', 'Kafka', 'GCP', 'Azure', 'NoSQL'] },
-    { category: 'Infrastructure & DevOps', items: ['Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions', 'Jenkins'] }
+    { category: 'Programming Languages', items: ['Python', 'Golang', 'Rust', 'Solidity', 'SQL', 'Java', 'TypeScript', 'JavaScript'] },
+    { category: 'Frameworks & APIs', items: ['FastAPI', 'FastMCP', 'REST APIs', 'GraphQL', 'Pytest', 'React', 'Node.js'] },
+    { category: 'AI Tools & Agents', items: ['Gemini', 'Claude Code', 'OpenAI API', 'LangChain', 'Ollama', 'Cursor'] },
+    { category: 'Databases & Cloud', items: ['PostgreSQL', 'MongoDB', 'Elasticsearch', 'Kafka', 'GCP', 'Azure', 'NoSQL', 'Git'] },
+    { category: 'DevOps & Architecture', items: ['Docker', 'Kubernetes', 'CI/CD', 'Microservices', 'Jenkins', 'Containerization'] },
+    { category: 'Core Competencies', items: ['System Architecture', 'Performance Tuning', 'Distributed Systems', 'Code Auditing', 'Foundry', 'Slither'] }
 ];
 
 const StackPage = () => {

@@ -16,7 +16,7 @@ const ContactPage = () => {
         <div ref={revealRef} className="contact-page container section animate-fade-in" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', paddingTop: '5rem' }}>
             <SEO
                 title="Contact Me"
-                description="Get in touch with Anjanay Raina for freelance projects, security audits, or full-stack development roles."
+                description="Get in touch with Anjanay Raina for architectural consulting, security audits, or high-performance backend engineering."
                 url="/contact"
             />
             <div className="reveal">
@@ -38,8 +38,6 @@ const ContactPage = () => {
                 {[
                     { name: 'LinkedIn', label: 'Professional Profile', url: 'https://linkedin.com/in/anjanay-raina-289716192/', color: '#0077b5', brand: 'in' },
                     { name: 'GitHub', label: 'Code & contributions', url: 'https://github.com/anjanayraina', color: '#fff', brand: 'git' },
-                    { name: 'Upwork', label: 'Hire me for projects', url: 'https://www.upwork.com/freelancers/~010cea8b44a78ea307?mp_source=share', color: '#14a800', brand: 'Up' },
-                    { name: 'Fiverr', label: 'Direct Gigs', url: 'https://www.fiverr.com/s/38xwaxx', color: '#1dbf73', brand: 'fi' },
                     { name: 'Medium', label: 'Technical Writing', url: 'https://medium.com/@anjanayraina326', color: '#fff', brand: 'M' },
                     { name: 'X / Twitter', label: 'Updates & Thoughts', url: 'https://x.com/Anjanay_Raina', color: '#fff', brand: '𝕏' },
                     { name: 'Email', label: 'Direct Correspondence', url: 'mailto:anjanayraina326@gmail.com', color: '#a855f7', brand: '✉' }
@@ -84,13 +82,13 @@ const ContactPage = () => {
 
 
             <div className="reveal" style={{ marginTop: '8rem', padding: '5rem 3rem', background: 'var(--bg-secondary)', borderRadius: '24px', width: '100%', maxWidth: '800px' }}>
-                <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-0.03em' }}>Ready to Scale?</h2>
+                <h2 style={{ fontSize: '2.5rem', fontWeight: 800, marginBottom: '1.5rem', letterSpacing: '-0.03em' }}>Let's Build Something Great</h2>
                 <p style={{ color: 'var(--text-secondary)', marginBottom: '3rem', fontSize: '1.125rem', lineHeight: '1.8' }}>
-                    Open to projects, full/part-time roles, and freelance. <br />
-                    Schedule a 30-minute technical discovery call to discuss your architecture.
+                    Open to engineering roles, technical advisory, and distributed systems architecture discussions. <br />
+                    Schedule a 30-minute technical discussion to talk systems and architecture.
                 </p>
                 <a href="https://calendly.com/anjanayraina326/30min" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '1rem 3rem', fontSize: '1.125rem' }}>
-                    Book a Discovery Call
+                    Schedule a Call
                 </a>
             </div>
 

@@ -4,10 +4,10 @@ import SEO from '../components/SEO/SEO';
 
 const projects = [
   {
-    title: 'Mon Finance AI',
-    subtitle: 'AI-Powered Backend & Web3 Intelligence',
-    description: 'A modular backend ecosystem bridging financial protocols. Features a high-performance FastAPI architecture, an intelligent data processing layer, and real-time Web3 monitoring. Designed for scalability in high-stakes DeFi and CeX environments.',
-    tech: ['FastAPI', 'MongoDB', 'Redis', 'Python', 'Web3', 'LLMs'],
+    title: 'Mor Finance AI',
+    subtitle: 'AI-Powered Trading & Web3 Intelligence | Jan 2025 – Present',
+    description: 'A high-performance trading ecosystem and Web3 intelligence platform. Features asynchronous microservice architecture, spot/margin trading engines, automated debt discharge, and real-time arbitrage processing.',
+    tech: ['FastAPI', 'Python', 'Web3', 'Microservices', 'MongoDB', 'Redis', 'LLMs'],
     links: {
       github: 'https://github.com/Mor-Fin-AI',
       live: 'https://dashboard.morfinance.ai/',
@@ -19,67 +19,67 @@ const projects = [
     },
     icon: '🤖',
     features: [
-      'Asynchronous microservice architecture for real-time Web3 intelligence.',
-      'Deployed intelligent decision systems using LLM-powered data analysis.',
-      'Built custom integration layers for diverse DeFi and CeX API protocols.',
-      'Hybrid engine supporting complex cross-platform execution logic.'
-    ]
-  },
-  {
-    title: 'IDRECS',
-    subtitle: 'Enterprise Data Processing & Recovery',
-    description: 'Engineered a mission-critical data processing engine with a fault-tolerant recovery mechanism ensuring zero state loss during service interruptions. Specialized in high-throughput system architecture and concurrent processing pipelines.',
-    tech: ['Python', 'Multithreading', 'System Design', 'Enterprise Architecture'],
-    links: {},
-    icon: '⚙️',
-    features: [
-      'Engineered a fault-tolerant recovery system ensuring transaction integrity.',
-      'Optimized backend services for high-concurrency using Python multithreading.',
-      'Reduced system response latency by 3x through algorithmic optimization.',
-      'Implemented robust business logic modules for complex enterprise reporting.'
-    ]
-  },
-  {
-    title: 'ISV Signature Matching',
-    subtitle: 'NatWest Group | Banking Microservice',
-    description: 'Developed a high-availability microservice for automated signature verification within NatWest Group\'s retail banking infrastructure. Focused on extreme reliability, security compliance, and minimal latency.',
-    tech: ['Python', 'FastAPI', 'Azure', 'Microservices', 'System Design'],
-    links: {},
-    icon: '🏦',
-    features: [
-      'Architected a resilient microservice handling core banking operations.',
-      'Automated legacy verification workflows, reducing processing time by 40%.',
-      'Implemented enterprise-grade logging, security, and financial compliance.',
-      'Optimized data pipelines for real-time validation and error handling.'
+      'Architected the core Trading API and responsive Trading UI for spot and margin trading (99.9% uptime).',
+      'Engineered a Debt Discharge Microservice using Flash and Collateralized Loans, achieving 0% slippage on atomic trade execution.',
+      'Developed a Real-Time Arbitrage Engine processing 50+ events/sec that continuously monitors on-chain swap events with sub-millisecond latency.',
+      'Integrated LLM-based agents within Developer Academy for personalized, real-time code debugging and curriculum guidance.',
+      'Scaled an LLM Service to fetch market data, feed AI models, and generate signals, handling 10,000+ daily trades (60% accuracy improvement).'
     ]
   },
   {
     title: 'JobSleuth',
-    subtitle: 'High-Throughput Data Aggregator',
-    description: 'A distributed data aggregation platform designed for massive scale. Leveraging asynchronous parallel processing, it ingests and processes thousands of records daily from disparate sources into a unified, high-performance interface.',
-    tech: ['Python', 'FastAPI', 'Asynchronous I/O', 'PostgreSQL', 'React'],
+    subtitle: 'High-Throughput Automated Job Aggregator | Oct 2024 – Dec 2024',
+    description: 'A distributed job aggregation and semantic ranking platform designed for high scale. Ingests and processes thousands of postings daily from disparate sources with asynchronous concurrency and AI-based filtering.',
+    tech: ['Python', 'aiohttp', 'FastAPI', 'PostgreSQL', 'React', 'AsyncIO', 'CI/CD'],
     links: { github: 'https://github.com/anjanayraina/JobSleuth', live: 'https://job-sleuth.onrender.com/' },
     icon: '🔍',
     features: [
-      'Built concurrent data pipelines reducing collection time by 90%.',
-      'Engineered a scalable FastAPI backend with asynchronous task processing.',
-      'Developed a responsive React dashboard for real-time data visualization.',
-      'Optimized database queries for millisecond-range filtering of 100k+ records.'
+      'Deployed an automated job aggregation platform processing 5,000+ daily postings from 20+ sources.',
+      'Achieved a 90% reduction in data ingestion time via highly concurrent, asynchronous aiohttp pipelines.',
+      'Implemented AI-based semantic ranking algorithms to filter and prioritize job listings based on user skill sets and long-term career goals.',
+      'Maintained consistent availability for 200+ registered users by building robust, automated CI/CD pipelines resulting in zero downtime.'
+    ]
+  },
+  {
+    title: 'IDRecs Platform & Microservices',
+    subtitle: 'NatWest Group | Enterprise Banking Architecture',
+    description: 'Enterprise data processing engine and validation microservices. Engineered fault-tolerant recovery, automated reconciliation, and non-blocking event-driven architectures.',
+    tech: ['Python', 'asyncio', 'FastAPI', 'OCR Orchestrator', 'Microservices', 'Azure'],
+    links: {},
+    icon: '🏦',
+    features: [
+      'Engineered a fault-tolerant recovery mechanism with OCR orchestrator, automatically correcting and reprocessing 5,000+ stuck records monthly (99.9% SLA).',
+      'Architected a Validation Service microservice to replace legacy workflows, reducing manual report validation time by 70%.',
+      'Refactored core synchronous API endpoints into non-blocking event-driven architectures with Python asyncio, reducing latency by 10x.',
+      'Implemented complex financial business logic modules (Rebate, Negative Ageing, Contra) for automated transaction reconciliation.'
+    ]
+  },
+  {
+    title: 'Independent Security Research & Zus Network',
+    subtitle: 'Web3 Security, Auditing & Gas Optimization',
+    description: 'Specialized in identifying critical systemic risks, mathematical invariant testing, and assembly optimizations for core blockchain and DeFi infrastructure.',
+    tech: ['Solidity', 'Foundry', 'Slither', 'Go', 'Formal Verification', 'Echidna'],
+    links: { live: 'https://drive.google.com/drive/folders/18StaXAN5Odo6mds5dGxj11s9YiRF-m-m?usp=sharing' },
+    icon: '🛡️',
+    features: [
+      'Audited global Web3 protocols and resolved 30+ critical vulnerabilities across high-traffic DeFi architectures.',
+      'Engineered an automated backend test suite in Go with custom fuzzing and regression checks, reducing manual QA testing time by 50%.',
+      'Audited Solidity smart contracts for Zus Network using Foundry and Slither to identify and patch 5+ critical vulnerabilities.',
+      'Implemented low-level static analysis and assembly optimizations, decreasing smart contract execution and gas costs by up to 60%.'
     ]
   },
   {
     title: 'LeadFlow AI',
     subtitle: 'AI-Powered Marketing SaaS',
     description: 'Architected a modular backend API using FastAPI to automate the end-to-end lead generation lifecycle. Features real-time SERP data extraction, AI-driven website audits, and competitive analysis using LLMs.',
-    tech: ['FastAPI', 'MongoDB', 'React', 'LLMs', 'BeautifulSoup', 'Tailwind CSS'],
+    tech: ['FastAPI', 'MongoDB', 'React', 'LLMs', 'SerpApi', 'Pytest', 'Tailwind CSS'],
     links: { github: 'https://github.com/anjanayraina/lead_generator', live: 'https://lead-gen-ai-sooty.vercel.app/' },
     icon: '⚡',
     features: [
       'Engineered a high-performance scraping pipeline using SerpApi and BeautifulSoup.',
       'Integrated LLM-based intelligence for automated website audits and competitive battle plans.',
       'Built a responsive React dashboard with lead tracking and waitlist management.',
-      'Implemented a robust data layer with MongoDB and verified with a 100% Pytest suite.',
-      'Automated CI/CD with GitHub Actions and hosted on Vercel for seamless scalability.'
+      'Implemented a robust data layer with MongoDB and verified with a 100% Pytest suite.'
     ]
   },
   {
@@ -94,20 +94,6 @@ const projects = [
       'Built a redundant oracle system with multi-layer failure protection.',
       'Implemented automated balance management and invariant protection.',
       'Designed gas-optimized logic for high-frequency on-chain state transitions.'
-    ]
-  },
-  {
-    title: 'Independent Security Research',
-    subtitle: 'DeFi Security & Vulnerability Analysis',
-    description: 'Specialized in identifying critical systemic risks and logic flaws in distributed DeFi architectures. My work involves deep analysis of mathematical invariants and economic game theory to prevent catastrophic system failure.',
-    tech: ['Solidity', 'Formal Verification', 'Foundry', 'Distributed Systems'],
-    links: { live: 'https://drive.google.com/drive/folders/18StaXAN5Odo6mds5dGxj11s9YiRF-m-m?usp=sharing' },
-    icon: '🛡️',
-    features: [
-      'Uncovered 20+ critical-severity vulnerabilities in complex DeFi protocols.',
-      'Ranked among top global security researchers on competitive platforms.',
-      'Conducted deep-dive security reviews for high-traffic Web3 infrastructure.',
-      'Specialized in logic-level exploit analysis and zero-day detection.'
     ]
   },
   {

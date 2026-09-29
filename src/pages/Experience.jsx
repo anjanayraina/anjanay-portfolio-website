@@ -5,54 +5,62 @@ import SEO from '../components/SEO/SEO';
 const experiences = [
   {
     company: 'NatWest Group',
-    role: 'Backend Systems Developer',
-
-    period: 'July 2024 – Present',
-    details: 'Architecting and scaling mission-critical microservices within the retail banking ecosystem.',
+    role: 'Senior Software Engineer',
+    period: 'Sept 2026 – Present',
+    details: 'Refactoring core synchronous API endpoints and data pipelines into non-blocking, event-driven architectures using Python’s asyncio.',
     highlights: [
-      'Engineered a high-availability ISV Signature Matching microservice from zero to production.',
-      'Implemented complex business logic modules (Rebate, Negative Ageing, Contra) handling millions in monthly transactions.',
-      'Architected a fault-tolerant recovery mechanism ensuring zero state loss during distributed system interruptions.',
-      'Optimized backend API performance by 3x using advanced concurrency patterns and Python multithreading.'
+      'Refactored core synchronous API endpoints and data pipelines into non-blocking, event-driven architectures using Python’s asyncio, reducing workflow execution latency by 10x and maximizing concurrent system throughput.',
+      'Architected a Validation Service microservice to replace legacy workflows, reducing manual report validation time by 70% through highly optimized data ingestion and automated reconciliation logic.',
+      'Spearheaded code reviews and architectural planning for a 5-engineer pod, standardizing modern Python best practices across the team and decreasing PR turnaround time by 40%.'
     ],
     logo: '🏦'
   },
   {
-    company: 'Independent Researcher',
-    role: 'Security Engineer & Auditor',
-    period: 'July 2023 – Present',
-    details: 'Securing complex distributed systems and financial protocols through deep-dive systemic analysis.',
+    company: 'NatWest Group',
+    role: 'Software Engineer',
+    period: 'Aug 2024 – Aug 2026',
+    details: 'Engineering fault-tolerant recovery mechanisms and core financial reconciliation modules for enterprise banking platforms.',
     highlights: [
-      'Uncovered 20+ critical vulnerabilities in high-traffic DeFi and distributed protocols.',
-      'Engineered mathematical invariant tests and formal verification suites to ensure system integrity.',
-      'Optimized low-level execution logic reducing operational costs by up to 60%.',
-      'Integrated advanced security tooling (Foundry, Slither, Echidna) into enterprise CI/CD pipelines.'
+      'Engineered a fault-tolerant recovery mechanism for the enterprise IDRecs platform with custom edit functionality and an OCR orchestrator, automatically correcting and reprocessing 5,000+ stuck records monthly for a 99.9% SLA.',
+      'Implemented complex financial business logic modules (Rebate, Negative Ageing, Contra) to ensure high-accuracy automated transaction reconciliation.'
     ],
-    logo: '🛡️'
+    logo: '🏦'
   },
   {
     company: 'Zus Network',
-    role: 'Backend Security Consultant',
-    period: 'April 2023 – June 2023',
-    details: 'Security architecture and performance optimization for decentralized storage protocols.',
+    role: 'Backend Consultant',
+    period: 'March 2023 – Aug 2024',
+    details: 'Backend infrastructure testing, protocol security auditing, and gas optimization for decentralized storage networks.',
     highlights: [
-      'Conducted deep-dive security audits of core storage protocols prior to mainnet deployment.',
-      'Designed and implemented a comprehensive system test suite in Go for complex scenario simulation.',
-      'Collaborated on secure architecture standards and real-time vulnerability monitoring systems.'
+      'Engineered an automated backend test suite in Go integrating custom fuzzing and regression checks across 5+ core repositories, streamlining CI/CD pipelines and reducing manual QA testing time by 50%.',
+      'Audited complex Solidity smart contracts for the Zus Network protocol, utilizing Foundry and Slither to identify and patch 5+ critical vulnerabilities.',
+      'Implemented low-level static analysis and assembly optimizations, decreasing smart contract execution and gas costs by up to 60% for the core DeFi protocols.'
     ],
     logo: '🛰️'
   },
   {
-    company: 'DLT Labs',
-    role: 'Student Researcher',
-    period: 'January 2023 – July 2023',
-    details: 'Blockchain research focused on theft tracking. Resulted in an IEEE ANTS publication.',
+    company: 'Independent Researcher',
+    role: 'Security Engineer & Auditor',
+    period: '2023 – Present',
+    details: 'Securing complex distributed systems and financial protocols through deep-dive systemic analysis and formal audits.',
     highlights: [
-      'Developed a Two-Layered Blockchain Architecture using Hyperledger Fabric.',
-      'Achieved 100x improvement in mobile theft resolution latency.',
-      'Published research detailing system guarantees and performance benchmarks.'
+      'Audited global Web3 protocols and resolved 30+ critical vulnerabilities across high-traffic DeFi architectures.',
+      'Engineered mathematical invariant tests, property-based fuzzing, and formal verification suites to ensure system integrity.',
+      'Ranked among top global security researchers on competitive auditing platforms (Code4rena, Sherlock).'
     ],
-    logo: '⛓️'
+    logo: '🛡️'
+  },
+  {
+    company: 'IIIT Delhi & Research',
+    role: 'B.Tech in CS & Biosciences & Blockchain Lead',
+    period: 'Jan 2021 – July 2024',
+    details: 'Graduated B.Tech from IIIT Delhi. Led blockchain initiatives and authored peer-reviewed research.',
+    highlights: [
+      'Graduated with B.Tech in Computer Science & Biosciences from IIIT Delhi (Jan 2021 – July 2024).',
+      'Served as GDSC Core Member & Blockchain Lead at IIIT Delhi (Aug 2023 – June 2024).',
+      'Developed two-layered blockchain architecture resulting in an IEEE ANTS publication.'
+    ],
+    logo: '🎓'
   }
 ];
 
@@ -64,7 +72,7 @@ const Experience = () => {
     <div ref={revealRef} className="experience-page container section animate-fade-in">
       <SEO
         title="Experience & Resume"
-        description="Professional experience of Anjanay Raina, including NatWest Group, smart contract auditing, and blockchain research."
+        description="Professional experience of Anjanay Raina, Senior Software Engineer at NatWest Group, smart contract auditor, and distributed systems architect."
         url="/experience"
       />
       <div className="reveal" style={{ marginBottom: '6rem' }}>

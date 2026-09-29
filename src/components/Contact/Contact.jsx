@@ -11,7 +11,7 @@ const Contact = () => {
                     Let's discuss how we can build secure, high-performance systems for your next big idea.
                 </p>
                 <a href="mailto:anjanayraina326@gmail.com" className="cta-button">
-                    Book a Technical Discovery Call
+                    Get in Touch
                 </a>
             </div>
         </Section>
