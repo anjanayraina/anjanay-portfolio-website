@@ -218,6 +218,8 @@ const About = () => {
 
                 <div className="reveal stagger-reveal" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
                     {[
+                        { title: 'We Raise the Bar Recognition', org: 'NatWest Group (Director Swati Sharma)', date: 'Apr 2026', icon: '⭐' },
+                        { title: 'Recognised for being Robust', org: 'NatWest Group (AVP Dhruv Upadhyaya)', date: '2026', icon: '🏦' },
                         { title: 'B.Tech (CS & Biosciences)', org: 'IIIT Delhi', date: 'Jan 2021 – Jul 2024', icon: '🎓' },
                         { title: 'Peak Hackathon Winner (2nd Place)', org: 'Mantra Chain', date: 'Jul 2024', icon: '🥈' },
                         { title: 'GDSC Core Member & Blockchain Lead', org: 'IIIT Delhi', date: 'Aug 2023 – Jun 2024', icon: '🔗' },
