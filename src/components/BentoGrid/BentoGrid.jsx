@@ -8,19 +8,19 @@ const projects = [
     {
         title: 'Mor Finance AI',
         description: 'A modular trading ecosystem and Web3 intelligence platform. Architected Trading APIs/UI (99.9% uptime), Debt Discharge microservice (0% slippage), and real-time arbitrage engine (50+ events/sec).',
-        tech: ['FastAPI', 'Microservices', 'Redis', 'LLMs', 'Web3'],
+        tech: ['FastAPI', 'WebSockets', 'Kafka', 'MongoDB', 'LangChain'],
         imgLabel: 'Mor Finance AI Platform'
     },
     {
         title: 'IDRecs & Validation Platform',
-        description: 'Enterprise banking platform at NatWest Group. Built fault-tolerant recovery reprocessing 5,000+ stuck records monthly (99.9% SLA) and validation microservice cutting manual review by 70%.',
-        tech: ['Python', 'asyncio', 'FastAPI', 'OCR Orchestrator', 'Microservices'],
+        description: 'Enterprise banking platform at NatWest Group. Built fault-tolerant recovery reprocessing 5,000+ stuck records monthly (99% SLA), an event-driven API refactor cutting latency by 90%, and a validation microservice cutting manual review by 70%.',
+        tech: ['Python', 'asyncio', 'FastAPI', 'Redis', 'Docker', 'MongoDB'],
         imgLabel: 'Enterprise Banking Architecture'
     },
     {
         title: 'JobSleuth',
-        description: 'Distributed data aggregation platform processing 5,000+ daily postings from 20+ sources. Built concurrent aiohttp pipelines reducing ingestion latency by 90% with AI semantic ranking.',
-        tech: ['Python', 'aiohttp', 'FastAPI', 'PostgreSQL', 'React', 'CI/CD'],
+        description: 'Autonomous job aggregation backend processing 5,000+ daily postings across 10+ platforms. Concurrent aiohttp and Telethon pipelines cut ingestion time by 90%, with Gemini-powered extraction and skill tagging.',
+        tech: ['Python', 'FastAPI', 'aiohttp', 'MongoDB', 'React', 'GitHub Actions'],
         imgLabel: 'JobSleuth Aggregator'
     },
     {
