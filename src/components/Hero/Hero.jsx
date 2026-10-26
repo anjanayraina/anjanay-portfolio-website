@@ -8,7 +8,7 @@ const Hero = () => {
     const [isDeleting, setIsDeleting] = React.useState(false);
 
     const roles = React.useMemo(() => [
-        "Senior Software Engineer",
+        "Software Engineer II",
         "Backend & Security Architect",
         "Distributed Systems Engineer",
         "Smart Contract Auditor"
@@ -58,7 +58,7 @@ const Hero = () => {
                     </h1>
                     <p className="hero-description">
                         Hi, I'm <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Anjanay Raina</span>.
-                        <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}> Senior Software Engineer at NatWest Group</span> & <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Security Researcher</span> building high-performance distributed systems, microservices, and Web3 protocols.
+                        <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}> Software Engineer II at NatWest Group</span> & <span style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Security Researcher</span> building high-performance distributed systems, microservices, and Web3 protocols.
                     </p>
 
 

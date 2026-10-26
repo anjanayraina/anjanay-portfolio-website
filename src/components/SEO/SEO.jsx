@@ -2,9 +2,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
 const SEO = ({ title, description, keywords, image, url }) => {
-    const siteTitle = 'Anjanay Raina | Senior Software Engineer & Security Researcher';
-    const defaultDescription = 'Anjanay Raina is a Senior Software Engineer at NatWest Group and Backend & Security Engineer building high-performance, fault-tolerant distributed systems and Web3 protocols.';
-    const defaultKeywords = 'Anjanay Raina, Senior Software Engineer, Backend Engineer, Security Researcher, Smart Contract Auditor, Python, Go, Solidity, FastAPI, NatWest Group, Distributed Systems, Microservices';
+    const siteTitle = 'Anjanay Raina | Software Engineer II & Security Researcher';
+    const defaultDescription = 'Anjanay Raina is a Software Engineer II at NatWest Group and Backend & Security Engineer building high-performance, fault-tolerant distributed systems and Web3 protocols.';
+    const defaultKeywords = 'Anjanay Raina, Software Engineer II, Backend Engineer, Security Researcher, Smart Contract Auditor, Python, Go, Solidity, FastAPI, NatWest Group, Distributed Systems, Microservices';
     const defaultImage = '/client_avatar_male_new_1767877648113.png';
     const siteUrl = 'https://anjanay.in';
 
@@ -51,7 +51,7 @@ const SEO = ({ title, description, keywords, image, url }) => {
                         "https://github.com/anjanayraina",
                         "https://x.com/Anjanay_Raina"
                     ],
-                    "jobTitle": "Senior Software Engineer & Security Researcher",
+                    "jobTitle": "Software Engineer II & Security Researcher",
                     "worksFor": {
                         "@type": "Organization",
                         "name": "NatWest Group"

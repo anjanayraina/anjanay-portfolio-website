@@ -5,9 +5,9 @@ import SEO from '../components/SEO/SEO';
 const projects = [
   {
     title: 'Mor Finance AI',
-    subtitle: 'AI-Powered Trading & Web3 Intelligence | Jan 2025 – Present',
+    subtitle: 'AI-Powered Trading & Web3 Intelligence | Sep 2025 – Aug 2026',
     description: 'A high-performance trading ecosystem and Web3 intelligence platform. Features asynchronous microservice architecture, spot/margin trading engines, automated debt discharge, and real-time arbitrage processing.',
-    tech: ['FastAPI', 'Python', 'Web3', 'Microservices', 'MongoDB', 'Redis', 'LLMs'],
+    tech: ['FastAPI', 'Python', 'React', 'TypeScript', 'WebSockets', 'MongoDB', 'PostgreSQL', 'Kafka', 'LangChain', 'OpenAI API', 'Web3'],
     links: {
       github: 'https://github.com/Mor-Fin-AI',
       live: 'https://dashboard.morfinance.ai/',
@@ -19,39 +19,39 @@ const projects = [
     },
     icon: '🤖',
     features: [
-      'Architected the core Trading API and responsive Trading UI for spot and margin trading (99.9% uptime).',
+      'Developed the core Trading API (FastAPI, MongoDB, REST/WebSockets) and responsive Trading UI (React, TypeScript) for real-time spot and margin trading.',
       'Engineered a Debt Discharge Microservice using Flash and Collateralized Loans, achieving 0% slippage on atomic trade execution.',
-      'Developed a Real-Time Arbitrage Engine processing 50+ events/sec that continuously monitors on-chain swap events with sub-millisecond latency.',
-      'Integrated LLM-based agents within Developer Academy for personalized, real-time code debugging and curriculum guidance.',
-      'Scaled an LLM Service to fetch market data, feed AI models, and generate signals, handling 10,000+ daily trades (60% accuracy improvement).'
+      'Built a Real-Time Arbitrage Engine in Python processing 50+ events/sec via WebSockets, continuously indexing high-frequency market liquidity streams to execute profitable opportunities with sub-millisecond latency.',
+      'Incorporated context-aware LLM agents using LangChain and OpenAI API within the Developer Academy, backed by PostgreSQL for real-time syntax debugging, curriculum guidance, and assessment tracking.',
+      'Scaled an asynchronous Python and Kafka LLM Service with distributed worker queues to ingest market data, feed AI models, and generate algorithmic signals across 10,000+ daily trades with 80% higher accuracy.'
     ]
   },
   {
     title: 'JobSleuth',
-    subtitle: 'High-Throughput Automated Job Aggregator | Oct 2024 – Dec 2024',
+    subtitle: 'High-Throughput Automated Job Aggregator | Jul 2025 – Sep 2025',
     description: 'A distributed job aggregation and semantic ranking platform designed for high scale. Ingests and processes thousands of postings daily from disparate sources with asynchronous concurrency and AI-based filtering.',
-    tech: ['Python', 'aiohttp', 'FastAPI', 'PostgreSQL', 'React', 'AsyncIO', 'CI/CD'],
+    tech: ['Python', 'FastAPI', 'aiohttp', 'Telethon', 'MongoDB', 'Gemini', 'React', 'Vite', 'Pytest', 'GitHub Actions'],
     links: { github: 'https://github.com/anjanayraina/JobSleuth', live: 'https://job-sleuth.onrender.com/' },
     icon: '🔍',
     features: [
-      'Deployed an automated job aggregation platform processing 5,000+ daily postings from 20+ sources.',
-      'Achieved a 90% reduction in data ingestion time via highly concurrent, asynchronous aiohttp pipelines.',
-      'Implemented AI-based semantic ranking algorithms to filter and prioritize job listings based on user skill sets and long-term career goals.',
-      'Maintained consistent availability for 200+ registered users by building robust, automated CI/CD pipelines resulting in zero downtime.'
+      'Deployed an autonomous job aggregation backend in Python and FastAPI processing 5,000+ daily postings across 10+ platforms, cutting ingestion time by 90% via concurrent aiohttp, Telethon, and MongoDB pipelines.',
+      'Applied a hybrid extraction pipeline combining Regex parsers, bulk Gemini LLM extractors, and automated skill tagging to structure raw job feeds into paginated MongoDB search queries tailored to user preferences.',
+      'Delivered a responsive React and Vite web app with multi-parameter search filtering, role-based authentication, and automated email alerts.',
+      'Backed by Pytest unit test suites and GitHub Actions CI/CD workflows, maintaining consistent availability for 200+ registered users.'
     ]
   },
   {
     title: 'IDRecs Platform & Microservices',
     subtitle: 'NatWest Group | Enterprise Banking Architecture',
     description: 'Enterprise data processing engine and validation microservices. Engineered fault-tolerant recovery, automated reconciliation, and non-blocking event-driven architectures.',
-    tech: ['Python', 'asyncio', 'FastAPI', 'OCR Orchestrator', 'Microservices', 'Azure'],
+    tech: ['Python', 'asyncio', 'FastAPI', 'Redis', 'Pydantic', 'Docker', 'MongoDB', 'Jenkins', 'OCR Orchestrator'],
     links: {},
     icon: '🏦',
     features: [
-      'Engineered a fault-tolerant recovery mechanism with OCR orchestrator, automatically correcting and reprocessing 5,000+ stuck records monthly (99.9% SLA).',
-      'Architected a Validation Service microservice to replace legacy workflows, reducing manual report validation time by 70%.',
-      'Refactored core synchronous API endpoints into non-blocking event-driven architectures with Python asyncio, reducing latency by 10x.',
-      'Implemented complex financial business logic modules (Rebate, Negative Ageing, Contra) for automated transaction reconciliation.'
+      'Established a fault-tolerant recovery mechanism with idempotent retry logic and an OCR orchestrator, reprocessing 5,000+ stuck records monthly (99% SLA).',
+      'Architected a containerized Validation Service microservice (Pydantic, Docker) with strict schema validation, reducing manual report validation time by 70%.',
+      'Refactored synchronous REST endpoints into non-blocking event-driven architectures with asyncio, FastAPI, and Redis, cutting execution latency by 90%.',
+      'Integrated financial business logic modules (Rebate, Negative Aging, Contra) in Python and MongoDB, achieving 95%+ STP across 1,000+ daily records.'
     ]
   },
   {
@@ -63,9 +63,9 @@ const projects = [
     icon: '🛡️',
     features: [
       'Audited global Web3 protocols and resolved 30+ critical vulnerabilities across high-traffic DeFi architectures.',
-      'Engineered an automated backend test suite in Go with custom fuzzing and regression checks, reducing manual QA testing time by 50%.',
-      'Audited Solidity smart contracts for Zus Network using Foundry and Slither to identify and patch 5+ critical vulnerabilities.',
-      'Implemented low-level static analysis and assembly optimizations, decreasing smart contract execution and gas costs by up to 60%.'
+      'Programmed an end-to-end backend test suite in Go with custom property-based fuzzing and regression checks, reducing manual QA testing time by 70%.',
+      'Audited Zus Network protocol services, Solidity modules, and state-transition logic, patching 5+ critical vulnerabilities across authentication and access-control workflows.',
+      'Executed VM bytecode analysis, storage packing, and assembly-level memory optimizations, decreasing protocol execution overhead and compute costs by up to 60%.'
     ]
   },
   {

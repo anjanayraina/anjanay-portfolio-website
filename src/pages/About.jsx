@@ -11,7 +11,7 @@ const About = () => {
         <div ref={revealRef} className="about-page container animate-fade-in" style={{ paddingTop: '5rem', paddingBottom: '8rem' }}>
             <SEO
                 title="About Me"
-                description="Learn more about Anjanay Raina - Senior Software Engineer at NatWest Group, Backend & Security Engineer, and Web3 Researcher."
+                description="Learn more about Anjanay Raina - Software Engineer II at NatWest Group, Backend & Security Engineer, and Web3 Researcher."
                 url="/about"
             />
             {/* Bio Section */}
@@ -32,11 +32,11 @@ const About = () => {
                             Know about <span style={{ color: '#a855f7' }}>Me!!</span>
                         </h1>
                         <p style={{ fontSize: '1.25rem', color: 'var(--text-primary)', marginBottom: '1.5rem', fontWeight: 600, letterSpacing: '-0.02em' }}>
-                            Hi Stranger!, I am <span style={{ color: '#a855f7' }}>Anjanay Raina</span> from <span style={{ color: '#a855f7' }}>Delhi, India.</span>
+                            Hi Stranger!, I am <span style={{ color: '#a855f7' }}>Anjanay Raina</span> from <span style={{ color: '#a855f7' }}>Delhi, India</span>, currently based in <span style={{ color: '#a855f7' }}>Gurugram, Haryana.</span>
                         </p>
                         <p style={{ color: 'var(--text-secondary)', marginBottom: '3rem', fontSize: '1.125rem', letterSpacing: '-0.01em', lineHeight: '1.8' }}>
-                            I am currently a <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>Senior Software Engineer at NatWest Group</span> and an independent <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>Backend & Security Engineer</span>.
-                            I specialize in building <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>high-performance, fault-tolerant distributed systems</span>, asynchronous architectures, and microservices in Python, Go, and Solidity. As an independent security researcher, I have audited global Web3 protocols and resolved <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>30+ critical vulnerabilities</span>.
+                            I am currently a <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>Software Engineer II at NatWest Group</span> and an independent <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>Backend & Security Engineer</span>.
+                            I specialize in building <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>high-performance, fault-tolerant distributed systems</span>, asynchronous architectures, and microservices in Python, Go, SQL, and Solidity. As an independent security researcher, I have audited global distributed protocols and resolved <span style={{ fontWeight: 800, color: 'var(--text-primary)' }}>30+ critical vulnerabilities</span>.
                         </p>
 
                         {/* Professional Skillset - Moved Up */}
@@ -220,9 +220,9 @@ const About = () => {
                     {[
                         { title: 'We Raise the Bar Recognition', org: 'NatWest Group (Director Swati Sharma)', date: 'Apr 2026', icon: '⭐' },
                         { title: 'Recognised for being Robust', org: 'NatWest Group (AVP Dhruv Upadhyaya)', date: '2026', icon: '🏦' },
-                        { title: 'B.Tech (CS & Biosciences)', org: 'IIIT Delhi', date: 'Jan 2021 – Jul 2024', icon: '🎓' },
-                        { title: 'Peak Hackathon Winner (2nd Place)', org: 'Mantra Chain', date: 'Jul 2024', icon: '🥈' },
-                        { title: 'GDSC Core Member & Blockchain Lead', org: 'IIIT Delhi', date: 'Aug 2023 – Jun 2024', icon: '🔗' },
+                        { title: 'B.Tech (CS & Biosciences)', org: 'IIIT Delhi', date: 'Jan 2021 – May 2024', icon: '🎓' },
+                        { title: 'Peak Hackathon Winner', org: 'Mantra Chain', date: 'Jul 2024', icon: '🥈' },
+                        { title: 'GDSC Core Member & Technical Lead', org: 'IIIT Delhi', date: 'Aug 2023 – Jun 2024', icon: '🔗' },
                         { title: 'Aptos Winter School', org: 'Selected Attendee (Top 60 India)', date: 'Dec 2023', icon: '🎿' }
                     ].map((award, i) => (
                         <div key={i} className="card glass glow-hover" style={{ padding: '2rem' }}>

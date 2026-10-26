@@ -2,12 +2,12 @@ import React from 'react';
 import SEO from '../components/SEO/SEO';
 
 const stack = [
-    { category: 'Programming Languages', items: ['Python', 'Golang', 'Rust', 'Solidity', 'SQL', 'Java', 'TypeScript', 'JavaScript'] },
-    { category: 'Frameworks & APIs', items: ['FastAPI', 'FastMCP', 'REST APIs', 'GraphQL', 'Pytest', 'React', 'Node.js'] },
-    { category: 'AI Tools & Agents', items: ['Gemini', 'Claude Code', 'OpenAI API', 'LangChain', 'Ollama', 'Cursor'] },
-    { category: 'Databases & Cloud', items: ['PostgreSQL', 'MongoDB', 'Elasticsearch', 'Kafka', 'GCP', 'Azure', 'NoSQL', 'Git'] },
-    { category: 'DevOps & Architecture', items: ['Docker', 'Kubernetes', 'CI/CD', 'Microservices', 'Jenkins', 'Containerization'] },
-    { category: 'Core Competencies', items: ['System Architecture', 'Performance Tuning', 'Distributed Systems', 'Code Auditing', 'Foundry', 'Slither'] }
+    { category: 'Programming Languages', items: ['Python', 'Golang', 'SQL', 'TypeScript', 'JavaScript', 'Solidity', 'Rust', 'Java'] },
+    { category: 'Frameworks & APIs', items: ['FastAPI', 'React', 'Vite', 'REST APIs', 'GraphQL', 'WebSockets', 'gRPC', 'Pytest', 'Pydantic', 'Node.js'] },
+    { category: 'AI Tools & Agents', items: ['OpenAI API', 'LangChain', 'Gemini', 'RAG', 'Vector Embeddings', 'FastMCP', 'Ollama', 'Claude Code', 'Cursor'] },
+    { category: 'Databases & Cloud', items: ['PostgreSQL', 'MongoDB', 'Redis', 'Kafka', 'Elasticsearch', 'AWS', 'GCP', 'Azure', 'Git'] },
+    { category: 'DevOps & Architecture', items: ['Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions', 'Jenkins', 'Microservices', 'Linux'] },
+    { category: 'Core Competencies', items: ['System Architecture', 'Distributed Systems', 'Security Auditing', 'Agile Methodologies', 'Performance Tuning', 'Foundry', 'Slither'] }
 ];
 
 const StackPage = () => {

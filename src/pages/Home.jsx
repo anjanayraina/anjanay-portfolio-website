@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <div ref={revealRef} className="home-page animate-fade-in">
             <SEO
-                title="Anjanay Raina | Senior Software Engineer & Security Researcher"
+                title="Anjanay Raina | Software Engineer II & Security Researcher"
                 description="Backend & Security Engineer building high-performance, fault-tolerant distributed systems, microservices, and Web3 protocols. Audited global protocols and resolved 30+ critical vulnerabilities."
             />
             {/* Centered Bio & Gallery */}
@@ -31,7 +31,7 @@ const Home = () => {
 
                 <div className="stagger-reveal reveal" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
                     {[
-                        { title: 'Backend & Distributed Systems', desc: 'High-performance microservices in Python (asyncio) and Go with non-blocking event-driven architectures, 10x latency reductions, and fault-tolerant recovery.' },
+                        { title: 'Backend & Distributed Systems', desc: 'High-performance microservices in Python (asyncio) and Go with non-blocking event-driven architectures, 90% latency reductions, and fault-tolerant recovery.' },
                         { title: 'Security & Protocol Auditing', desc: 'Smart contract security reviews (Solidity/Rust), formal verification (Foundry/Slither), mathematical invariant testing, and assembly gas optimizations.' },
                         { title: 'AI Engineering & High-Throughput APIs', desc: 'Autonomous LLM agents, real-time trading engines processing 50+ events/sec, concurrent aiohttp ingestion pipelines, and automated CI/CD.' }
                     ].map((service, i) => (

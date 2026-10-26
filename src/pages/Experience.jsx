@@ -5,13 +5,13 @@ import SEO from '../components/SEO/SEO';
 const experiences = [
   {
     company: 'NatWest Group',
-    role: 'Senior Software Engineer',
-    period: 'Sept 2026 – Present',
-    details: 'Refactoring core synchronous API endpoints and data pipelines into non-blocking, event-driven architectures using Python’s asyncio.',
+    role: 'Software Engineer II',
+    period: 'Sep 2026 – Present',
+    details: 'Refactoring synchronous APIs and data pipelines into non-blocking, event-driven architectures using Python, asyncio, FastAPI, and Redis.',
     highlights: [
-      'Refactored core synchronous API endpoints and data pipelines into non-blocking, event-driven architectures using Python’s asyncio, reducing workflow execution latency by 10x and maximizing concurrent system throughput.',
-      'Architected a Validation Service microservice to replace legacy workflows, reducing manual report validation time by 70% through highly optimized data ingestion and automated reconciliation logic.',
-      'Spearheaded code reviews and architectural planning for a 5-engineer pod, standardizing modern Python best practices across the team and decreasing PR turnaround time by 40%.'
+      'Refactored synchronous RESTful API endpoints and data pipelines into non-blocking, event-driven architectures using Python, asyncio, FastAPI, and Redis, cutting execution latency by 90% and maximizing I/O throughput.',
+      'Architected a containerized Validation Service microservice in Python, Pydantic, and Docker with strict schema validation, reducing manual report validation time by 70% via optimized batch ingestion and reconciliation.',
+      'Spearheaded peer reviews, technical documentation, and architectural planning for a 4-member pod using Agile methodologies, standardizing Python, Pytest, and Jenkins CI/CD best practices to cut PR turnaround time by 40%.'
     ],
     logo: '🏦'
   },
@@ -21,20 +21,20 @@ const experiences = [
     period: 'Aug 2024 – Aug 2026',
     details: 'Engineering fault-tolerant recovery mechanisms and core financial reconciliation modules for enterprise banking platforms.',
     highlights: [
-      'Engineered a fault-tolerant recovery mechanism for the enterprise IDRecs platform with custom edit functionality and an OCR orchestrator, automatically correcting and reprocessing 5,000+ stuck records monthly for a 99.9% SLA.',
-      'Implemented complex financial business logic modules (Rebate, Negative Ageing, Contra) to ensure high-accuracy automated transaction reconciliation.'
+      'Established a fault-tolerant recovery mechanism for the enterprise IDRecs platform with custom edit functionality, idempotent retry logic, and an OCR orchestrator, reprocessing 5,000+ stuck records monthly for a 99% SLA.',
+      'Integrated complex financial business logic modules (Rebate, Negative Aging, Contra) in Python and MongoDB for automated transaction processing, achieving 95%+ STP across 1,000+ daily records.'
     ],
     logo: '🏦'
   },
   {
     company: 'Zus Network',
-    role: 'Backend Consultant',
-    period: 'March 2023 – Aug 2024',
+    role: 'Protocol Engineer',
+    period: 'Mar 2024 – Jul 2024',
     details: 'Backend infrastructure testing, protocol security auditing, and gas optimization for decentralized storage networks.',
     highlights: [
-      'Engineered an automated backend test suite in Go integrating custom fuzzing and regression checks across 5+ core repositories, streamlining CI/CD pipelines and reducing manual QA testing time by 50%.',
-      'Audited complex Solidity smart contracts for the Zus Network protocol, utilizing Foundry and Slither to identify and patch 5+ critical vulnerabilities.',
-      'Implemented low-level static analysis and assembly optimizations, decreasing smart contract execution and gas costs by up to 60% for the core DeFi protocols.'
+      'Programmed an end-to-end backend test suite in Go integrating custom property-based fuzzing and regression checks across repositories, streamlining CI/CD pipelines and reducing manual QA testing time by 70%.',
+      'Audited distributed protocol services, Solidity modules, and state-transition logic using automated static analysis tooling, identifying and patching 5+ critical vulnerabilities across authentication and access-control workflows.',
+      'Executed low-level virtual machine bytecode analysis, storage packing, and assembly-level memory optimizations, decreasing protocol execution overhead and transaction compute costs by up to 60%.'
     ],
     logo: '🛰️'
   },
@@ -52,12 +52,13 @@ const experiences = [
   },
   {
     company: 'IIIT Delhi & Research',
-    role: 'B.Tech in CS & Biosciences & Blockchain Lead',
-    period: 'Jan 2021 – July 2024',
+    role: 'B.Tech in CS & Biosciences & GDSC Technical Lead',
+    period: 'Jan 2021 – May 2024',
     details: 'Graduated B.Tech from IIIT Delhi. Led blockchain initiatives and authored peer-reviewed research.',
     highlights: [
-      'Graduated with B.Tech in Computer Science & Biosciences from IIIT Delhi (Jan 2021 – July 2024).',
-      'Served as GDSC Core Member & Blockchain Lead at IIIT Delhi (Aug 2023 – June 2024).',
+      'Graduated with B.Tech in Computer Science & Biosciences from IIIT Delhi (Jan 2021 – May 2024).',
+      'Served as GDSC Core Member & Technical Lead at IIIT Delhi (Aug 2023 – June 2024).',
+      'Won the Peak Hackathon organised by Mantra Chain (Jul 2024).',
       'Developed two-layered blockchain architecture resulting in an IEEE ANTS publication.'
     ],
     logo: '🎓'
@@ -72,7 +73,7 @@ const Experience = () => {
     <div ref={revealRef} className="experience-page container section animate-fade-in">
       <SEO
         title="Experience & Resume"
-        description="Professional experience of Anjanay Raina, Senior Software Engineer at NatWest Group, smart contract auditor, and distributed systems architect."
+        description="Professional experience of Anjanay Raina, Software Engineer II at NatWest Group, smart contract auditor, and distributed systems architect."
         url="/experience"
       />
       <div className="reveal" style={{ marginBottom: '6rem' }}>

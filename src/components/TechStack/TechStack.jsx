@@ -5,27 +5,27 @@ import './TechStack.css';
 const stack = [
     {
         category: 'Programming Languages',
-        skills: ['Python', 'Golang', 'Rust', 'Solidity', 'SQL', 'Java', 'TypeScript', 'JavaScript']
+        skills: ['Python', 'Golang', 'SQL', 'TypeScript', 'JavaScript', 'Solidity', 'Rust', 'Java']
     },
     {
         category: 'Frameworks & APIs',
-        skills: ['FastAPI', 'FastMCP', 'REST APIs', 'GraphQL', 'Pytest', 'React', 'Node.js']
+        skills: ['FastAPI', 'React', 'Vite', 'REST APIs', 'GraphQL', 'WebSockets', 'gRPC', 'Pytest', 'Pydantic', 'Node.js']
     },
     {
         category: 'AI Tools & Agents',
-        skills: ['Gemini', 'Claude Code', 'OpenAI API', 'LangChain', 'Ollama', 'Cursor']
+        skills: ['OpenAI API', 'LangChain', 'Gemini', 'RAG', 'Vector Embeddings', 'FastMCP', 'Ollama', 'Claude Code', 'Cursor']
     },
     {
         category: 'Databases & Cloud',
-        skills: ['PostgreSQL', 'MongoDB', 'Elasticsearch', 'Kafka', 'GCP', 'Azure', 'NoSQL', 'Git']
+        skills: ['PostgreSQL', 'MongoDB', 'Redis', 'Kafka', 'Elasticsearch', 'AWS', 'GCP', 'Azure', 'Git']
     },
     {
         category: 'DevOps & Architecture',
-        skills: ['Docker', 'Kubernetes', 'CI/CD', 'Microservices', 'Jenkins', 'Containerization']
+        skills: ['Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions', 'Jenkins', 'Microservices', 'Linux']
     },
     {
         category: 'Core Competencies',
-        skills: ['System Architecture', 'Performance Tuning', 'Distributed Systems', 'Code Auditing', 'Foundry', 'Slither']
+        skills: ['System Architecture', 'Distributed Systems', 'Security Auditing', 'Agile Methodologies', 'Performance Tuning', 'Foundry', 'Slither']
     }
 ];
 
@@ -66,6 +66,10 @@ const TechStack = () => {
                                             {skill === 'Pytest' && <span style={{ color: '#0A9EDC' }}>🧪</span>}
                                             {skill === 'React' && <span style={{ color: '#61DAFB' }}>⚛️</span>}
                                             {skill === 'Node.js' && <span style={{ color: '#339933' }}>🟢</span>}
+                                            {skill === 'Vite' && <span style={{ color: '#646CFF' }}>⚡</span>}
+                                            {skill === 'WebSockets' && <span style={{ color: '#F59E0B' }}>🔁</span>}
+                                            {skill === 'gRPC' && <span style={{ color: '#244C5A' }}>📡</span>}
+                                            {skill === 'Pydantic' && <span style={{ color: '#E92063' }}>✅</span>}
 
                                             {skill === 'Gemini' && <span style={{ color: '#4E88FF' }}>✨</span>}
                                             {skill === 'Claude Code' && <span style={{ color: '#D97706' }}>🟧</span>}
@@ -73,9 +77,13 @@ const TechStack = () => {
                                             {skill === 'LangChain' && <span>🦜</span>}
                                             {skill === 'Ollama' && <span>🦙</span>}
                                             {skill === 'Cursor' && <span style={{ color: '#8B5CF6' }}>⚡</span>}
+                                            {skill === 'RAG' && <span style={{ color: '#8B5CF6' }}>📚</span>}
+                                            {skill === 'Vector Embeddings' && <span style={{ color: '#6366F1' }}>🧭</span>}
 
                                             {skill === 'PostgreSQL' && <span style={{ color: '#336791' }}>🐘</span>}
                                             {skill === 'MongoDB' && <span style={{ color: '#47A248' }}>🍃</span>}
+                                            {skill === 'Redis' && <span style={{ color: '#DC382D' }}>🟥</span>}
+                                            {skill === 'AWS' && <span style={{ color: '#FF9900' }}>☁️</span>}
                                             {skill === 'Elasticsearch' && <span style={{ color: '#005571' }}>🔍</span>}
                                             {skill === 'Kafka' && <span style={{ color: '#231F20' }}>📨</span>}
                                             {skill === 'GCP' && <span style={{ color: '#4285F4' }}>☁️</span>}
@@ -88,17 +96,20 @@ const TechStack = () => {
                                             {skill === 'CI/CD' && <span style={{ color: '#22C55E' }}>🔄</span>}
                                             {skill === 'Microservices' && <span style={{ color: '#EC4899' }}>🧩</span>}
                                             {skill === 'Jenkins' && <span style={{ color: '#D24939' }}>👨‍✈️</span>}
+                                            {skill === 'GitHub Actions' && <span style={{ color: '#2088FF' }}>🐙</span>}
+                                            {skill === 'Linux' && <span style={{ color: '#FCC624' }}>🐧</span>}
                                             {skill === 'Containerization' && <span style={{ color: '#3B82F6' }}>📦</span>}
 
                                             {skill === 'System Architecture' && <span style={{ color: '#00bcd4' }}>🏛️</span>}
                                             {skill === 'Performance Tuning' && <span style={{ color: '#F59E0B' }}>🚀</span>}
                                             {skill === 'Distributed Systems' && <span style={{ color: '#6366f1' }}>🔗</span>}
-                                            {skill === 'Code Auditing' && <span style={{ color: '#f44336' }}>🛡️</span>}
+                                            {skill === 'Security Auditing' && <span style={{ color: '#f44336' }}>🛡️</span>}
+                                            {skill === 'Agile Methodologies' && <span style={{ color: '#22C55E' }}>🔄</span>}
                                             {skill === 'Foundry' && <span style={{ color: '#D33833' }}>⚒️</span>}
                                             {skill === 'Slither' && <span style={{ color: '#4CAF50' }}>🐍</span>}
 
                                             {/* Default Icon */}
-                                            {!['Solidity', 'Python', 'Rust', 'Golang', 'Java', 'SQL', 'TypeScript', 'JavaScript', 'FastAPI', 'FastMCP', 'REST APIs', 'GraphQL', 'Pytest', 'React', 'Node.js', 'Gemini', 'Claude Code', 'OpenAI API', 'LangChain', 'Ollama', 'Cursor', 'PostgreSQL', 'MongoDB', 'Elasticsearch', 'Kafka', 'GCP', 'Azure', 'NoSQL', 'Git', 'Docker', 'Kubernetes', 'CI/CD', 'Microservices', 'Jenkins', 'Containerization', 'System Architecture', 'Performance Tuning', 'Distributed Systems', 'Code Auditing', 'Foundry', 'Slither'].includes(skill) &&
+                                            {!['Solidity', 'Python', 'Rust', 'Golang', 'Java', 'SQL', 'TypeScript', 'JavaScript', 'FastAPI', 'FastMCP', 'REST APIs', 'GraphQL', 'Pytest', 'React', 'Node.js', 'Gemini', 'Claude Code', 'OpenAI API', 'LangChain', 'Ollama', 'Cursor', 'PostgreSQL', 'MongoDB', 'Elasticsearch', 'Kafka', 'GCP', 'Azure', 'NoSQL', 'Git', 'Docker', 'Kubernetes', 'CI/CD', 'Microservices', 'Jenkins', 'Containerization', 'System Architecture', 'Performance Tuning', 'Distributed Systems', 'Code Auditing', 'Foundry', 'Slither', 'Vite', 'WebSockets', 'gRPC', 'Pydantic', 'RAG', 'Vector Embeddings', 'Redis', 'AWS', 'GitHub Actions', 'Linux', 'Security Auditing', 'Agile Methodologies'].includes(skill) &&
                                                 <span style={{ color: 'var(--accent-purple)' }}>✧</span>
                                             }
                                         </div>
